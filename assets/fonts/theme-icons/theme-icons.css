@@ -1,0 +1,261 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./icomoon.eot?xo0pez');
+  src:  url('./icomoon.eot?xo0pez#iefix') format('embedded-opentype'),
+    url('./icomoon.ttf?xo0pez') format('truetype'),
+    url('./icomoon.woff?xo0pez') format('woff'),
+    url('./icomoon.svg?xo0pez#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="fe-"], [class*=" fe-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fe-angle-up:before {
+  content: "\e900";
+}
+.fe-arrow-down:before {
+  content: "\e901";
+}
+.fe-arrow-left:before {
+  content: "\e902";
+}
+.fe-arrow-right:before {
+  content: "\e903";
+}
+.fe-arrow-up:before {
+  content: "\e904";
+}
+.fe-audio-speakerl:before {
+  content: "\e905";
+}
+.fe-briefcase:before {
+  content: "\e906";
+}
+.fe-bucket-square:before {
+  content: "\e907";
+}
+.fe-business-up:before {
+  content: "\e908";
+}
+.fe-calendar-1:before {
+  content: "\e909";
+}
+.fe-calendar-2:before {
+  content: "\e90a";
+}
+.fe-call:before {
+  content: "\e90b";
+}
+.fe-chart:before {
+  content: "\e90c";
+}
+.fe-checkbox:before {
+  content: "\e90d";
+}
+.fe-check-line:before {
+  content: "\e90e";
+}
+.fe-check-square:before {
+  content: "\e90f";
+}
+.fe-cliping:before {
+  content: "\e910";
+}
+.fe-clock-cirlce:before {
+  content: "\e911";
+}
+.fe-code-file:before {
+  content: "\e912";
+}
+.fe-dashboard:before {
+  content: "\e913";
+}
+.fe-download:before {
+  content: "\e914";
+}
+.fe-download-2:before {
+  content: "\e915";
+}
+.fe-dubbol-arrow-right:before {
+  content: "\e916";
+}
+.fe-dubbol-arrow-down:before {
+  content: "\e917";
+}
+.fe-dubbol-arrow-left:before {
+  content: "\e918";
+}
+.fe-dubbol-arrow-up:before {
+  content: "\e919";
+}
+.fe-dubbol-user:before {
+  content: "\e91a";
+}
+.fe-edit:before {
+  content: "\e91b";
+}
+.fe-envalop:before {
+  content: "\e91c";
+}
+.fe-extra-eq:before {
+  content: "\e91d";
+}
+.fe-facebook:before {
+  content: "\e91e";
+}
+.fe-global:before {
+  content: "\e91f";
+}
+.fe-goal:before {
+  content: "\e920";
+}
+.fe-grap:before {
+  content: "\e921";
+}
+.fe-heand-bag:before {
+  content: "\e922";
+}
+.fe-heart:before {
+  content: "\e923";
+}
+.fe-help:before {
+  content: "\e924";
+}
+.fe-instagram:before {
+  content: "\e925";
+}
+.fe-keyboard-open:before {
+  content: "\e926";
+}
+.fe-language:before {
+  content: "\e927";
+}
+.fe-linkedin:before {
+  content: "\e928";
+}
+.fe-medium:before {
+  content: "\e929";
+}
+.fe-messages:before {
+  content: "\e92a";
+}
+.fe-microphone:before {
+  content: "\e92b";
+}
+.fe-microphone-voice:before {
+  content: "\e92c";
+}
+.fe-minus:before {
+  content: "\e92d";
+}
+.fe-monitor:before {
+  content: "\e92e";
+}
+.fe-music:before {
+  content: "\e92f";
+}
+.fe-paper-pen:before {
+  content: "\e930";
+}
+.fe-pencil-ruler:before {
+  content: "\e931";
+}
+.fe-pen-line:before {
+  content: "\e932";
+}
+.fe-pen-tool:before {
+  content: "\e933";
+}
+.fe-pintarest:before {
+  content: "\e934";
+}
+.fe-play:before {
+  content: "\e935";
+}
+.fe-play-2:before {
+  content: "\e936";
+}
+.fe-plus:before {
+  content: "\e937";
+}
+.fe-prifile:before {
+  content: "\e938";
+}
+.fe-quote-left:before {
+  content: "\e939";
+}
+.fe-quote-left-angle:before {
+  content: "\e93a";
+}
+.fe-quote-right:before {
+  content: "\e93b";
+}
+.fe-rocket:before {
+  content: "\e93c";
+}
+.fe-rule-pen:before {
+  content: "\e93d";
+}
+.fe-search:before {
+  content: "\e93e";
+}
+.fe-send:before {
+  content: "\e93f";
+}
+.fe-send-2:before {
+  content: "\e940";
+}
+.fe-shuttle:before {
+  content: "\e941";
+}
+.fe-star:before {
+  content: "\e942";
+}
+.fe-translate:before {
+  content: "\e943";
+}
+.fe-triangle:before {
+  content: "\e944";
+}
+.fe-trophy:before {
+  content: "\e945";
+}
+.fe-twitter:before {
+  content: "\e947";
+}
+.fe-user-box:before {
+  content: "\e948";
+}
+.fe-voice-o:before {
+  content: "\e949";
+}
+.fe-website:before {
+  content: "\e94a";
+}
+.fe-3d-rotate:before {
+  content: "\e94b";
+}
+.fe-angle-down:before {
+  content: "\e94c";
+}
+.fe-angle-left:before {
+  content: "\e94d";
+}
+.fe-angle-right:before {
+  content: "\e94e";
+}
