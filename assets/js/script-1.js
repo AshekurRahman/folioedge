@@ -31,7 +31,7 @@
         });
     });
     /*====== Feedback-Slider ======*/
-    var Feedback_Slider = new Swiper(".Feedback-slider", {
+    var Feedback_Slider = new Swiper(".feedback-slider", {
         loop: true,
         speed: 800,
         spaceBetween: 0,
