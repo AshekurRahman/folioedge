@@ -28,8 +28,9 @@ CSS Indexing
 }
 
 /*=== 1. Reset-CSS ===*/
-body {
-    font-family: 'Gilroy';
+body { 
+    
+    font-family: 'satoshi';
     font-weight: 500;
     font-size: 18px;
     color: var(--body-color);
@@ -45,6 +46,8 @@ h3,
 h4,
 h5,
 h6 {
+    
+    font-family: "recoleta"; 
     font-weight: 700;
     color: var(--heading-color);
     margin-bottom: 16px;
@@ -132,11 +135,6 @@ img {
     position: absolute;
     border-bottom: 1px solid rgba(109, 103, 100, 0.2);
 }
-
-.page-wrapper {
-    padding-top: var(--navbar-height);
-}
-
 .mainmenu-area .nav-row {
     display: flex;
     justify-content: space-between;
@@ -189,11 +187,265 @@ img {
 
 
 /*=== 7. header-CSS ===*/
-.header-area {
+.header-area{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 221px;
+    }
+    .header-area .header-box{
+        padding: 72px 56px;
+        background-color: #3CC3A3;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .header-box .top-title{
+        color: white;
+        font-size: 34px;
+        margin-bottom: 12px;
+    }
+    .header-box .title{
+        font-size: 74px;
+        color: white;
+        margin-bottom: 32px;
+    }
+    .header-box .desc{
+        color: #ffffff;
+        font-size: 20px;
+        margin-bottom: 48px;
+    }
+    .header-box .primary-button{
+        background-color: #ffffff;
+        color: #10131F;
+    }
+    
+    .header-box .primary-button:hover{
+        background-color: #10131F;
+        color: white;
+
+    }
+    
+
+.video-icon .icon {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 85px;
+    color: white;
+    background-color:#F1554C;
+    display: inline-block;
+    border-radius: 120px;
+    padding-left: 5px;
+    transition: 0.5s;
+}
+
+.video-icon .icon:hover {
+    color:#F1554C ;
+    background-color:white ;
+}
+.video-box {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    min-height: 100vh;
-    background: url('../image/header-image.png') no-repeat;
-    background-position: center center;
-    background-size: cover;
+    justify-content: flex-end;
+    padding: 130px;
 }
+
+.wave-effect {
+    position: absolute;
+    left: 72%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+}
+
+
+.wave-effect span {
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #F1554C;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 200px;
+    animation-name: wave;
+    animation-duration: 1.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.wave-effect span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.wave-effect span:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.wave-effect span:nth-child(3) {
+    animation-delay: 1.2s;
+}
+
+.wave-effect span:nth-child(4) {
+    animation-delay: 1.8s;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        border-width: 1px;
+    }
+
+    100% {
+        transform: scale(2.6);
+        opacity: 0;
+        border-width: 0px;
+    }
+}
+
+
+
+
+
+/*=== 7. feature-CSS ===*/
+.feature-area{
+    background-color:#10131F;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.feature-area .section-title{
+    align-items: center;
+    margin-bottom: 56px;
+}
+.feature-area .section-title .top-title{
+    font-size: 18px;
+    color: #F1554C;
+    margin-bottom: 4px;
+}
+.feature-area .section-title .title{
+    color: white;
+    font-size: 48px;
+    margin-bottom: 56px;
+}
+.feature-area .side-title{
+    color: #3CC3A3;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-box {
+    padding: 48px 48px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.feature-box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #1C1F2A;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.feature-box:hover:before {
+    opacity: 0.8;
+    background-color: #10131F;
+}
+
+.feature-box .icon {
+    width: 66px;
+    height: 66px;
+    font-size: 32px;
+    line-height: 66px;
+    text-align: center;
+    color: white;
+    background-color: #FDB12E;
+    border-radius: 100px;
+    margin-bottom: 24px;
+    transition: 0.5;
+    box-shadow: 6px;
+    margin-bottom: 32px;
+    transition: 0.5s;
+}
+
+.feature-box:hover .icon {
+    color: #FDB12E;
+    background-color: white;
+}
+
+.feature-box.box-2 .icon {
+    color: #ffffff;
+    background-color: #3CC3A3;
+}
+
+.feature-box.box-2:hover .icon {
+    color: #3CC3A3;
+    background-color:white;
+}
+
+.feature-box.box-3 .icon {
+    color: #ffffff;
+    background-color: #F1554C;
+    transition: 0.5s;
+}
+
+.feature-box.box-3:hover .icon {
+    color: #F1554C;
+    background-color:white ;
+}
+.feature-box .title {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 12px;
+
+}
+
+
+/*=== Project--CSS ===*/
+.Project-area {
+    background-image: url(../image/theme-1/project-bg.png);    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 135px 130px;
+    text-align: center;
+}
+.Project-area .Project-logo{
+    margin-bottom: 20px;
+}
+.Project-area .title{
+    color: #10131F;
+    font-size: 48px;
+    margin-bottom: 4px;
+}
+.Project-area .desc{
+    color: #6E6E78;
+    font-size:18px;
+}
+
+
