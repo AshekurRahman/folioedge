@@ -875,18 +875,19 @@ img {
 .faq-questions .top-title {
     font-size: 18px;
     color: #F1554C;
-    margin-bottom: 4px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
 }
 
 .faq-questions .title {
     font-size: 48px;
     color: #10131F;
-    margin-bottom: 24px;
+    margin-bottom:40px;
 }
 
 .faq-questions .desc {
     color: #6E6E78;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 }
 
 .faq-box {
