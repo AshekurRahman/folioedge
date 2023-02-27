@@ -1,5 +1,10 @@
 /* === Start-Media-Query === */
 
+<<<<<<< HEAD
+    
+
+}
+=======
 @media screen and (min-width: 1201px) {
 
     .mainmenu-area .nav-row .menu-items {
@@ -93,3 +98,4 @@
         width: 60%;
     }
 }
+>>>>>>> c31938c398aa4359cd89fcce5271a7e0b3693d8d

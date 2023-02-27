@@ -1,4 +1,31 @@
 /* === Start-Media-Query === */
+/* max-widths */
+@media screen and (max-width: 1600) {
+
+}
+
 @media screen and (max-width: 1200) {
+
+}
+
+@media screen and (max-width: 1400) {
+
+}
+@media screen and (max-width: 1024) {
+
+}
+@media screen and (max-width: 992) {
+
+}
+@media screen and (max-width: 768) {
+
+}
+@media screen and (max-width: 576) {
+
+}
+
+/* main-widths */
+
+@media screen and (min-width: 1025) {
 
 }

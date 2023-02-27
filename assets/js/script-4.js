@@ -3,16 +3,6 @@
 
 
 
-                /* Sticky-Menu-JS */
-                $(window).scroll(function () {
-                    if($(window).scrollTop() > 300) {
-                        $(".mainmenu-area").addClass('sticky');
-                    } else {
-                        $(".mainmenu-area").removeClass('sticky');
-                    }
-                });
-
-
 
         /*====== testimonial -slider ======*/
         var testimonial_sider = new Swiper(".testimonial-slider", {
@@ -35,43 +25,14 @@
                     slidesPerView: 1,
                 },
                 768: {
-                    slidesPerView: 1,
-                },
-                992: {
                     slidesPerView: 2,
-                },
-            },
-        });
-
-
-        /*====== Members-slider -slider ======*/
-        var members_slider = new Swiper(".members-slider", {
-            loop: true,
-            speed: 800,
-            spaceBetween: 30,
-            slidesPerView: 1,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: "#Project-slider-control .navigation-control .next",
-                prevEl: "#Project-slider-control .navigation-control .prev",
-            },
-            pagination: {
-                el: "#Project-slider-control .pagination-control",
-                clickable: true,
-            },
-            breakpoints: {
-                575: {
-                    slidesPerView: 2,
-                },
-                768: {
-                    slidesPerView: 3,
                 },
                 992: {
                     slidesPerView: 3,
                 },
             },
         });
+
 
 
 
@@ -106,25 +67,6 @@
 
 
 
-
-
-        /*-- Line-Progress-Bar-Active --*/
-        $(".bar_group").appear(function () {
-            var value = $(this).find('.bar_group__bar').data('value');
-            $(this).find('.b_tooltip span').animateNumber({
-                number: value
-            }, 1500);
-        });
-
-        // 
-        var typed3 = new Typed('#typed3', {
-            strings: ['My strings are: <i>strings</i> with', 'My strings are: <strong>HTML</strong>', 'My strings are: Chars &times; &copy;'],
-            typeSpeed: 0,
-            backSpeed: 0,
-            smartBackspace: true, // this is a default
-            loop: true
-          });
-            
 
 
     });
