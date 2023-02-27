@@ -1,6 +1,5 @@
 /* === Start-Media-Query === */
 @media screen and (min-width: 1201px) {
-
     .mainmenu-area .nav-row .menu-items {
         display: block !important;
     }
@@ -97,4 +96,8 @@
         order: inherit;
         width: 60%;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 67cd6e6201f2e51469720da2ae51b0ba444c3c21
