@@ -894,12 +894,18 @@ img {
     padding: 40px 40px;
     background-color: #3CC3A3;
     color: white;
+    border-radius: 5px;
 }
 
 .faq-box .title {
     font-size: 36px;
     margin-bottom: 26px;
     color: white;
+}
+.call-number .number {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
 .call-number {
@@ -1061,13 +1067,14 @@ img {
 .blog-news .top-title {
     font-size: 18px;
     color: #F1554C;
-    margin-bottom: 4px;
+    margin-bottom: 26px;
+    text-transform: uppercase;
 }
 
 .blog-news .title {
     font-size: 48px;
     color: #10131F;
-    margin-bottom: 46px;
+    margin-bottom: 74px;
 }
 
 
