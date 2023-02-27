@@ -1,10 +1,4 @@
 /* === Start-Media-Query === */
-
-<<<<<<< HEAD
-    
-
-}
-=======
 @media screen and (min-width: 1201px) {
 
     .mainmenu-area .nav-row .menu-items {
@@ -32,6 +26,12 @@
     font-size: 47px;
     color: #10131F;
     margin-bottom: 74px;
+}
+.member-title .title {
+    font-size: 44px;
+}
+.team-member-box .social-links a {
+    margin-right: 10px;
 }
 }
 
@@ -98,4 +98,3 @@
         width: 60%;
     }
 }
->>>>>>> c31938c398aa4359cd89fcce5271a7e0b3693d8d
