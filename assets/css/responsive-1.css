@@ -1,4 +1,95 @@
 /* === Start-Media-Query === */
-@media screen and (max-width: 1200) {
 
+@media screen and (min-width: 1201px) {
+
+    .mainmenu-area .nav-row .menu-items {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+.about-history {
+    background-color: #F7F7F7;
+    padding: 100px 200px;
+    margin: 0 -130px;
+    border-radius: 10px;
+}
+.about-area .image-info {
+    padding: 27px;
+    background-color: #F1554C;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    bottom: 24px;
+    width: calc(100% - 15px);
+}
+.project-area .section-title .title {
+    font-size: 47px;
+    color: #10131F;
+    margin-bottom: 74px;
+}
+}
+
+@media screen and (max-width: 1200px) {
+    .mainmenu-area .nav-row {
+        flex-wrap: wrap;
+    }
+
+    .mainmenu-area .nav-row .menu-items {
+        display: none;
+    }
+
+    .mainmenu-area .nav-row .nav-logo {
+        width: 70%;
+        min-height: 100px;
+        line-height: 100px;
+    }
+
+    .mainmenu-area .menu-button {
+        order: inherit;
+        width: 30%;
+    }
+
+    .mainmenu-area .nav-row .menu-items>ul {
+        border-radius: 5px;
+        background-color: white;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .mainmenu-area .nav-action {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 996px) {
+
+    .mainmenu-area .nav-row .nav-logo {
+        width: 60%;
+        min-height: 100px;
+        line-height: 100px;
+    }
+
+    .mainmenu-area .menu-button {
+        order: inherit;
+        width: 40%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 770px) {
+
+    .mainmenu-area .nav-row .nav-logo {
+        width: 40%;
+        min-height: 100px;
+        line-height: 100px;
+    }
+
+    .mainmenu-area .menu-button {
+        order: inherit;
+        width: 60%;
+    }
 }

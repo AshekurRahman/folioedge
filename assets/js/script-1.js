@@ -1,16 +1,32 @@
 ; (function ($) {
     $(document).on('ready', function () {
+    
+            /* Sticky-Menu-JS */
+            $(window).scroll(function () {
+                if($(window).scrollTop() > 400) {
+                    $(".mainmenu-area").addClass('sticky');
+                } else {
+                    $(".mainmenu-area").removeClass('sticky');
+                }
+            });
+              /*mobile-menu-active*/
+        $('.mainmenu-area .nav-row .menu-button .nav-action.toggle-menu').on('click', function () {
+            $(this).find('span').toggleClass('fe-plus');
+            $(this).find('span').toggleClass('fe-minus');
+            $('.mainmenu-area .nav-row .menu-items').slideToggle();
+        });
+     
 
         /*====== Project-Slider ======*/
-        var Product_Slider = new Swiper(".Project-slider", {
+        var Product_Slider = new Swiper(".project-slider", {
             loop: true,
             speed: 800,
-            spaceBetween: 0,
+            spaceBetween: 35,
             slidesPerView: 4,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
             navigation: {
-                nextEl: "#Project-slider-control .navigation-control .next",
+                nextEl: "#project-slider-control .navigation-control .next",
                 prevEl: "#Project-slider-control .navigation-control .prev",
             },
             pagination: {
@@ -27,23 +43,110 @@
                 1250: {
                     slidesPerView: 3,
                 },
+                1920: {
+                    slidesPerView: 3,
+                },
             },
         });
-    });
-    /*====== Feedback-Slider ======*/
-    var Feedback_Slider = new Swiper(".feedback-slider", {
+        /*====== Feedback-Slider ======*/
+        var Feedback_Slider = new Swiper(".feedback-slider", {
+            loop: true,
+            speed: 800,
+            spaceBetween: 100,
+            slidesPerView: 4,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: "#feedback-slider-control .navigation-control .next",
+                prevEl: "#feedback-slider-control .navigation-control .prev",
+            },
+            pagination: {
+                el: "#feedback-slider-control .pagination-control",
+                clickable: true,
+            },
+            breakpoints: {
+                575: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 1,
+                },
+                1250: {
+                    slidesPerView: 1,
+                },
+
+                1920: {
+                    slidesPerView: 1,
+                },
+
+            },
+        });
+
+
+
+
+
+
+
+/*-- Button-Hover-Effect-Script --*/
+$( '.mouse-dir' ).on( 'mouseenter', function ( e ) {
+    var parentOffset = $( this ).offset( ),
+    relX = e.pageX - parentOffset.left,
+    relY = e.pageY - parentOffset.top;
+    if ( $( this ).find( '.mouse-dir .dir-part' ) ) {
+        $( '.mouse-dir .dir-part' ).css( {
+            top: relY,
+            left: relX,
+        } );
+    }
+} );
+$( '.mouse-dir' ).on( 'mouseout', function ( e ) {
+    var parentOffset = $( this ).offset( ),
+        relX = e.pageX - parentOffset.left,
+        relY = e.pageY - parentOffset.top;
+    if ( $( this ).find( '.mouse-dir .dir-part' ) ) {
+        $( '.mouse-dir .dir-part' ).css( {
+            top: relY,
+            left: relX,
+        } );
+    }
+} );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        /*====== -Slider ======*/
+        var Feedback_Slider = new Swiper(".news-slider", {
         loop: true,
         speed: 800,
-        spaceBetween: 0,
+        spaceBetween: 35,
         slidesPerView: 4,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         navigation: {
-            nextEl: "#Feedback-slider-control .navigation-control .next",
-            prevEl: "#Feedback-slider-control .navigation-control .prev",
+            nextEl: "#news-slider-control .navigation-control .next",
+            prevEl: "#news-slider-control .navigation-control .prev",
         },
         pagination: {
-            el: "#Feedback-slider-control .pagination-control",
+            el: "#news-slider-control .pagination-control",
             clickable: true,
         },
         breakpoints: {
@@ -51,28 +154,35 @@
                 slidesPerView: 1,
             },
             768: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             1250: {
-                slidesPerView: 1,
+                slidesPerView: 3,
+            },
+
+            1920: {
+                slidesPerView: 3,
             },
 
         },
     });
+    
+
+
     /*====== Project-Slider ======*/
-    var Team_Member_Slider = new Swiper(".Team-Member-slider", {
+    var team_member_Slider = new Swiper(".team-member-slider", {
         loop: true,
         speed: 800,
-        spaceBetween: 0,
+        spaceBetween: 35,
         slidesPerView: 4,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         navigation: {
-            nextEl: "#Team-Member-slider-control .navigation-control .next",
-            prevEl: "#Team-Member-slider-control .navigation-control .prev",
+            nextEl: "#team-member-slider-control .navigation-control .next",
+            prevEl: "#team-member-slider-control .navigation-control .prev",
         },
         pagination: {
-            el: "#Team-Member-slider-control .pagination-control",
+            el: "#team-member-slider-control .pagination-control",
             clickable: true,
         },
         breakpoints: {
@@ -83,13 +193,14 @@
                 slidesPerView: 3,
             },
             1250: {
-                slidesPerView: 3,
+                slidesPerView: 4,
+            },
+            1920: {
+                slidesPerView: 4,
             },
         },
     });
 
 
-
-
-
-})(jQuery);
+});
+}) (jQuery);
