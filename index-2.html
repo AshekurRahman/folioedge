@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -26,9 +26,9 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle-min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/lity.min.css">
     <link rel="stylesheet" href="./assets/fonts/theme-icons/theme-icons.css">
     <link rel="stylesheet" href="assets/css/theme-font.css">
@@ -41,9 +41,9 @@
 
     <!-- page-wrapper-strrt-->
     <div class="page-wrapper">
-        
+
         <!-- main-manu-area-start -->
-        <div class="mainmenu-area sticky">
+        <div class="mainmenu-area">
             <div class="container">
                 <div class="nav-row">
                     <!-- logo-start -->
@@ -53,10 +53,17 @@
                         </a>
                     </div>
                     <!-- logp-end -->
+
+                    <!-- nav-actions-start -->
+                    <div class="nav-button">
+                        <button type="submit" class="primary-button">Download CV</button>
+                    </div>
+                    <!-- nav-actions-End -->
+
                     <!-- manu-item-start -->
                     <nav class="manu-items">
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="#home-section">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Page</a></li>
                             <li><a href="#">Services</a></li>
@@ -65,9 +72,6 @@
                         </ul>
                     </nav>
                     <!-- manu-item-End -->
-                    <!-- nav-actions-start -->
-                        <button type="submit" class="primary-button">Download CV</button>
-                    <!-- nav-actions-End -->
                 </div>
             </div>
         </div>
@@ -76,27 +80,32 @@
         <!-- heder-area-start -->
         <header class="header-area" style="background-image: url(assets/images/theme-2/header-image.png);">
             <div class="container">
-                <div class="row align-item-center">
+                <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="header-item">
                             <h4 class="top-title">Creative Agency</h4>
                             <h1 class="main-title">We’ll Provide with Our Passion</h1>
                             <div class="desc">
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when at its layout.</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when at its layout.</p>
+                                    <figure class="h-shape-image">
+                                        <img src="assets/images/theme-2/header-shape.png" alt="">
+                                    </figure>
                             </div>
                             <a href="#" class="primary-button">Browse Projects</a>
                         </div>
+                        <div class="water-mark">Follow Me On - Tw.   /   Fb.   /   Li.   /   In.</div>
                     </div>
-                    <!-- <div class="col-md-6">
-                        <div class="header-overlay">
-                            <img src="assets/images/theme-2/header-overlay-image.jpg" alt="">
-                        </div>
-                    </div> -->
+                    <div class="col-md-6">
+                        <figure class="header-image"
+                            style="background-image: url(assets/images/theme-2/header-overlay-bg.png);">
+                            <img src="assets/images/theme-2/header-image.jpg" alt="">
+                        </figure>
+                    </div>
                 </div>
             </div>
         </header>
         <!-- header-area-End -->
-
 
         <!-- Feature-area-start -->
         <section class="feature-area section-padding">
@@ -110,13 +119,15 @@
                     </div>
                     <div class="col-md-4 offset-md-3">
                         <div class="feature-desc text-start">
-                            <p>We create unique and modern designs with web & hands. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed does a eiusmod tempor.</p>
+                            <p>We create unique and modern designs with web & hands. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed does a eiusmod tempor.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="feature-box-1">
+                            <h6 class="no">01</h6>
                             <div class="icon"><span class="fe-bucket-square"></span></div>
                             <h4 class="title">Design Strategy</h4>
                             <div class="desc">
@@ -127,8 +138,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="feature-box-1">
+                            <h6 class="no">02</h6>
                             <div class="icon"><span class="fe-keyboard-open"></span></div>
-                            <h4 class="title">Design Strategy</h4>
+                            <h4 class="title">Web Development</h4>
                             <div class="desc">
                                 <p>Lorem ipsum dolor amet, consectetur adipiscing elit suspendisse.</p>
                             </div>
@@ -137,8 +149,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="feature-box-1">
+                            <h6 class="no">03</h6>
                             <div class="icon"><span class="fe-grap"></span></div>
-                            <h4 class="title">Design Strategy</h4>
+                            <h4 class="title">Digital Marketing</h4>
                             <div class="desc">
                                 <p>Lorem ipsum dolor amet, consectetur adipiscing elit suspendisse.</p>
                             </div>
@@ -147,8 +160,9 @@
                     </div>
                     <div class="col-md-3">
                         <div class="feature-box-1">
+                            <h6 class="no">04</h6>
                             <div class="icon"><span class="fe-rule-pen"></span></div>
-                            <h4 class="title">Design Strategy</h4>
+                            <h4 class="title">Brand Strategy</h4>
                             <div class="desc">
                                 <p>Lorem ipsum dolor amet, consectetur adipiscing elit suspendisse.</p>
                             </div>
@@ -156,6 +170,9 @@
                         </div>
                     </div>
                 </div>
+                <figure class="fe-shape-image">
+                    <img src="assets/images/theme-2/feature-shape.png" alt="">
+                </figure>
             </div>
         </section>
         <!-- Feature-areaEnd -->
@@ -166,29 +183,35 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="counting-box">
-                            <figure class="awrd-logo">
+                            <figure class="awrd-icon">
                                 <img src="assets/images/theme-2/key-perpomens.svg" alt="">
                             </figure>
-                            <div class="count">1627+</div>
-                            <span class="desc">Project Completed</span>
+                            <div class="cout-box">
+                                <h4 class="count">1627+</h4>
+                                <span class="desc">Total Winning Awards</span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="counting-box">
-                            <figure class="awrd-lodo">
+                            <figure class="awrd-icon">
                                 <img src="assets/images/theme-2/hand-bag.svg" alt="">
                             </figure>
-                            <div class="count">12+</div>
-                            <span class="desc">Years Of Experiences</span>
+                            <div class="cout-box">
+                                <h4 class="count">12+</h4>
+                                <span class="desc">Total Winning Awards</span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="counting-box">
-                            <figure class="awrd-logo">
+                            <figure class="awrd-icon">
                                 <img src="assets/images/theme-2/meddle.svg" alt="">
                             </figure>
-                            <div class="count">235+</div>
-                            <span class="desc">Total Winning Awards</span>
+                            <div class="cout-box">
+                                <h4 class="count">235+</h4>
+                                <span class="desc">Total Winning Awards</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -205,35 +228,44 @@
                             <img src="assets/images/theme-2/processt-image-1.jpg" alt="">
                         </figure>
                     </div>
+
+
                     <div class="col-md-5 offset-md-1 py-5">
                         <div class="section-title">
                             <h4 class="top-title">Our Process</h4>
                             <h3 class="main-title">Working Process</h3>
                         </div>
+                        
+                    <figure class="process-shape-1">
+                        <img src="assets/images/theme-2/prosece-shape-1.png" alt="">
+                    </figure>
                         <div class="section-item">
                             <div class="process-box">
                                 <div class="icon color-1"><span class="fe-pen-line"></span></div>
                                 <h3 class="title">Idea Validation</h3>
                                 <div class="desc">
-                                    <p>There are many variations of passages Ipsum available the majority have suffered.</p>
+                                    <p>There are many variations of passages Ipsum available the majority have suffered.
+                                    </p>
                                 </div>
                             </div>
                             <div class="process-box">
                                 <div class="icon color-2"><span class="fe-messages"></span></div>
-                                <h3 class="title">Idea Validation</h3>
+                                <h3 class="title">Business Strategy</h3>
                                 <div class="desc">
-                                    <p>There are many variations of passages Ipsum available the majority have suffered.</p>
+                                    <p>There are many variations of passages Ipsum available the majority have suffered.
+                                    </p>
                                 </div>
                             </div>
                             <div class="process-box">
                                 <div class="icon color-3"><span class="fe-triangle"></span></div>
-                                <h3 class="title">Idea Validation</h3>
+                                <h3 class="title">Implementation</h3>
                                 <div class="desc">
-                                    <p>There are many variations of passages Ipsum available the majority have suffered.</p>
+                                    <p>There are many variations of passages Ipsum available the majority have suffered.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
 
@@ -243,13 +275,33 @@
                             <img src="assets/images/theme-2/process-image-2.jpg" alt="">
                         </figure>
                     </div>
+                    <figure class="process-shape-2">
+                        <img src="assets/images/theme-2/prosece-shape-2.png" alt="">
+                    </figure>
                     <div class="col-md-5 py-5">
                         <div class="section-title m-0 text-start">
                             <h4 class="top-title">Hava any Project In Your Mind</h4>
                             <h3 class="main-title-2">Creative Thinking for Business Growth </h3>
                             <div class="desc">
-                                <p>It is a long established fact that a reader will be the distracted by the readable content.</p>
+                                <p>It is a long established fact that a reader will be the distracted by the readable
+                                    content.</p>
                             </div>
+
+                            <div class="bar_group wow fadeInUp" data-wow-delay="0.3s" data-max="100">
+                                <div class="title">UI/UX Design</div>
+                                <div class="bar_group__bar thick elastic" data-value="80" data-color="#F1554C" data-tooltip="true" data-show-values="false" data-unit="%"></div>
+                            </div>
+
+                            <div class="bar_group wow fadeInUp" data-wow-delay="0.3s" data-max="100">
+                                <div class="title">Web Development</div>
+                                <div class="bar_group__bar thick elastic" data-value="70" data-color="#3CC3A3" data-tooltip="true" data-show-values="false" data-unit="%"></div>
+                            </div>
+
+                            <div class="bar_group wow fadeInUp" data-wow-delay="0.3s" data-max="100">
+                                <div class="title">Product Design</div>
+                                <div class="bar_group__bar thick elastic" data-value="75" data-color="#FDB12E" data-tooltip="true" data-show-values="false" data-unit="%"></div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -262,35 +314,53 @@
         <section class="payment-area section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2">
-                        <figure class="payment-logo">
-                            <img src="assets/images/theme-2/payment-logo-1.svg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-md-2">
-                        <figure class="payment-logo">
-                            <img src="assets/images/theme-2/payment-logo-2.svg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-md-2">
-                        <figure class="payment-logo">
-                            <img src="assets/images/theme-2/payment-logo-3.svg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-md-2">
-                        <figure class="payment-logo">
-                            <img src="assets/images/theme-2/payment-logo-4.svg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-md-2">
-                        <figure class="payment-logo">
-                            <img src="assets/images/theme-2/payment-logo-5.svg" alt="">
-                        </figure>
-                    </div>
-                    <div class="col-md-2">
-                        <figure class="payment-logo">
-                            <img src="assets/images/theme-2/payment-logo-6.svg" alt="">
-                        </figure>
+                    <div class="col">
+                        <div class="swiper logo-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figuer class="payment-logo">
+                                        <a href="#">
+                                        <img src="assets/images/theme-2/payment-logo-1.svg" alt="">
+                                        </a>
+                                    </figuer>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figuer class="payment-logo">
+                                        <a href="#">
+                                            <img src="assets/images/theme-2/payment-logo-2.svg" alt="">
+                                        </a>
+                                    </figuer>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figuer class="payment-logo">
+                                        <a href="#">
+                                            <img src="assets/images/theme-2/payment-logo--3.svg" alt="">
+                                        </a>
+                                    </figuer>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figuer class="payment-logo">
+                                        <a href="#">
+                                            <img src="assets/images/theme-2/payment-logo-4.svg" alt="">
+                                        </a>
+                                    </figuer>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figuer class="payment-logo">
+                                        <a href="#">
+                                            <img src="assets/images/theme-2/payment-logo-5.svg" alt="">
+                                        </a>
+                                    </figuer>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figuer class="payment-logo">
+                                        <a href="#">
+                                            <img src="assets/images/theme-2/payment-logo-6.svg" alt="">
+                                        </a>
+                                    </figuer>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -302,39 +372,102 @@
         <section class="stuadis-area section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-6">
                         <div class="studies-title">
                             <h4 class="top-title">Popular Works</h4>
                             <h3 class="main-title">Our Recent Case-Studies</h3>
                         </div>
                     </div>
-                    <div class="col-md-2 offset-md-4">
+                    <div class="col-md-6 text-end">
                         <a href="#" class="primary-button">Browse Projects</a>
                     </div>
                 </div>
-                <div class="row">
+                <figure class="case-shape-1">
+                    <img src="assets/images/theme-2/staduis-shape-2.png" alt="">
+                </figure>
+                
+                <figure class="case-shape-2">
+                    <img src="assets/images/theme-2/staduis-shape-1.png" alt="">
+                </figure>
+                
+                <figure class="case-shape-3">
+                    <img src="assets/images/theme-2/staduis-shape-3.png" alt="">
+                </figure>
+                <div class="row g-5">
                     <div class="col-md-6">
-                        <figure class="stuadis-image">
-                            <img src="assets/images/theme-2/studis-images-1.jpg" alt="">
-                        </figure>
+                        <div class="stadius-box active">
+                            <figure class="stadius-image">
+                                <img src="assets/images/theme-2/studis-images-1.jpg" alt="">
+                            </figure>
+                            <div class="info-box">
+                                <a href="#" class="icon"><span class="fe-plus"></span></a>
+                                <div class="contant">
+                                    <a href="#">
+                                        <h6 class="name-title">Design</h6>
+                                    </a>
+                                    <a href="#">
+                                        <h6 class="desc">iOS Apps Design</h6>
+                                   </a>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-                    
                     <div class="col-md-6">
-                        <figure class="stuadis-image">
-                            <img src="assets/images/theme-2/studis-images-1.jpg" alt="">
-                        </figure>
+                        <div class="stadius-box">
+                            <figure class="stadius-image">
+                                <img src="assets/images/theme-2/studis-images-2.jpg" alt="">
+                            </figure>
+                            <div class="info-box">
+                                <a href="#" class="icon"><span class="fe-plus"></span></a>
+                                <div class="contant">
+                                    <a href="#">
+                                        <h6 class="name-title">Design</h6>
+                                    </a> 
+                                    <a href="#">
+                                        <h6 class="desc">iOS Apps Design</h6>
+                                     </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
                     <div class="col-md-6">
-                        <figure class="stuadis-image">
-                            <img src="assets/images/theme-2/studis-images-1.jpg" alt="">
-                        </figure>
+                        <div class="stadius-box">
+                            <figure class="stadius-image">
+                                <img src="assets/images/theme-2/studis-images-3.jpg" alt="">
+                            </figure>
+                            <div class="info-box">
+                                <a href="#" class="icon"><span class="fe-plus"></span></a>
+                                <div class="contant">
+                                    <a href="#">
+                                        <h6 class="name-title">Design</h6>
+                                    </a> 
+                                    <a href="#">
+                                        <h6 class="desc">iOS Apps Design</h6>
+                                     </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
                     <div class="col-md-6">
-                        <figure class="stuadis-image">
-                            <img src="assets/images/theme-2/studis-images-1.jpg" alt="">
-                        </figure>
+                        <div class="stadius-box">
+                            <figure class="stadius-image">
+                                <img src="assets/images/theme-2/studis-images-4.jpg" alt="">
+                            </figure>
+                            <div class="info-box">
+                                <a href="" class="icon"><span class="fe-plus"></span></a>
+                                <div class="contant">
+                                    <a href="#">
+                                        <h6 class="name-title">Design</h6>
+                                    </a>
+
+                                    <a href="#">
+                                    <h6 class="desc">iOS Apps Design</h6>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -347,127 +480,341 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="section-title">
+                        <div class="testi-section">
                             <h4 class="title">Testimonials</h4>
                             <h3 class="main-title">Clients Feedback</h3>
                             <div class="desc">
-                                <p>Sed ut perspiciatis unde omnis iste natus errorsit voluptatem accusantium doloremque laudantium totae rem aperiam.</p>
+                                <p>Sed ut perspiciatis unde omnis iste natus errorsit voluptatem accusantium doloremque
+                                    laudantium totae rem aperiam.</p>
                             </div>
                         </div>
+                        <figure class="clint-photos">
+                            <img src="assets/images/theme-2/clint-thoto-1.png" alt="">
+                            <img src="assets/images/theme-2/clint-thoto-2.png" alt="">
+                            <img src="assets/images/theme-2/clint-thoto-3.png" alt="">
+                            <img src="assets/images/theme-2/clint-thoto-4.png" alt="">
+                            <span class="counting">8k</span>
+                        </figure>
                     </div>
-                    <div class="col-md-4">
-                        <div class="testimolial-section">
 
-                            <div class="rating-star">
-                                <span class="star front"></span>
-                                <span class="star back"></span>
+                    <div class="col-md-8">
+                        <div class="swiper testimonial-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-section">
+                                        <div class="rating-star">
+                                            <span class="star front"></span>
+                                            <span class="star back"></span>
+                                        </div>
+                                        <div class="desc">
+                                            <p>“ Sed perspiciatis and omni natus voluptate accusantie doloremque
+                                                laudantium totam
+                                                remua aperiam eaque quaea vtore eritatis quasig architecto beatae
+                                                vitae.”</p>
+                                        </div>
+                                        <div class="thumb">
+                                            <img src="assets/images/theme-2/clint-thoto-5.png" alt="">
+                                            <div class="clint">
+                                                <h6 class="name">David Rason</h6>
+                                                <span class="positation">UI/UX Designer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-section">
+                                        <div class="rating-star">
+                                            <span class="star front"></span>
+                                            <span class="star back"></span>
+                                        </div>
+                                        <div class="desc">
+                                            <p>“ Sed perspiciatis and omni natus voluptate accusantie doloremque
+                                                laudantium totam
+                                                remua aperiam eaque quaea vtore eritatis quasig architecto beatae
+                                                vitae.”</p>
+                                        </div>
+                                        <div class="thumb">
+                                            <img src="assets/images/theme-2/clint-thoto-6.png" alt="">
+                                            <div class="clint">
+                                                <h6 class="name">David Rason</h6>
+                                                <span class="positation">UI/UX Designer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-section">
+                                        <div class="rating-star">
+                                            <span class="star front"></span>
+                                            <span class="star back"></span>
+                                        </div>
+                                        <div class="desc">
+                                            <p>“ Sed perspiciatis and omni natus voluptate accusantie doloremque
+                                                laudantium totam
+                                                remua aperiam eaque quaea vtore eritatis quasig architecto beatae
+                                                vitae.”</p>
+                                        </div>
+                                        <div class="thumb">
+                                            <img src="assets/images/theme-2/clint-thoto-5.png" alt="">
+                                            <div class="clint">
+                                                <h6 class="name">David Rason</h6>
+                                                <span class="positation">UI/UX Designer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-section">
+                                        <div class="rating-star">
+                                            <span class="star front"></span>
+                                            <span class="star back"></span>
+                                        </div>
+                                        <div class="desc">
+                                            <p>“ Sed perspiciatis and omni natus voluptate accusantie doloremque
+                                                laudantium totam
+                                                remua aperiam eaque quaea vtore eritatis quasig architecto beatae
+                                                vitae.”</p>
+                                        </div>
+                                        <div class="thumb">
+                                            <img src="assets/images/theme-2/clint-thoto-6.png" alt="">
+                                            <div class="clint">
+                                                <h6 class="name">David Rason</h6>
+                                                <span class="positation">UI/UX Designer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-section">
+                                        <div class="rating-star">
+                                            <span class="star front"></span>
+                                            <span class="star back"></span>
+                                        </div>
+                                        <div class="desc">
+                                            <p>“ Sed perspiciatis and omni natus voluptate accusantie doloremque
+                                                laudantium totam
+                                                remua aperiam eaque quaea vtore eritatis quasig architecto beatae
+                                                vitae.”</p>
+                                        </div>
+                                        <div class="thumb">
+                                            <img src="assets/images/theme-2/clint-thoto-5.png" alt="">
+                                            <div class="clint">
+                                                <h6 class="name">David Rason</h6>
+                                                <span class="positation">UI/UX Designer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-section">
+                                        <div class="rating-star">
+                                            <span class="star front"></span>
+                                            <span class="star back"></span>
+                                        </div>
+                                        <div class="desc">
+                                            <p>“ Sed perspiciatis and omni natus voluptate accusantie doloremque
+                                                laudantium totam
+                                                remua aperiam eaque quaea vtore eritatis quasig architecto beatae
+                                                vitae.”</p>
+                                        </div>
+                                        <div class="thumb">
+                                            <img src="assets/images/theme-2/clint-thoto-6.png" alt="">
+                                            <div class="clint">
+                                                <h6 class="name">David Rason</h6>
+                                                <span class="positation">UI/UX Designer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="desc">
-                                <p>“ Sed perspiciatis and omni natus voluptate accusantie doloremque laudantium totam remua aperiam eaque quaea vtore eritatis quasig architecto beatae vitae.”</p>
-                            </div>
-                            <div class="thumb">
-                                <img src="assets/images/theme-2/clint-thoto-5.png" alt="">
-                            </div>
-                            <h6 class="name">David Rason</h6>
-                            <span class="positation">UI/UX Designer</span>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        
-                        <div class="testimolial-section">
-
-                            <div class="rating-star">
-                                <span class="star front"></span>
-                                <span class="star back"></span>
-                            </div>
-
-                            <div class="desc">
-                                <p>“ Sed perspiciatis and omni natus voluptate accusantie doloremque laudantium totam remua aperiam eaque quaea vtore eritatis quasig architecto beatae vitae.”</p>
-                            </div>
-                            <div class="thumb">
-                                <img src="assets/images/theme-2/clint-thoto-5.png" alt="">
-                            </div>
-                            <h6 class="name">David Rason</h6>
-                            <span class="positation">UI/UX Designer</span>
-                        </div>
-                         
                     </div>
                 </div>
+                <figure class="testi-shape-1">
+                    <img src="assets/images/theme-2/teatimolial-shape-1.png" alt="">
+                </figure>
+                
+                <figure class="testi-shape-2">
+                    <img src="assets/images/theme-2/testimolial-shape-2.png" alt="">
+                </figure>
             </div>
         </section>
         <!-- Testimonial-area-End -->
-        <!-- Propasonal-area-start -->
+
+
+        <!-- Leaders-area-start -->
         <section class="propasonal-area section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
-                        <div class="section-title">
-                            <h5 class="top-title">Creative Leaders</h5>
+                        <div class="slider-title">
+                            <h5 class="title">Creative Leaders</h5>
                             <h3 class="main-title">Our Professional Members</h3>
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-md-4">
-                        <figure class="member-image">
-                            <img src="assets/images/theme-2/slider-2-image2.png" alt="">
-                        </figure>
-                        <div class="icon"><span class=""></span></div>
-                        <h4 class="name">David Rason</h4>
-                        <span class="posisation">UI/UX Designer</span>
+
+                    <div class="col-md-12">
+
+                        <div class="swiper members-slider">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <figure class="member-image">
+                                            <img src="assets/images/theme-2/slider-2-image1.png" alt="">
+                                        </figure>
+                                        <div class="clint-posisation">
+                                            <a href="#" class="icon"><span class="fe-plus"></span></a>
+                                            <h4 class="name">David Rason</h4>
+                                            <span class="posisation">UI/UX Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <figure class="member-image">
+                                            <img src="assets/images/theme-2/slider-2-image3.png" alt="">
+                                        </figure>
+                                        <div class="clint-posisation">
+                                            <a href="" class="icon"><span class="fe-plus"></span></a>
+                                            <h4 class="name">David Rason</h4>
+                                            <span class="posisation">UI/UX Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <figure class="member-image">
+                                            <img src="assets/images/theme-2/slider-2-image2.png" alt="">
+                                        </figure>
+                                        <div class="clint-posisation">
+                                            <div class="icon"><span class="fe-plus"></span></div>
+                                            <h4 class="name">David Rason</h4>
+                                            <span class="posisation">UI/UX Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <figure class="member-image">
+                                            <img src="assets/images/theme-2/slider-2-image3.png" alt="">
+                                        </figure>
+                                        <div class="clint-posisation">
+                                            <div class="icon"><span class="fe-plus"></span></div>
+                                            <h4 class="name">David Rason</h4>
+                                            <span class="posisation">UI/UX Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <figure class="member-image">
+                                            <img src="assets/images/theme-2/slider-2-image2.png" alt="">
+                                        </figure>
+                                        <div class="clint-posisation">
+                                            <div class="icon"><span class="fe-plus"></span></div>
+                                            <h4 class="name">David Rason</h4>
+                                            <span class="posisation">UI/UX Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <figure class="member-image">
-                            <img src="assets/images/theme-2/slider-2-image1.png" alt="">
-                        </figure>
-                        <div class="icon"><span class=""></span></div>
-                        <h4 class="name">David Rason</h4>
-                        <span class="posisation">UI/UX Designer</span>
-                    </div>
-                    <div class="col-md-4">
-                        <figure class="member-image">
-                            <img src="assets/images/theme-2/slider-2-image3.png" alt="">
-                        </figure>
-                        <div class="icon"><span class=""></span></div>
-                        <h4 class="name">David Rason</h4>
-                        <span class="posisation">UI/UX Designer</span>
-                    </div>
+
                 </div>
+                <figure class="member-seape-1">
+                    <img src="assets/images/theme-2/member-shape-1.png" alt="">
+                </figure>
+                
+                <figure class="member-seape-2">
+                    <img src="assets/images/theme-2/membber-shape-2.png" alt="">
+                </figure>
             </div>
         </section>
-        <!-- propasonal-area-End -->
-        <!-- submite-area-start -->
-        <section class="submit-area section-padding">
+        <!-- Leaders-area-End -->
+
+
+
+        <!-- coustomar-area-start -->
+        <section class="coustomar-area section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 offset-md-3">
                         <div class="section-title">
                             <h4 class="top-title">Get a quote</h4>
                             <h3 class="main-title">Make A Custom Order</h3>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <form action="" class="row g-4 contact-form">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" placeholder="Your Name*">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" placeholder="Your Email*">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="tel" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="col-sm-6">
+                        <select name="form-service" id="form-service" class="form-control">
+                            <option value="Web Design">Web Design</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="App Design">App Design</option>
+                            <option value="App Development">App Development</option>
+                            <option value="Graphic">Graphic Design</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" placeholder="Website url">
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="submit" class="primary-button">Send Message</button>
+                    </div>
+                </form>
 
-                </div>
+                <figure class="coustomar-shape-1">
+                    <img src="assets/images/theme-2/submit-shape-1.png" alt="">
+                </figure>
+
+                <figure class="coustomar-shape-2">
+                    <img src="assets/images/theme-2/submit-shape-2.png" alt="">
+                </figure>
+
+                <figure class="coustomar-shape-3">
+                    <img src="assets/images/theme-2/submit-shape-3.png" alt="">
+                </figure>
+
+                <figure class="coustomar-shape-4">
+                    <img src="assets/images/theme-2/submit-shape-4.png" alt="">
+                </figure>
             </div>
         </section>
-        <!-- submite-area-End -->
+        <!-- coustomar-area-End -->
 
 
         <!-- News-paid-area-start -->
         <section class="news-paid-area section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
-                        <div class="section-title">
+                    <div class="col-md-6">
+                        <div class="news-titles">
                             <h4 class="top-title">Blog & News</h4>
                             <h3 class="main-title">Latest News & Blog</h3>
                         </div>
                     </div>
-                    <div class="col-md-2 offset-md-5">
-                        <div class="blog-link">
+                    <div class="col-md-6">
+                        <div class="blog-link text-end">
                             <a href="#">Browse All Blogs</a>
                         </div>
                     </div>
@@ -477,31 +824,52 @@
                         <figure class="news-image">
                             <img src="assets/images/theme-2/news-images-1.jpg" alt="">
                         </figure>
-                        <div class="icon"><span class=""></span>16 March, 2022</div>
-                        <div class="icon"><span class=""></span>Posted By DevignEdge</div>
-                        <div class="desc">
-                            <p>5 Signs Need Follow in Your Design Strategy Needs Rethinking</p>
+
+                        <div class="date-addmin">
+                            <div class="icon"><span class="fe-calendar-2"></span>
+                                <p class="date">16 March, 2022</p>
+                            </div>
+                            <div class="icon"><span class="fe-prifile"></span>
+                                <a href="#">
+                                    <p class="edge">Posted By DevignEdge</p>
+                                </a>
+                            </div>
                         </div>
+                        <a href="#"><h3 class="news-title">5 Signs Need Follow in Your Design Strategy Needs Rethinking</h3>
+                        </a>
                     </div>
+
+
                     <div class="col-md-6">
                         <figure class="news-image">
-                            <img src="assets/images/theme-2/news-images-1.jpg" alt="">
+                            <img src="assets/images/theme-2/news-image-2.jpg" alt="">
                         </figure>
-                        <div class="icon"><span class=""></span>16 March, 2022</div>
-                        <div class="icon"><span class=""></span>Posted By DevignEdge</div>
-                        <div class="desc">
-                            <p>5 Signs Need Follow in Your Design Strategy Needs Rethinking</p>
+                        <div class="date-addmin">
+                            <div class="icon"><span class="fe-calendar-2"></span>
+                                <p class="date">16 March, 2022</p>
+                            </div>
+                            <div class="icon"><span class="fe-prifile"></span>
+                                <a href="#">
+                                    <p class="edge">Posted By DevignEdge</p>
+                                </a>
+                            </div>
                         </div>
+
+                        <a href="#"><h3 class="news-title">5 Signs Need Follow in Your Design Strategy Needs Rethinking</h3>
+
                     </div>
                 </div>
+                <figure class="news-shape-1">
+                    <img src="assets/images/theme-2/news-shape-1.png" alt="">
+                </figure>
             </div>
         </section>
         <!-- News-paid-area-End -->
 
         <!-- Footer-area-start -->
-        <footer class="footer-area section-padding-top">
+        <footer class="footer-area">
             <div class="container">
-                <div class="row footer-top">
+                <div class="row footer-top section-padding">
                     <div class="col-md-3">
                         <div class="footer-widegt">
                             <div class="footer-logo">
@@ -510,7 +878,8 @@
                                 </a>
                             </div>
                             <div class="desc">
-                                <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content.</p>
                             </div>
                             <ul class="social-manu">
                                 <li><a href="#"><span class="fe-facebook"></span></a></li>
@@ -547,22 +916,40 @@
                             <h4 class="widegt-title">Contact Info</h4>
                             <ul class="block-list">
                                 <li><a href="#">+(880) 8239 2718</a></li>
-                                <li><a href="#">ayourmailaddress@gmail.com</a</li>
+                                <li><a href="#">ayourmailaddress@gmail.com</a< /li>
                                 <li><a href="#">423 Winding Crek Road, Sydney</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                
+                <figure class="footer-shape-1">
+                    <img src="assets/images/theme-2/footer-shape-1.png" alt="">
+                </figure>
+                
+                <figure class="footer-shape-2">
+                    <img src="assets/images/theme-2/footer-shape-2.png" alt="">
+                </figure>
+
                 <div class="row footer-bottom">
-                    <div class="copy-right text-end">
-                        <p>&copy;2022 FolioEdge, Inc. All rights reserved</p>
+                    <div class="col-md-3">
+                        <div class="policy">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Cookies</a>
+                        </div>
                     </div>
+                    <div class="col-md-4 offset-md-5">
+                        <div class="copy-right text-end">
+                            <p>&copy;2022 FolioEdge, Inc. All rights reserved</p>
+                        </div>
+                    </div>
+            
                 </div>
+            <div class="page-up" id="home-section">
+                <a href="#" class="icon"><span class="fe-arrow-up"></span></a>
             </div>
         </footer>
         <!-- Footer-area-End -->
-
-
 
     </div>
     <!-- page-wrapper-End -->
@@ -582,7 +969,7 @@
     <script src="assets/js/lity.min.js"></script>
     <script src="assets/js/progress-bar.js"></script>
     <script src="assets/js/scrollreveal.js"></script>
-    <script src="assets/js/script-1.js"></script>
+    <script src="assets/js/script-2.js"></script>
 </body>
 
 </html>
