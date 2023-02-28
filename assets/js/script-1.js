@@ -84,60 +84,11 @@
 
 
 
-
-
-
-
-/*-- Button-Hover-Effect-Script --*/
-$( '.mouse-dir' ).on( 'mouseenter', function ( e ) {
-    var parentOffset = $( this ).offset( ),
-    relX = e.pageX - parentOffset.left,
-    relY = e.pageY - parentOffset.top;
-    if ( $( this ).find( '.mouse-dir .dir-part' ) ) {
-        $( '.mouse-dir .dir-part' ).css( {
-            top: relY,
-            left: relX,
-        } );
-    }
-} );
-$( '.mouse-dir' ).on( 'mouseout', function ( e ) {
-    var parentOffset = $( this ).offset( ),
-        relX = e.pageX - parentOffset.left,
-        relY = e.pageY - parentOffset.top;
-    if ( $( this ).find( '.mouse-dir .dir-part' ) ) {
-        $( '.mouse-dir .dir-part' ).css( {
-            top: relY,
-            left: relX,
-        } );
-    }
-} );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
         /*====== -Slider ======*/
         var Feedback_Slider = new Swiper(".news-slider", {
         loop: true,
         speed: 800,
-        spaceBetween: 35,
+        spaceBetween: 30,
         slidesPerView: 4,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
