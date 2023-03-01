@@ -116,7 +116,7 @@ img {
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: -1;
 }
 
@@ -222,6 +222,7 @@ img {
 .mainmenu-area .nav-row .nav-logo {
     flex-grow: 2;
 }
+
 .mainmenu-area .nav-action {
     padding: 17px;
     background-color: black;
@@ -235,9 +236,10 @@ img {
 
 .mainmenu-area .nav-action:hover {
     color: white;
-    background-color:#3CC3A3;
+    background-color: #3CC3A3;
 }
-.mainmenu-area .menu-button{
+
+.mainmenu-area .menu-button {
     order: 1;
 }
 
@@ -325,6 +327,7 @@ img {
     width: 100px;
     height: 100px;
 }
+
 .video-icon {
     position: relative;
 }
@@ -882,7 +885,7 @@ img {
 .faq-questions .title {
     font-size: 48px;
     color: #10131F;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 .faq-questions .desc {
@@ -1303,6 +1306,7 @@ img {
 .copyrights-list .block-list {
     display: flex;
 }
+
 .copyrights-list .block-list li {
     margin-left: 40px;
 }
