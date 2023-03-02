@@ -1,31 +1,135 @@
 /* === Start-Media-Query === */
 /* max-widths */
-@media screen and (max-width: 1600) {
+
+@media screen and (max-width: 1200px) {
+   .mainmenu-area .nav-row {
+       flex-wrap: wrap;
+   }
+
+   .mainmenu-area .nav-row .manu-items {
+       display: none;
+   }
+   .mainmenu-area .nav-row .nav-logo {
+      height: 100px;
+      line-height: 100px;
+      width: 70%;
+   }
+   .mainmenu-area .nav-button {
+      order: inherit;
+      width: 30%;
+   }
+   .mainmenu-area .nav-action {
+      display: inline-block;
+   }
+   .feature-area .feature-desc {
+      font-size: 13px;
+   }
+   
+   .feature-area .section-title .title {
+      font-size: 30px;
+      margin-bottom: 40px;
+   }
+
 
 }
 
-@media screen and (max-width: 1200) {
+
+
+
+
+@media screen and (max-width: 992px) {
+         
+   .header-area .header-item .top-title {
+      font-size: 24px;
+      margin-bottom: 25px;
+   }
+
+
+   .header-area .header-item .main-title {
+      font-size: 40px;
+      margin-bottom: 24px;
+   }
+  
+   .header-area .header-item .desc {
+      font-size: 14px;
+      margin-bottom: 36px;
+   }
+   .header-area .header-image {
+      padding: 40px;
+   }
+   .header-area .primary-button {
+      margin-bottom: 50px;
+   }
+   
+   .feature-area .section-title .title {
+      font-size: 24px;
+   }
+   .feature-area .section-title .top-title {
+      font-size: 18px;
+      margin-bottom: 14px;
+   }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+   .header-area .header-item .top-title {
+      font-size: 28px;
+      margin-bottom: 14px;
+   }
+   
+   .header-area .header-item .main-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+   }
+   .feature-area .section-title .title {
+      margin-bottom: 20px;
+   }
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
 
 }
 
-@media screen and (max-width: 1400) {
 
-}
-@media screen and (max-width: 1024) {
 
-}
-@media screen and (max-width: 992) {
 
+@media screen and (max-width: 320px) {
+   
+   .header-area .header-image {
+      padding: 30px;
+   }
+   .feature-area .feature-desc {
+      margin-bottom: 36px;
+   }
+   .section-padding {
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
 }
-@media screen and (max-width: 768) {
 
-}
-@media screen and (max-width: 576) {
 
-}
+
+
 
 /* main-widths */
 
 @media screen and (min-width: 1025) {
+
+}
+
+@media screen and (min-width: 1201) {
+
+   .mainmenu .nav-row .manu-items {
+    display: block!important;
+   }
 
 }
