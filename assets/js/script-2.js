@@ -14,9 +14,9 @@
 
                 
               /*Mobail-menu-active*/
-        $('.mainmenu-area .nav-row .menu-button .nav-action.toggle-menu').on('click', function () {
-            $(this).find('span').toggleClass('fe-plusfe-dubbol-arrow-up');
-            $(this).find('span').toggleClass('fe-dubbol-arrow-down');
+        $('.mainmenu-area .toggle-menu').on('click', function () {
+            $(this).find('span').toggleClass('fe-plus');
+            $(this).find('span').toggleClass('fe-minus');
             $('.mainmenu-area .nav-row .manu-items').slideToggle();
         });
 
@@ -70,10 +70,10 @@
             },
             breakpoints: {
                 575: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                 },
                 768: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                 },
                 992: {
                     slidesPerView: 3,
@@ -87,7 +87,7 @@
                 var logo_slider = new Swiper(".logo-slider", {
                     loop: true,
                     speed: 800,
-                    spaceBetween: 10,
+                    spaceBetween: 20,
                     slidesPerView: 1,
                     watchSlidesVisibility: true,
                     watchSlidesProgress: true,
@@ -100,13 +100,19 @@
                         clickable: true,
                     },
                     breakpoints: {
-                        575: {
+                        320: {
                             slidesPerView: 2,
+                        },
+                        575: {
+                            slidesPerView: 3,
                         },
                         768: {
                             slidesPerView: 4,
                         },
                         992: {
+                            slidesPerView: 5,
+                        },
+                        1200: {
                             slidesPerView: 6,
                         },
                     },

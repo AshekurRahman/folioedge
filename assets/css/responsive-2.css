@@ -1,33 +1,126 @@
 /* === Start-Media-Query === */
 /* max-widths */
 
+@media screen and (max-width: 1400px) {
+   .header-area .header-item .main-title {
+      font-size: 64px;
+   }
+
+   .testi-section .main-title {
+      font-size: 36px;
+   }
+
+   .header-image {
+      padding: 50px;
+   }
+   .slider-title .main-title {
+      font-size: 36px;
+   }
+   
+   .slider-title .title {
+      margin-bottom: 20px;
+
+   }
+
+
+}
+
 @media screen and (max-width: 1200px) {
+
+
    .mainmenu-area .nav-row {
-       flex-wrap: wrap;
+      flex-wrap: wrap;
    }
 
    .mainmenu-area .nav-row .manu-items {
-       display: none;
+      display: none;
+      width: 100%;
    }
+
    .mainmenu-area .nav-row .nav-logo {
-      height: 100px;
+      min-height: 100px;
       line-height: 100px;
-      width: 70%;
+      width: 50%;
    }
+
    .mainmenu-area .nav-button {
       order: inherit;
-      width: 30%;
+      width: 50%;
    }
-   .mainmenu-area .nav-action {
+
+   .mainmenu-area .toggle-menu {
       display: inline-block;
    }
+   
+   .header-area .header-item .main-title {
+      font-size: 54px;
+   }
+   
+
    .feature-area .feature-desc {
       font-size: 13px;
    }
-   
+
    .feature-area .section-title .title {
       font-size: 30px;
       margin-bottom: 40px;
+   }
+
+   .mainmenu-area .manu-items ul {
+      background: #fff;
+      border-radius: 5px;
+      flex-direction: column;
+      padding: 15px;
+   }
+
+   .studies-title .top-title {
+      margin-bottom: 18px;
+   }
+
+   .studies-title .main-title {
+      font-size: 36px;
+      margin-bottom: 60px;
+   }
+
+   .mainmenu-area .manu-items ul li a {
+      color: var(--heading-color);
+
+   }
+
+   .mainmenu-area .manu-items ul li:hover a {
+      color: var(--primary-color);
+      border: none;
+      line-height: var(--navbar-height);
+   }
+
+   .process-area .section-title .main-title-2 {
+      font-size: 36px;
+   }
+   .slider-title .main-title {
+      font-size: 24px;
+      margin-bottom: 40px;
+   }
+   .slider-title .title {
+      font-size: 14px;
+   }
+   .coustomar-area .top-title {
+      margin-bottom: 10px;
+   }
+   .coustomar-area .main-title {
+      font-size: 36px;
+   }
+
+
+}
+
+@media screen and (max-width: 1050px) {
+   .header-area .header-item .main-title {
+      font-size: 46px;
+   }
+
+   .process-area .section-title .main-title {
+      font-size: 40px;
+      margin-bottom: 50px;
    }
 
 
@@ -37,8 +130,8 @@
 
 
 
-@media screen and (max-width: 992px) {
-         
+@media screen and (max-width: 991px) {
+
    .header-area .header-item .top-title {
       font-size: 24px;
       margin-bottom: 25px;
@@ -49,14 +142,16 @@
       font-size: 40px;
       margin-bottom: 24px;
    }
-  
+
    .header-area .header-item .desc {
       font-size: 14px;
       margin-bottom: 36px;
    }
+
    .header-area .header-image {
-      padding: 40px;
+      padding: 30px;
    }
+
    .header-area .primary-button {
       margin-bottom: 50px;
    }
@@ -64,38 +159,246 @@
    .feature-area .section-title .title {
       font-size: 24px;
    }
+
    .feature-area .section-title .top-title {
       font-size: 18px;
       margin-bottom: 14px;
    }
+
+   .h-shape-1 {
+      left: 220px;
+      bottom: -75px;
+   }
+
+   .process-area .section-title .main-title {
+      font-size: 36px;
+      margin-bottom: 24px;
+   }
+
+   .process-box .icon {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 24px;
+   }
+
+   .process-box .title {
+      font-size: 20px;
+      margin-bottom: 22px;
+   }
+
+   .studies-title .top-title {
+      margin-bottom: 18px;
+      font-size: 14px;
+   }
+
+   .studies-title .main-title {
+      font-size: 28px;
+      margin-bottom: 50px;
+   }
+
+   .stadius-box .info-box {
+      height: 100px;
+   }
+
+   .stadius-box .info-box .icon {
+      width: 44px;
+      height: 44px;
+      line-height: 44px;
+      right: 14px;
+      top: 28px;
+   }
+
+   .contant .name-title {
+      font-size: 14px;
+      margin-bottom: 14px;
+   }
+
+   .contant .desc {
+      font-size: 18px;
+   }
+
+   .primary-button {
+      padding: 9.5px 18px;
+      font-size: 14px;
+   }
+
+   .process-area .section-title .top-title {
+      font-size: 12px;
+   }
+
+   .process-area .section-title .main-title-2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+   }
+
+   .process-area .section-title .desc {
+      font-size: 14px;
+      margin-bottom: 30px;
+   }
+   
+   .coustomar-area .main-title {
+      font-size: 28px;
+   }
+   .news-titles .main-title {
+      font-size: 36px;
+   }
+   .date-addmin {
+      margin-bottom: 10px;
+   }
+   .news-paid-area .news-title {
+      font-size: 18px;
+   }
+
+
 }
 
 
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
    .header-area .header-item .top-title {
       font-size: 28px;
       margin-bottom: 14px;
    }
-   
+
    .header-area .header-item .main-title {
       font-size: 36px;
       margin-bottom: 20px;
    }
+   .h-shape-1 {
+      left: 150px;
+      bottom: -70px;
+  }
+
    .feature-area .section-title .title {
       margin-bottom: 20px;
    }
+
+   .mainmenu-area .primary-button {
+      padding: 10.5px 18.3px;
+      font-size: 9px;
+   }
+
+   .header-area .header-image {
+      padding: 40px;
+   }
+
+   .process-box .desc {
+      font-size: 12px;
+   }
+
+   .process-box {
+      margin-bottom: 60px;
+   }
+
+   .primary-button {
+      font-size: 10px;
+   }
+
+   .primary-button {
+      padding: 9.5px 9px;
+      font-size: 14px;
+   }
+
+   .studies-title .main-title {
+      font-size: 24px;
+   }
+   .contact-form {
+      padding: 25px;
+   }
+   .blog-link {
+      float: left;
+      margin-bottom: 30px;
+  }
+  .news-titles .main-title {
+   margin-bottom: 0;
+  }
+  .news-titles .top-title {
+   margin-bottom: 10px;
+  }
+
 }
 
+@media screen and (min-width: 768px) {}
 
 
 
+/* @media screen and (min-width: 575px) {
+   .header-area .header-image {
+      padding: 50px;
+   }
+} */
 
 
 @media screen and (max-width: 576px) {
+
+
+   .process-area .section-title .top-title {
+      font-size: 14px;
+      margin-bottom: 14px;
+   }
+
+   .process-area .section-title .main-title {
+      font-size: 32px;
+   }
+
+   .process-box {
+      margin-bottom: 40px;
+   }
+
+   .header-area .header-image {
+      padding: 50px;
+   }
+
+   .studies-title .top-title {
+      font-size: 12px;
+   }
+
+   .studies-title .main-title {
+      font-size: 18px;
+      margin-bottom: 20px;
+   }
+
+   .section-padding {
+      padding-top: 100px;
+      padding-bottom: 100px;
+   }
+
+   .primary-button {
+      padding: 12.5px 14px;
+      font-size: 10px;
+   }
+
+   .nav-button .toggle-menu {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 70%;
+   }
+
+   .primary-button.case-bt {
+      float: left;
+      margin-bottom: 30px;
+   }
+
+   .testi-section .desc {
+      font-size: 12px;
+   }
+
+   .testi-section .title {
+      font-size: 14px;
+      margin-bottom: 14px;
+   }
+   .news-titles .main-title {
+      font-size: 28px;
+   }
+   .header-area .header-image {
+      padding: 30px;
+   }
+
 
 }
 
@@ -103,33 +406,52 @@
 
 
 @media screen and (max-width: 320px) {
-   
-   .header-area .header-image {
-      padding: 30px;
-   }
+
    .feature-area .feature-desc {
       margin-bottom: 36px;
    }
-   .section-padding {
-      padding-top: 50px;
-      padding-bottom: 50px;
-  }
+
+   .cout-box .count {
+      font-size: 40px;
+      margin-bottom: 14px;
+   }
+
 }
 
+@media screen and (max-width: 1024px) {
+   .h-shape-1 {
+      left: 220px;
+      bottom: -85px;
+   }
 
+   .header-item .desc {
+      font-size: 14px;
+      margin-bottom: 36px;
+   }
 
+   .header-item .main-title {
+      font-size: 50px;
+      margin-bottom: 18px;
+   }
 
+   .header-item .top-title {
+      font-size: 28px;
+      margin-bottom: 25px;
+   }
 
-/* main-widths */
-
-@media screen and (min-width: 1025) {
+   .header-image {
+      padding: 45px;
+   }
 
 }
 
 @media screen and (min-width: 1201) {
 
    .mainmenu .nav-row .manu-items {
-    display: block!important;
+      display: block !important;
    }
 
+   .feature-area .feature-desc {
+      font-size: 15px;
+   }
 }

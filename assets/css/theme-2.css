@@ -143,9 +143,7 @@ img {
     min-height: var(--navbar-height);
     display: flex;
     align-items: center;
-    width: 100%;
-    z-index: 99;
-    position: fixed;
+    position: absolute;
     background: rgba(16, 19, 31, 0.3);
     backdrop-filter: blur(5px);
     left: 0;
@@ -160,7 +158,6 @@ img {
 }
 .mainmenu-area .nav-row {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -188,8 +185,11 @@ img {
     transition: 0.5s;
 }
 
-.mainmenu-area .manu-items ul li a {
+.mainmenu-area .manu-items ul li {
     margin: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .mainmenu-area .manu-items ul li:hover a {
@@ -198,19 +198,20 @@ img {
 }
 .mainmenu-area .nav-button {
     order: 3;
+    display: flex;
 }
 .nav-button .toggle-menu {
-    width: 44px;
-    height: 44px;
-    line-height: 44px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
     text-align: center;
-    font-size: 28px;
+    font-size: 80%;
     color: #ffffff;
-    margin-left: 20px;
     background-color: var(--primary-color);
-    border-radius: 100px;
+    border-radius: 5px;
     display: inline-block;
     display: none;
+    margin-left: 20px;
 }
 /* header-area-css */
 .header-area {
@@ -425,17 +426,17 @@ img {
     font-size: 18px;
     font-weight: 700;
     color: #F1554C;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .process-area .section-title .main-title {
     font-size: 48px;
-    margin-bottom: 56px;
+    margin-bottom: 65px;
 }
 
 .process-box {
     position: relative;
-    margin-bottom: 68px;
+    margin-bottom: 40px;
     padding-left: 88px;
 }
 
@@ -465,6 +466,7 @@ img {
 .process-box .icon:hover.color-1 {
     background-color: #ffffff;
     color: #F1554C;
+    border: 1px solid;
 }
 
 .process-box .icon.color-2 {
@@ -475,6 +477,7 @@ img {
 .process-box .icon:hover.color-2 {
     background-color: #ffffff;
     color: var(--primary-color);
+    border: 1px solid;
 }
 
 .process-box .icon.color-3 {
@@ -485,11 +488,12 @@ img {
 .process-box .icon:hover.color-3 {
     background-color: #ffffff;
     color: yellow;
+    border: 1px solid;
 }
 
 .process-box .title {
     font-size: 28px;
-     margin-bottom:  25px;
+     margin-bottom: 17px;
 }
 
 .process-box .desc {
@@ -498,7 +502,7 @@ img {
 
 .process-area .section-title .main-title-2 {
     font-size: 48px;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 
 .process-area .section-title .desc {
@@ -507,9 +511,9 @@ img {
 }
 
 .process-image {
-    width: 100vw;
+    width: 150vw;
     float: right;
-    max-width: 1040px;
+    max-width: 1140px;
     margin: 0;
     line-height: 0;
 }
@@ -790,16 +794,20 @@ img {
 .testi-section .desc {
     margin-bottom: 40px;
 }
-
+.clints {
+    margin-bottom: 30px;
+}
 .clint-photos .counting {
     color: #ffffff;
-    width: 64px;
-    height: 64px;
+    width: 55px;
+    height: 55px;
     display: inline-block;
     background-color: var(--primary-color);
     border-radius: 100px;
     text-align: center;
-    line-height: 64px;
+    line-height: 55px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .testimonial-section {
@@ -1152,6 +1160,8 @@ img {
 }
 
 .footer-widegt .widegt-title {
+    font-size: 24px;
+    font-weight: 600;
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -1433,3 +1443,8 @@ img {
         transform: translate(100px, -100px) rotate(90deg);
     }
 }
+
+
+
+
+
