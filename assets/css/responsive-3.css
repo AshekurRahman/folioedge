@@ -3,12 +3,22 @@
         display: block !important;
     }
 
+
+    .mainmenu-area .nav-row .menu-items {
+        display: block !important;
+    }
+
     .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a {
-     
+        color: #ffff;
         line-height: var(--navbar-height);
         padding: 0;
         margin: 0 24px;
         position: relative;
+    }
+
+    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li.active>a,
+    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li:hover>a {
+        color: #3CC3A3
     }
 
     .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a:before {
@@ -41,14 +51,14 @@
     }
 
     .mainmenu-area .nav-row .nav-logo {
-        width: 50%;
+        width: 70%;
         min-height: 100px;
         line-height: 100px;
     }
 
     .mainmenu-area .menu-button {
         order: inherit;
-        width: 50%;
+        width: 30%;
     }
 
     .mainmenu-area .nav-row .menu-items {
@@ -119,14 +129,6 @@
         width: 100%;
         max-width: 100%;
     }
-    .project-area .section-title .title{
-        font-size: 30px;
-    }
-    .feedback-title .title {
-        font-size: 30px;
-    }
-
-
 }
 
 @media screen and (max-width: 992px) {
@@ -171,9 +173,6 @@
 @media screen and (max-width: 768px) {
     .about-history {
         padding: 120px 60px;
-    }
-    .feedback-box .description {
-        font-size: 20px;
     }
 }
 
