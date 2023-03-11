@@ -1,6 +1,21 @@
 ; (function ($) {
     $(document).on('ready', function () {
 
+                      /*Mobail-menu-active*/
+                      $('.mainmenu-area .toggle-menu').on('click', function () {
+                        $(this).find('span').toggleClass('fe-plus');
+                        $(this).find('span').toggleClass('fe-minus');
+                        $('.mainmenu-area .nav-row .manu-items').slideToggle();
+                    });
+
+                                    /* Sticky-Menu-JS */
+                $(window).scroll(function () {
+                    if($(window).scrollTop() > 50) {
+                        $(".mainmenu-area").addClass('sticky');
+                    } else {
+                        $(".mainmenu-area").removeClass('sticky');
+                    }
+                });
 
 
 
@@ -60,7 +75,7 @@
                             slidesPerView: 4,
                         },
                         992: {
-                            slidesPerView: 6,
+                            slidesPerView: 5,
                         },
                     },
                 });
