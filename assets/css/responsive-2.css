@@ -84,20 +84,19 @@
 
    .mainmenu-area .manu-items ul li a {
       color: var(--heading-color);
-
+      line-height: inherit;
    }
 
    .mainmenu-area .manu-items ul li:hover a {
       color: var(--primary-color);
       border: none;
-      line-height: var(--navbar-height);
    }
 
    .process-area .section-title .main-title-2 {
       font-size: 36px;
    }
    .slider-title .main-title {
-      font-size: 24px;
+      font-size: 26px;
       margin-bottom: 40px;
    }
    .slider-title .title {
@@ -109,6 +108,12 @@
    .coustomar-area .main-title {
       font-size: 36px;
    }
+   .social-links {
+      position: static;
+      display: flex;
+      margin-top: 30px;
+      transform: rotate(0deg)
+  }
 
 
 }
@@ -122,6 +127,13 @@
       font-size: 40px;
       margin-bottom: 50px;
    }
+  .nav-button .toggle-menu {
+   width: 60px;
+   height: 60px;
+   line-height: 60px;
+   font-size: 100%;
+}
+
 
 
 }
@@ -150,10 +162,6 @@
 
    .header-area .header-image {
       padding: 30px;
-   }
-
-   .header-area .primary-button {
-      margin-bottom: 50px;
    }
    
    .feature-area .section-title .title {
@@ -249,6 +257,17 @@
    .news-paid-area .news-title {
       font-size: 18px;
    }
+   
+  .nav-button .toggle-menu {
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+}
+
+.border-right {
+   border-right:none;
+}
+
 
 
 }
@@ -287,7 +306,7 @@
    }
 
    .process-box .desc {
-      font-size: 12px;
+      font-size: 16px;
    }
 
    .process-box {
@@ -319,18 +338,25 @@
   .news-titles .top-title {
    margin-bottom: 10px;
   }
+  .nav-button .toggle-menu {
+   width: 36px;
+   height: 36px;
+   line-height: 36px;
+}
+
+.page-up {
+   right: 40px;
+   bottom: 30px;
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   font-size: 18px;
+}
 
 }
 
 @media screen and (min-width: 768px) {}
 
-
-
-/* @media screen and (min-width: 575px) {
-   .header-area .header-image {
-      padding: 50px;
-   }
-} */
 
 
 @media screen and (max-width: 576px) {
@@ -358,8 +384,8 @@
    }
 
    .studies-title .main-title {
-      font-size: 18px;
-      margin-bottom: 20px;
+      font-size: 24px;
+      margin-bottom: 0;
    }
 
    .section-padding {
@@ -397,6 +423,9 @@
    }
    .header-area .header-image {
       padding: 30px;
+   }
+   .blog-link {
+      margin-top: 0;
    }
 
 
