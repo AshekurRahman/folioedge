@@ -1,0 +1,147 @@
+/* === Start-Media-Query === */
+@media screen and (min-width: 1201px) {
+
+}
+
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+    .mainmenu-area .nav-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mainmenu-area .nav-button {
+        order: inherit;
+        width: 50%;
+        min-height: 100px;
+    }
+    .mainmenu-area .nav-row .nav-logo {
+        width: 50%;
+        min-height: 100px;
+        line-height: 100px;
+    }
+    .mainmenu-area .nav-row .manu-items {
+        display: none;
+        width: 100%;
+     }
+     .mainmenu-area .manu-items ul {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        flex-direction: column;
+     }
+     .mainmenu-area .manu-items ul li a {
+        color: var(--heading-color);
+        
+     }
+     .mainmenu-area .manu-items ul li:hover a{
+        color: var(--primary-color);
+        text-decoration: none;
+     }
+     .mainmenu-area .toggle-menu {
+        display: inline-block;
+     }
+     .header-item .top-title {
+        font-size: 28px;
+        margin-bottom: 24px;
+     }
+     .header-item .main-title {
+        font-size: 60px;
+     }
+     .about-area .section-title .main-title{
+        font-size: 40px;
+     }
+     .about-area .section-desc {
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
+    .service-area .main-title {
+        font-size: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+    
+    .header-item .main-title {
+        font-size: 40px;
+        margin-bottom: 24px;
+     }
+     .header-item .desc {
+        font-size: 16px;
+        margin-bottom: 46px;
+    }
+    
+    .about-area .section-title .main-title{
+        font-size: 28px;
+     }
+     .about-area .section-desc {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    .icon-box .title {
+        font-size: 20px;
+    }
+    .icon-box .desc {
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+    .icon-box .icon {
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .service-area .top-title {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .service-area .main-title {
+        font-size: 30px;
+        margin-bottom: 46px;
+    }
+    .audio-area .main-title {
+        font-size: 36px;
+        margin-bottom: 45px;
+    }
+    .box-desc {
+        font-size: 16px;
+    }
+    .audio-area .box-title {
+        font-size: 16px;
+    }
+    .heard-voice-area .main-title {
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 767px) {
+    
+    .icon-box .desc {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    .icon-box .title {
+        font-size: 28px;
+    }
+    .about-area .section-title .main-title {
+        margin-bottom: 40px;
+    }
+    
+    .about-area .section-desc {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .audio-area .main-title {
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+    .audio-area .top-title {
+        font-size: 14px;
+    }
+}
+
