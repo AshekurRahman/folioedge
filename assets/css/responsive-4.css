@@ -4,6 +4,9 @@
 }
 
 @media screen and (max-width: 1400px) {
+    .about-area .section-desc {
+        margin-bottom: 50px;
+    }
 
 }
 
@@ -50,21 +53,43 @@
      .header-item .main-title {
         font-size: 60px;
      }
-     .about-area .section-title .main-title{
-        font-size: 40px;
-     }
      .about-area .section-desc {
         font-size: 20px;
-        margin-bottom: 70px;
+        margin-bottom: 45px;
     }
-    .service-area .main-title {
-        font-size: 40px;
+    .section-title .main-title {
+        font-size: 36px;
+    }
+    .accordion-button.collapsed {
+        font-size: 24px;
+    }
+    .section-title .desc {
+        font-size: 18px;
+    }
+    .icon-box .title {
+        font-size: 18px;
     }
 
 }
 
 
 @media screen and (max-width: 991px) {
+    .primary-button {
+        padding: 9.5px 18px;
+        font-size: 14px;
+     }
+     .mainmenu-area .toggle-menu {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 70%;
+    }
+    .play-button .play-icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
     
     .header-item .main-title {
         font-size: 40px;
@@ -74,13 +99,9 @@
         font-size: 16px;
         margin-bottom: 46px;
     }
-    
-    .about-area .section-title .main-title{
-        font-size: 28px;
-     }
      .about-area .section-desc {
-        font-size: 18px;
-        margin-bottom: 50px;
+        font-size: 14px;
+        margin-bottom: 45px;
     }
     .icon-box .title {
         font-size: 20px;
@@ -95,13 +116,15 @@
         line-height: 24px;
         font-size: 14px;
     }
-    .service-area .top-title {
+    .section-title .top-title {
         font-size: 14px;
         margin-bottom: 10px;
     }
-    .service-area .main-title {
-        font-size: 30px;
-        margin-bottom: 46px;
+    .section-title .main-title {
+        font-size: 28px;
+    }
+    .section-title .desc {
+        font-size: 18px;
     }
     .audio-area .main-title {
         font-size: 36px;
@@ -117,31 +140,122 @@
         font-size: 22px;
         margin-bottom: 35px;
     }
+    .section-title .top-title {
+        font-size: 14px;
+    }
+    .accordion-button {
+        font-size: 24px;
+    }
+    .accordion-desc {
+        font-size: 16px;
+    }
+    .faq-image {
+        float: left;
+        width: 100%;
+    }
+    .contact-image {
+        margin-top: 0;
+    }
+    .contact-info {
+        padding: 24px;
+    }
+    .contact-info .lable {
+        font-size: 14px;
+    }
+    .contact-info .icon{
+        font-size: 24px;
+    }
+    .contact-info .no {
+        font-size: 12px;
+    }
+    .faq-area .section-title .main-title {
+        margin-bottom: 0;
+    }
+    .input-grouph textarea.input-filde {
+        min-height: 150px;
+    }
+
+    
 }
 @media screen and (max-width: 767px) {
+    .mainmenu-area .primary-button {
+        padding: 10.5px 18.3px;
+        font-size: 9px;
+     }  
+
+     
+     .mainmenu-area .toggle-menu {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 60%;
+    }
     
     .icon-box .desc {
-        font-size: 20px;
-        margin-bottom: 24px;
+        font-size: 14px;
+        margin-bottom: 30px;
     }
     .icon-box .title {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .icon-box .icon-title {
+        margin-bottom: 8px;
+    }
+    .icon-box .icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 18px;
+    }
+    .contact-info {
+        padding: 32px;
+    }
+
+    .contact-info .lable {
         font-size: 28px;
     }
-    .about-area .section-title .main-title {
-        margin-bottom: 40px;
+
+    .contact-info .icon {
+        font-size: 32px;
     }
-    
-    .about-area .section-desc {
-        font-size: 22px;
+    .contact-info .no {
+        font-size: 24px;
+    }
+
+    .accordion-button.collapsed {
+        font-size: 18px;
+    }
+    button:focus:not(:focus-visible) {
+        font-size: 18px;
+    }
+    .faq-shape {
+        display: none;
     }
 }
 @media screen and (max-width: 576px) {
+
+    
+   .primary-button {
+    padding: 12.5px 14px;
+    font-size: 10px;
+ }
     .audio-area .main-title {
         font-size: 24px;
         margin-bottom: 35px;
     }
     .audio-area .top-title {
         font-size: 14px;
+    }
+    .section-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .faq-image {
+        display: none;
+    }
+    .counting {
+        padding-top: 50px;
     }
 }
 
