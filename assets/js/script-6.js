@@ -28,22 +28,12 @@
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
             navigation: {
-                nextEl: "#Project-slider-control .navigation-control .next",
-                prevEl: "#Project-slider-control .navigation-control .prev",
-            },
-            pagination: {
-                el: "#Project-slider-control .pagination-control",
-                clickable: true,
+                nextEl: ".testimonial-slider .navigation-control .next",
+                prevEl: ".testimonial-slider .navigation-control .prev",
             },
             breakpoints: {
                 575: {
                     slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                992: {
-                    slidesPerView: 3,
                 },
             },
         });
@@ -68,11 +58,8 @@
                         clickable: true,
                     },
                     breakpoints: {
-                        320: {
-                            slidesPerView: 2,
-                        },
                         575: {
-                            slidesPerView: 3,
+                            slidesPerView: 2,
                         },
                         768: {
                             slidesPerView: 4,
@@ -84,30 +71,12 @@
                 });
 
 
-            $('[data-audio]').each(function(){
-                var value = $(this).data('audio');                
-                var title = $(this).data('title');
-                if(value === ''){
-                    return false;
-                }   
-                audioPlayer = new oyoPlayer();
-                $(this).append(audioPlayer);
-                audioPlayer.addToPlaylist(value, title);
-                audioPlayer.setSourceIndex(1);
-                // get the current audio
-                audioPlayer.getCurrentTrack();
 
-                // get all audio files
-                audioPlayer.getSongs()
 
-                // check states
-                audioPlayer.state.active
-                audioPlayer.state.playing
-                audioPlayer.state.paused
-            });
 
 
     });
+
 
     $(window).on("load", function(){
         $(".loader-bg").fadeOut();

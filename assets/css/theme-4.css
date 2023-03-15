@@ -83,9 +83,7 @@ img {
 
 /*=== 2. Button-CSS ===*/
 .primary-button {
-    width: 180px;
-    height: 64px;
-    line-height: 64px;
+    padding: 18.5px 34.3px;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -173,13 +171,10 @@ img {
     margin-bottom: 24px;
 }
 
-.section-title.white-title .title {
+.section-title.white-title {
     color: #ffffff;
 }
 
-.section-title.white-title .desc {
-    color: #ffffff;
-}
 
 /*=== 7. Mainmenu-CSS ===*/
 .mainmenu-area {
@@ -233,9 +228,9 @@ img {
 }
 
 .mainmenu-area .toggle-menu {
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
     font-size: 80%;
     color: #ffffff;
@@ -340,18 +335,22 @@ img {
     z-index: 1;
 }
 
-.about-area .section-title .top-title {
+.section-title .top-title {
     font-size: 18px;
     font-weight: 700;
     color: var(--top-title-color);
     margin-bottom: 12px;
     text-transform: uppercase;
 }
-
-.about-area .section-title .main-title {
-    font-size: 48px;
+.section-title {
+    margin-bottom: 56px;
+}
+.section-title .desc {
+    margin-top: 24px;
+}
+.section-title .main-title {
+    font-size: 46px;
     font-weight: 600;
-    margin-bottom: 65px;
 }
 
 .about-image img {
@@ -361,8 +360,7 @@ img {
 .about-area .section-desc {
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 100px;
-    line-height: 36px;
+    margin-bottom: 75px;
     color: #6E6E78;
     padding-top: 40px;
 }
@@ -398,6 +396,9 @@ img {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 40px;
+}
+.icon-box .desc.last-child {
+    margin-bottom: 0;
 }
 
 .ab-shape-1 {
@@ -493,7 +494,7 @@ img {
 }
 
 .service-box .title {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 16px;
 }
 
@@ -545,54 +546,6 @@ img {
     margin-bottom: 65px;
 }
 
-.audio-area .audio-box {
-    position: relative;
-    z-index: 1;
-    padding: 40px;
-    background-color: #F7F7F7;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.audio-area .audio-box:hover {
-    background-color: #ffffff;
-    transform: translateY(-10px);
-    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.06);
-}
-
-.audio-area .box-title {
-    font-size: 20px;
-    font-weight: 500;
-    color: #10131F;
-    margin-bottom: 32px;
-}
-
-.audio-area .dw-icon {
-    position: absolute;
-    right: 45px;
-    bottom: 40px;
-    text-align: end;
-    color: #10131F;
-}
-
-.audio-area .pl-icon {
-    width: 56px;
-    height: 56px;
-    line-height: 56px;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: #ffffff;
-    border-radius: 100px;
-    margin-bottom: 35px;
-    border: none;
-    outline: none;
-    transition: 0.3s;
-}
-
-.audio-area .pl-icon:hover {
-    background-color: var(--heading-color);
-}
-
 .ad-shape-1 {
     position: absolute;
     z-index: -1;
@@ -632,31 +585,23 @@ img {
 .contact-title {
     padding: 100px 0;
 }
-
-.contact-title .top-title {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--top-title-color);
-    margin-bottom: 12px;
-    text-transform: uppercase;
-}
-
-.contact-title .main-title {
-    font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 24px;
+.contact-area .main-title {
     color: #ffffff;
 }
 
-.contact-title .desc {
-    font-size: 18px;
-    margin-bottom: 55px;
-    color: rgba(255, 255, 255, 0.7);
+.contact-area .section-title {
+    margin-bottom: 56px;
+    padding-top: 100px;
 }
 
 .contact-image {
     margin-bottom: 0;
     margin-top: -80px;
+    width: 100%;
+}
+
+.contact-image img {
+    width: 100%;
 }
 
 .counting {
@@ -766,8 +711,11 @@ img {
 .accordion-item:last-child {
     border-bottom: none;
 }
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon) !important;
+}
 
-.accordion-title .top-title {
+.section-title .top-title {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 12px;
@@ -775,11 +723,6 @@ img {
     text-transform: uppercase;
 }
 
-.accordion-title .main-title {
-    font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 56px;
-}
 
 .accordion-button {
     font-size: 28px;
@@ -821,6 +764,7 @@ img {
     box-shadow: none;
 }
 
+
 .faq-shape {
     position: absolute;
     z-index: -1;
@@ -835,18 +779,11 @@ img {
     z-index: 1;
 }
 
-.testimonial-area .top-title {
+.section-title .top-title {
     font-size: 18px;
-    text-align: center;
     color: var(--top-title-color);
     text-transform: uppercase;
     margin-bottom: 12px;
-}
-
-.testimonial-area .main-title {
-    font-size: 48px;
-    text-align: center;
-    margin-bottom: 56px;
 }
 
 .testimonial-items {
@@ -917,26 +854,9 @@ img {
     position: relative;
     z-index: 1;
 }
-
-.submit-title .top-title {
-    font-size: 18px;
-    color: var(--top-title-color);
-    font-weight: 700;
-    margin-bottom: 12px;
-    text-transform: uppercase
+.submit-area .section-title {
+    margin-bottom: 56px;
 }
-
-.submit-title .main-title {
-    font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 26px;
-}
-
-.submit-title .desc {
-    font-size: 18px;
-    margin-bottom: 24px;
-}
-
 .contact-info {
     padding: 32px;
     background-color: #8A64F9;
@@ -1022,7 +942,6 @@ img {
 }
 
 .footer-widegt .widegt-title {
-    margin-bottom: 32px;
     color: #ffffff;
     font-size: 28px;
     font-weight: 600;
@@ -1067,20 +986,21 @@ img {
 
 .block-list .email {
     font-size: 20px;
-    margin-bottom: 20px;
     font-weight: 700;
     color: #ffffff;
 }
 
 .block-list .Phone {
     font-size: 20px;
-    margin-bottom: 20px;
     font-weight: 700;
     color: #ffffff;
 }
 
 .Location {
     margin: 12px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
 }
 
 .block-list li {
@@ -1089,15 +1009,14 @@ img {
 
 .block-list li a {
     color: rgba(255, 255, 255, 0.8);
-    margin: 18px 0;
+    margin: 0px 0;
     display: inline-block;
     transition: 0.5s;
 }
 
-.block-list li:hover a {
+.block-list li a:hover {
     color: var(--primary-color);
 }
-
 .footer-bottom .policy a {
     font-size: 18px;
     font-weight: 500;
@@ -1142,4 +1061,75 @@ img {
     z-index: -1;
     top: 185px;
     right: 78px;
+}
+
+
+
+/* preloder-css */
+body {
+    font-family: 'satoshi';
+   
+}
+
+.loader-bg {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999999;
+}
+.loader-bg h3 {
+  position: fixed;
+  color: var(--primary-color);
+  font-size: 24px;
+}
+.loader {
+  width: 8em;
+  height: 8em;
+  font-size: 22px;
+  box-sizing: border-box;
+  border-top: 0.3em solid #505050;
+  border-radius: 50%;
+  position: relative;
+  animation: rotating 2s ease-in-out infinite;
+  --direction: 1;
+}
+.loader span {
+  position: absolute;
+  color: var(--primary-color);
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  line-height: 10em;
+  font-family: sans-serif;
+  animation: rotating 2s linear infinite;
+}
+.loader::before,
+.loader::after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  box-sizing: border-box;
+  top: -0.2em;
+}
+.loader::before {
+  border-top: 0.3em solid var(--primary-color);
+  transform: rotate(120deg);
+}
+.loader::after {
+  border-top: 0.3em solid #38BFAC;
+  transform: rotate(240deg);
+}
+@keyframes rotating {
+  50% {
+    transform: rotate(calc(180deg));
+  }
+  100% {
+    transform: rotate(calc(360deg));
+  }
 }
