@@ -1,21 +1,21 @@
 ; (function ($) {
     $(document).on('ready', function () {
-    
-            /* Sticky-Menu-JS */
-            $(window).scroll(function () {
-                if($(window).scrollTop() > 400) {
-                    $(".mainmenu-area").addClass('sticky');
-                } else {
-                    $(".mainmenu-area").removeClass('sticky');
-                }
-            });
-              /*mobile-menu-active*/
+
+        /* Sticky-Menu-JS */
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 400) {
+                $(".mainmenu-area").addClass('sticky');
+            } else {
+                $(".mainmenu-area").removeClass('sticky');
+            }
+        });
+        /*mobile-menu-active*/
         $('.mainmenu-area .nav-row .menu-button .nav-action.toggle-menu').on('click', function () {
             $(this).find('span').toggleClass('fe-plus');
             $(this).find('span').toggleClass('fe-minus');
             $('.mainmenu-area .nav-row .menu-items').slideToggle();
         });
-     
+
 
         /*====== Project-Slider ======*/
         var Product_Slider = new Swiper(".project-slider", {
@@ -38,7 +38,10 @@
                     slidesPerView: 1,
                 },
                 992: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2,
                 },
                 1024: {
                     slidesPerView: 3,
@@ -48,6 +51,7 @@
                 },
             },
         });
+
         /*====== Feedback-Slider ======*/
         var Feedback_Slider = new Swiper(".feedback-slider", {
             loop: true,
@@ -71,6 +75,7 @@
                 992: {
                     slidesPerView: 1,
                 },
+
                 1024: {
                     slidesPerView: 1,
                 },
@@ -84,74 +89,95 @@
 
 
 
-        /*====== -Slider ======*/
-        var Feedback_Slider = new Swiper(".news-slider", {
-        loop: true,
-        speed: 800,
-        spaceBetween: 30,
-        slidesPerView: 1,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-        navigation: {
-            nextEl: "#news-slider-control .navigation-control .next",
-            prevEl: "#news-slider-control .navigation-control .prev",
-        },
-        pagination: {
-            el: "#news-slider-control .pagination-control",
-            clickable: true,
-        },
-        breakpoints: {
-            575: {
-                slidesPerView: 1,
-            },
-            992: {
-                slidesPerView: 2,
-            },
-            1024: {
-                slidesPerView: 3,
-            },
 
-            1920: {
-                slidesPerView: 3,
+        /*====== team_member-Slider ======*/
+        var team_member_Slider = new Swiper(".team-member-slider", {
+            loop: true,
+            speed: 800,
+            spaceBetween: 35,
+            slidesPerView: 1,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: "#team-member-slider-control .navigation-control .next",
+                prevEl: "#team-member-slider-control .navigation-control .prev",
             },
+            pagination: {
+                el: "#team-member-slider-control .pagination-control",
+                clickable: true,
+            },
+            breakpoints: {
 
-        },
+                320: {
+                    slidesPerView: 2,
+                },
+                575: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+
+                1920: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+        
+
+
+
+
+        /*====== news-Slider ======*/
+        var news_Slider = new Swiper(".news-slider", {
+            loop: true,
+            speed: 800,
+            spaceBetween: 30,
+            slidesPerView: 1,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: "#news-slider-control .navigation-control .next",
+                prevEl: "#news-slider-control .navigation-control .prev",
+            },
+            pagination: {
+                el: "#news-slider-control .pagination-control",
+                clickable: true,
+            },
+            breakpoints: {
+
+                320: {
+                    slidesPerView: 1,
+                },
+                575: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+
+                1920: {
+                    slidesPerView: 3,
+                },
+
+            },
+        });
+        
+        $(window).on("load", function(){
+            $(".loader-bg").fadeOut();
+        });
+
     });
-    
-
-
-    /*====== Project-Slider ======*/
-    var team_member_Slider = new Swiper(".team-member-slider", {
-        loop: true,
-        speed: 800,
-        spaceBetween: 35,
-        slidesPerView: 1,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-        navigation: {
-            nextEl: "#team-member-slider-control .navigation-control .next",
-            prevEl: "#team-member-slider-control .navigation-control .prev",
-        },
-        pagination: {
-            el: "#team-member-slider-control .pagination-control",
-            clickable: true,
-        },
-        breakpoints: {
-            575: {
-                slidesPerView: 1,
-            },
-            992: {
-                slidesPerView: 3,
-            },
-            1024: {
-                slidesPerView: 4,
-            },
-            1920: {
-                slidesPerView: 4,
-            },
-        },
-    });
-
-
-});
-}) (jQuery);
+})(jQuery);

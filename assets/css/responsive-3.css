@@ -3,22 +3,12 @@
         display: block !important;
     }
 
-
-    .mainmenu-area .nav-row .menu-items {
-        display: block !important;
-    }
-
     .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a {
-        color: #ffff;
+
         line-height: var(--navbar-height);
         padding: 0;
         margin: 0 24px;
         position: relative;
-    }
-
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li.active>a,
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li:hover>a {
-        color: #3CC3A3
     }
 
     .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a:before {
@@ -29,7 +19,6 @@
         transition: 0.3S;
         width: 0%;
         height: 3px;
-        background-color: #3CC3A3;
     }
 
     .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li:hover>a:before,
@@ -39,9 +28,22 @@
         right: auto;
 
     }
+
+    .header-box .title {
+        font-size: 65px;
+    }
+
+    .header-box .top-title {
+        font-size: 30px;
+    }
+
+    .about-history .section-title .title {
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
+
     .mainmenu-area .nav-row {
         flex-wrap: wrap;
     }
@@ -51,14 +53,14 @@
     }
 
     .mainmenu-area .nav-row .nav-logo {
-        width: 70%;
+        width: 50%;
         min-height: 100px;
         line-height: 100px;
     }
 
     .mainmenu-area .menu-button {
         order: inherit;
-        width: 30%;
+        width: 50%;
     }
 
     .mainmenu-area .nav-row .menu-items {
@@ -68,9 +70,9 @@
 
     .mainmenu-area .nav-row .menu-items>ul {
         border-radius: 5px;
-        background-color: white;
         flex-direction: column;
         padding: 15px;
+        background-color: white;
     }
 
     .mainmenu-area .nav-row .menu-items>ul>li {
@@ -81,6 +83,7 @@
     .mainmenu-area .nav-row .menu-items>ul>li>a {
         line-height: 1.5em;
         padding: 6px;
+        color: #131313;
     }
 
     .mainmenu-area .nav-action {
@@ -91,47 +94,48 @@
         font-size: 58px;
     }
 
-    .about-history {
-        padding: 120px;
-        margin: -60px;
+    .project-area .section-title .title {
+        font-size: 35px;
     }
 
-    .about-image.image-2,
-    .about-image.image-1 {
-        width: 100%;
-        max-width: 100%;
+    .contant .desc {
+        font-size: 20px;
     }
 
-    .about-image.image-2 img,
-    .about-image.image-1 img {
-        width: 100%;
+    .video-news .icon {
+        font-size: 30px;
     }
 
-    .about-area .image-info {
-        left: 0;
-        right: 0;
-        margin: auto;
+    .video-news .box-title {
+        font-size: 15px;
     }
 
-    .about-history .title {
-        font-size: 43px;
+    .video-info .section-title {
+        margin-bottom: 30px;
     }
 
-    .feature-box .title {
-        font-size: 24px;
+    .testimonial-area .section-title .title {
+        font-size: 40px;
     }
 
-    .core-features-image img {
-        width: 100%;
+    .feature-box-1 .desc {
+        font-size: 14px;
     }
 
-    .core-features-image {
-        width: 100%;
-        max-width: 100%;
-    }
 }
 
 @media screen and (max-width: 992px) {
+
+    .mainmenu-area .nav-action.toggle-menu {
+        width: 41px;
+        height: 41px;
+        margin: 0;
+        padding: 0;
+        margin-left: 5px;
+        line-height: 41px;
+        font-size: 10px;
+    }
+
     .header-area {
         padding-top: 180px;
     }
@@ -150,14 +154,13 @@
     }
 
     .header-box .desc {
-        color: #ffffff;
         font-size: 16px;
         margin-bottom: 30px;
     }
 
     .primary-button {
         padding: 10px 20px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .mainmenu-area .nav-action.toggle-menu {
@@ -168,17 +171,115 @@
         font-size: 14px;
     }
 
+    .section-title .top-title {
+        font-size: 13px;
+    }
+
+    .section-title .title {
+        font-size: 32px;
+    }
+
+    .price-box .price-title {
+        font-size: 15px;
+    }
+
+    .price-box .price-rate {
+        font-size: 30px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     .about-history {
         padding: 120px 60px;
     }
+
+    .price-box {
+        margin-bottom: 40px;
+    }
+
+    .video-news {
+        margin-bottom: 15px;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
+    .header-box .section-title .title {
+        font-size: 25px;
+    }
+
     .video-box {
         margin: 150px 0;
         height: inherit;
     }
+
+    .mainmenu-area .nav-action.toggle-menu {
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+        font-size: 12px;
+    }
+
+    .primary-button {
+        padding: 9.5px 13.3px;
+        font-size: 10px;
+    }
+
+    .project-area .section-title .title {
+        font-size: 25px;
+    }
+
+    .Project-box-1 .info-box {
+        height: 100px;
+    }
+
+    .Project-box-1 .info-box .icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 13px;
+    }
+
+    .contant .name-title {
+        font-size: 13px;
+        margin-bottom: 13px;
+    }
+
+    .contant .desc {
+        font-size: 15px;
+    }
+
+    .feedback-area .section-title .title {
+        font-size: 30px;
+    }
+
+    .video-info .section-title .title {
+        font-size: 25px;
+    }
+
+    .testimonial-area .section-title .title {
+        font-size: 28px;
+    }
+
+    .testimonial-image {
+        margin-bottom: 30px;
+    }
+
+    .accordion .item .title a {
+        font-size: 13px;
+    }
+
+    .news-content .title {
+        font-size: 13px;
+    }
+
+    .subscribe-from .footer-logo {
+        margin-bottom: 25px;
+    }
+
+
+
+
+
 }
