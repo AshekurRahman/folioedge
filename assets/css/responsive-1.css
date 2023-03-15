@@ -4,7 +4,7 @@
     }
 
     .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a {
-     
+
         line-height: var(--navbar-height);
         padding: 0;
         margin: 0 24px;
@@ -19,7 +19,6 @@
         transition: 0.3S;
         width: 0%;
         height: 3px;
-        background-color: #3CC3A3;
     }
 
     .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li:hover>a:before,
@@ -29,6 +28,16 @@
         right: auto;
 
     }
+
+    .header-box .title {
+        font-size: 65px;
+    }
+
+    .header-box .top-title {
+        font-size: 30px;
+    }
+
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -58,7 +67,6 @@
 
     .mainmenu-area .nav-row .menu-items>ul {
         border-radius: 5px;
-        background-color: white;
         flex-direction: column;
         padding: 15px;
     }
@@ -119,12 +127,37 @@
         width: 100%;
         max-width: 100%;
     }
-    .project-area .section-title .title{
+
+    .project-area .section-title .title {
         font-size: 30px;
     }
+
     .feedback-title .title {
         font-size: 30px;
     }
+
+    .team-member-box .team-content {
+        width: 150%;
+    }
+
+    .faq-area .section-title .title {
+        font-size: 40px;
+    }
+
+    .subscribe-from-area .section-title .title {
+        font-size: 33px;
+    }
+
+    .project-box-2 .description a {
+        font-size: 20px;
+    }
+
+    .news-area .section-title .title {
+        font-size: 39px;
+    }
+
+
+
 
 
 }
@@ -148,7 +181,6 @@
     }
 
     .header-box .desc {
-        color: #ffffff;
         font-size: 16px;
         margin-bottom: 30px;
     }
@@ -163,8 +195,31 @@
         height: 41px;
         padding: 0;
         line-height: 41px;
-        font-size: 14px;
+        font-size: 10px;
     }
+
+    .section-title .top-title {
+        font-size: 13px;
+    }
+
+    .section-title .title {
+        font-size: 32px;
+    }
+
+    .project-box-1 .title {
+        font-size: 25px;
+    }
+
+    .faq-area .section-title {
+        text-align: center;
+    }
+
+    .news-area .section-title .title {
+        font-size: 30px;
+    }
+
+
+
 
 }
 
@@ -172,14 +227,104 @@
     .about-history {
         padding: 120px 60px;
     }
+
     .feedback-box .description {
         font-size: 20px;
+    }
+
+    .core-features-image img {
+        margin-bottom: 20px;
+    }
+
+    .project-box-2 .description a {
+        font-size: 18px;
+    }
+
+    .subscribe-from-area .section-title .title {
+        font-size: 33px;
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 576px) {
+    .mainmenu-area .nav-action.toggle-menu {
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+        font-size: 12px;
+    }
+
+    .primary-button {
+        padding: 9.5px 13.3px;
+        font-size: 10px;
+    }
+
     .video-box {
         margin: 150px 0;
         height: inherit;
     }
+
+    .feature-box .title {
+        font-size: 20px;
+    }
+
+    .about-history .section-title .title {
+        font-size: 26px;
+    }
+
+    .about-tab .nav-link {
+        margin-bottom: 15px;
+    }
+
+    .project-box-1 .title {
+        font-size: 20px;
+    }
+
+    .project-area .section-title .title {
+        font-size: 26px;
+    }
+
+    .project-box-1 .top-title {
+        font-size: 16px;
+    }
+
+    .faq-box .title {
+        font-size: 18px;
+    }
+
+    .call-number .number {
+        font-size: 16px;
+    }
+
+    .accordion .item .title a {
+        font-size: 16px;
+    }
+
+    .accordion .item .title a:after {
+        font-size: 10px;
+    }
+
+    .core-box .section-title .title {
+        font-size: 24px;
+    }
+
+    .icon-box .title {
+        font-size: 25px;
+    }
+
+    .faq-area .section-title .title {
+        font-size: 35px;
+    }
+
+    .feature-area .section-title .title {
+        font-size: 27px;
+    }
+
+    .subscribe-from-area .section-title .title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+
+
 }
