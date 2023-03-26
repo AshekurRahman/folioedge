@@ -129,7 +129,7 @@
                 },
             },
         });
-        
+
 
 
 
@@ -174,10 +174,12 @@
 
             },
         });
-        
-        $(window).on("load", function(){
-            $(".loader-bg").fadeOut();
-        });
 
     });
+
+    $(window).on("load", function () {
+        $(".loader-bg").fadeOut();
+    });
+
+
 })(jQuery);
