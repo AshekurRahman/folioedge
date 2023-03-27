@@ -181,5 +181,4 @@
         $(".loader-bg").fadeOut();
     });
 
-
 })(jQuery);

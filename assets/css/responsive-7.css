@@ -1,0 +1,284 @@
+/* === Start-Media-Query === */
+/* max-widths */
+
+@media screen and (max-width: 1400px) {
+   .header-area .header-item .main-title {
+      font-size: 64px;
+   }
+
+   .slider-title .title {
+      margin-bottom: 20px;
+
+   }
+
+   .section-title .main-title {
+      font-size: 40px;
+   }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+
+
+   .mainmenu-area .nav-row {
+      flex-wrap: wrap;
+   }
+
+   .mainmenu-area .nav-row .manu-items {
+      display: none;
+      width: 100%;
+   }
+
+   .mainmenu-area .nav-row .nav-logo {
+      min-height: 100px;
+      line-height: 100px;
+      width: 50%;
+   }
+
+   .mainmenu-area .nav-button {
+      order: inherit;
+      width: 50%;
+   }
+
+   .mainmenu-area .toggle-menu {
+      display: inline-block;
+   }
+
+   .header-area .header-item .main-title {
+      font-size: 54px;
+   }
+
+
+
+   .mainmenu-area .manu-items ul {
+      background: #fff;
+      border-radius: 5px;
+      flex-direction: column;
+      padding: 15px;
+   }
+
+
+   .mainmenu-area .manu-items ul li a {
+      color: var(--heading-color);
+      line-height: inherit;
+   }
+
+   .mainmenu-area .manu-items ul li:hover a {
+      color: var(--primary-color);
+      border: none;
+   }
+
+
+   .social-links {
+      position: static;
+      display: flex;
+      margin-top: 30px;
+      transform: rotate(0deg)
+   }
+
+   .section-title .main-title {
+      font-size: 36px;
+   }
+
+   .tesi-items .title {
+      font-size: 36px;
+      margin-bottom: 30px;
+   }
+
+   .accordion-button.collapsed {
+      font-size: 24px;
+   }
+
+   .accordion-button {
+      font-size: 24px;
+   }
+
+
+}
+
+@media screen and (max-width: 1050px) {
+   .header-area .header-item .main-title {
+      font-size: 46px;
+   }
+
+   .nav-button .toggle-menu {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 100%;
+   }
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+
+   .header-area .header-item .top-title {
+      font-size: 24px;
+      margin-bottom: 25px;
+   }
+
+
+   .header-area .header-item .main-title {
+      font-size: 40px;
+      margin-bottom: 24px;
+   }
+
+   .header-area .header-item .desc {
+      font-size: 14px;
+      margin-bottom: 36px;
+   }
+
+   .header-area .header-image {
+      padding: 30px;
+   }
+
+   .section-title {
+      margin-bottom: 30px
+   }
+
+   .section-title .top-title {
+      margin-bottom: 10px;
+      font-size: 14px;
+   }
+
+   .section-title .main-title {
+      font-size: 26px;
+   }
+
+   .primary-button {
+      padding: 9.5px 18px;
+      font-size: 14px;
+   }
+
+   .accordion-button.collapsed {
+      font-size: 18px;
+   }
+   .accordion-button {
+      font-size: 18px;
+  }
+  .accordion-desc {
+   font-size: 14px;
+}
+
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+   .header-area .header-item .top-title {
+      font-size: 28px;
+      margin-bottom: 14px;
+   }
+
+   .header-area .header-item .main-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+   }
+
+   .mainmenu-area .primary-button {
+      padding: 10.5px 18.3px;
+      font-size: 9px;
+   }
+
+   .section-title .main-title {
+      font-size: 24px;
+   }
+
+   .nav-button .toggle-menu {
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+   }
+
+   .social-links li {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 18px;
+   }
+
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+
+   .section-title .top-title {
+      font-size: 12px;
+   }
+
+   .section-title .main-title {
+      font-size: 24px;
+   }
+
+   .section-padding {
+      padding-top: 100px;
+      padding-bottom: 100px;
+   }
+
+   .primary-button {
+      padding: 12.5px 14px;
+      font-size: 10px;
+   }
+
+   .nav-button .toggle-menu {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 70%;
+   }
+
+   .tesi-items .title {
+      font-size: 28px;
+      margin-bottom: 18px;
+   }
+
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 320px) {}
+
+@media screen and (max-width: 1024px) {
+
+
+   .header-item .desc {
+      font-size: 14px;
+      margin-bottom: 36px;
+   }
+
+   .header-item .main-title {
+      font-size: 50px;
+      margin-bottom: 18px;
+   }
+
+   .header-item .top-title {
+      font-size: 28px;
+      margin-bottom: 25px;
+   }
+
+}
+
+@media screen and (min-width: 1201) {
+
+   .mainmenu .nav-row .manu-items {
+      display: block !important;
+   }
+
+}
