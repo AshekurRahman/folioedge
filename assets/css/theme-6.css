@@ -257,6 +257,27 @@ img {
 }
 
 /*=== 4. Section-Title-CSS ===*/
+
+.section-title .top-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--top-title-color);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.about-area .section-title {
+    padding-top: 50px;
+}
+
+.section-title .main-title {
+    font-size: 48px;
+}
+
+.section-title .desc {
+    margin-top: 24px;
+}
+
 .section-title .title {
     font-size: 48px;
     margin-bottom: 24px;
@@ -311,17 +332,25 @@ img {
     padding: 0;
 }
 
+.mainmenu-area .manu-items ul li {
+    margin: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .mainmenu-area .manu-items ul li a {
     color: #ffffff;
     display: block;
-    padding: 10px 24px;
+    padding: 10px 0;
     transition: 0.5s;
     display: inline-block;
+    border-bottom: 1px solid transparent;
 }
 
 .mainmenu-area .manu-items ul li:hover a {
     color: var(--primary-color);
-    text-decoration: underline;
+    border-color: var(--primary-color);
 }
 
 .mainmenu-area .toggle-menu {
@@ -438,7 +467,25 @@ img {
     top: 200px;
 }
 
+.header-area .circle {
+    width: 500px;
+    height: 500px;
+    display: block;
+    position: absolute;
+    background-color: rgba(255,255,255,0.05);
+    right: 82%;
+    bottom: 70%;
+    border-radius: 100%;
+}
 
+.header-area .circle-2 {
+    right: -18%;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 1159px;
+    height: 1159px;
+    background-color: rgba(255,255,255,0.07);
+}
 /* brand-area-css */
 .branded-area {
     position: relative;
@@ -498,32 +545,12 @@ img {
     width: 100%;
 }
 
-.section-title .top-title {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--top-title-color);
-    margin-bottom: 14px;
-    text-transform: uppercase;
-}
-
-.about-area .section-title {
-    padding-top: 50px;
-}
-
-.section-title .main-title {
-    font-size: 48px;
-}
-
-.section-title .desc {
-    margin-top: 24px;
-}
 
 .about-area .primary-button:hover {
     background-color: #10131F;
     color: #ffffff;
 }
 
-/* About-area-css */
 .about-image img {
     position: relative;
     z-index: 1;
@@ -535,6 +562,37 @@ img {
     z-index: 2;
     top: 108px;
     right: -50px;
+}
+.section-img-box{
+    position: relative;
+    z-index: 1;
+}
+.elimant-box {
+    padding: 26px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    left: -25%;
+    bottom: 70px;
+    z-index: 1;
+    max-width: 300px;
+    max-height: 140px;
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.07);
+}
+.about-clints img {
+    background-color: #ffffff;
+    border-radius: 100px;
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.07);
+}
+.about-clints {
+    display: flex;
+    position: absolute;
+    top: -20px;
+}
+
+.elimant-contant span {
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 .about-shape-1 {
@@ -623,7 +681,6 @@ img {
 
 
 /* secvice-area-css */
-
 .secvice-box {
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
     display: flex;
@@ -669,10 +726,11 @@ img {
 
 .service-area {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .service-area::before {
@@ -699,6 +757,31 @@ img {
 .service-area .primary-button:hover {
     background-color: var(--primary-color);
     color: #ffffff;
+}
+.service-area .scrvice-circle {
+    width: 396px;
+    height: 396px;
+    border-radius: 100%;
+    display: block;
+    background-color: rgba(241, 85, 76, 0.3);
+    position: absolute;
+    z-index: -1;
+
+}
+.scrvice-circle.circle-1 {
+    left: -10%;
+    bottom: -20%;
+}
+
+.scrvice-circle.circle-2 {
+    left: 0%;
+    bottom: -30%;
+}
+
+.scrvice-circle.circle-3 {
+    right: -10%;
+    top: -20%;
+    background-color: rgba(253, 177, 46, 0.3);
 }
 
 /* pricing-area-css */
@@ -804,14 +887,13 @@ img {
 }
 .stadius-box .stadius-info {
     width: calc(100% - 60px);
-    height: 119px;
+    height: 135px;
     padding: 32px;
     background-color: #ffffff;
     border-radius: 5px;
     position: absolute;
-    left: 48px;
+    left: 24px;
     bottom: 48px;
-    width: 550px;
     opacity: 0;
     transition: 0.5s;
 
@@ -936,10 +1018,10 @@ img {
 .coundown .number {
     font-size: 48px;
 }
-.coundown-items {
+.coundown-items>div {
     border: 1px solid rgba(16, 19, 31, 0.1);
     border-right: none;
-    border-left: none;
+    left: -1px;
 }
 
 
@@ -1071,7 +1153,7 @@ img {
     display: inline-block;
 }
 
-.bock-list li:hover a {
+.bock-list li a:hover {
     color: var(--primary-color);
 }
 
