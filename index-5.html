@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="assets/css/responsive-5.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".mainmenu-area" data-bs-offset="100">
 
     <div class="page-wrapper">
         <!-- preloader -->
@@ -53,7 +53,6 @@
         <!-- mainmenu-area-start -->
 
         <div class="mainmenu-area">
-            <div class="container">
                 <div class="nav-row">
                     <!-- logo-start -->
                     <a href="#" class="nav-logo">
@@ -63,7 +62,11 @@
                     <!-- menu-button-start -->
                     <div class="menu-button">
                         <a href="#" class="primary-button">Download CV</a>
-                        <a href="#" class="nav-action toggle-menu"><span class="fe-plus"></span></a>
+                        <button class="nav-action toggle-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </button>
                     </div>
                     <!-- menu-button-end -->
                     <!-- menu-items-start -->
@@ -80,7 +83,6 @@
                     <!-- menu-items-end -->
 
                 </div>
-            </div>
         </div>
 
         <!-- mainmenu-area-end -->
@@ -175,7 +177,7 @@
         <section class="process-area">
             <div class="container">
                 <div class="row g-0 align-items-center flex-row-reverse">
-                    <div class="col-md-5 offset-md-1 py-5">
+                    <div class="col-lg-5 offset-lg-1 py-5">
                         <div class="section-title m-0 text-start">
                             <div class="top-title">About Me</div>
                             <h3 class="title">Why You Hire Me for Your Next Project?</h3>
@@ -204,7 +206,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <figure class="process-image">
                             <img src="assets/images/theme-5/process-image.png" alt="">
                         </figure>
@@ -441,7 +443,7 @@
                                         <figure class="thumb">
                                             <img src="assets/images/theme-5/news-slide-image-1.png" alt="">
                                             <div class="icon-box">
-                                                <div class="icon"><span class="fe-send"></span></div>
+                                            <a href="#" class="icon"><span class="fe-send"></span></a>
                                             </div>
                                         </figure>
                                         <div class="news-content">
@@ -455,7 +457,7 @@
                                         <figure class="thumb">
                                             <img src="assets/images/theme-5/news-slide-image-2.png" alt="">
                                             <div class="icon-box">
-                                                <div class="icon"><span class="fe-send"></span></div>
+                                                <a href="#" class="icon"><span class="fe-send"></span></a>
                                             </div>
                                         </figure>
                                         <div class="news-content">
@@ -843,6 +845,7 @@
     <script src="assets/js/jquery-mailchimp.min.js"></script>
     <script src="assets/js/lity.min.js"></script>
     <script src="assets/js/scrollreveal.js"></script>
+    <script src="assets/js/common.js"></script>
     <script src="assets/js/script-5.js"></script>
 
 </body>

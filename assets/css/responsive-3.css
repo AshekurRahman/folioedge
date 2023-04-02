@@ -1,285 +1,376 @@
+/* --- Mainmenu-Responsive-CSS --- */
 @media screen and (min-width: 1201px) {
     .mainmenu-area .nav-row .menu-items {
         display: block !important;
     }
 
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a {
-
+    .mainmenu-area .nav-row .menu-items>ul>li>a {
         line-height: var(--navbar-height);
         padding: 0;
-        margin: 0 24px;
+        margin: -1px 24px;
         position: relative;
     }
 
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a:before {
+    .mainmenu-area .nav-row .menu-items>ul>li>a:before {
         content: "";
         position: absolute;
         right: 0;
         bottom: 0;
         transition: 0.3S;
-        width: 0%;
-        height: 3px;
-    }
-
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li:hover>a:before,
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li.active>a:before {
         width: 100%;
-        left: 0;
-        right: auto;
-
+        height: 0px;
+        background-color: var(--primary-color);
     }
 
-    .header-box .title {
-        font-size: 65px;
-    }
-
-    .header-box .top-title {
-        font-size: 30px;
-    }
-
-    .about-history .section-title .title {
-        font-size: 40px;
+    .mainmenu-area .nav-row .menu-items>ul>li:hover>a:before,
+    .mainmenu-area .nav-row .menu-items>ul>li>a.active:before {
+        height: 3px;
     }
 }
 
 @media screen and (max-width: 1200px) {
+    .mainmenu-area {
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .mainmenu-area .nav-action.toggle-menu {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mainmenu-area .nav-action.toggle-menu .bar {
+        width: 30px;
+        height: 3px;
+        display: block;
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+
+    .mainmenu-area .nav-action.toggle-menu.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .mainmenu-area .nav-action.toggle-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mainmenu-area .nav-action.toggle-menu.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .mainmenu-area .menu-button {
+        order: inherit;
+    }
 
     .mainmenu-area .nav-row {
         flex-wrap: wrap;
     }
 
     .mainmenu-area .nav-row .menu-items {
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 0 -15px;
         display: none;
     }
+}
 
-    .mainmenu-area .nav-row .nav-logo {
-        width: 50%;
-        min-height: 100px;
-        line-height: 100px;
+@media screen and (max-width: 992px) {
+    .mainmenu-area .nav-action {
+        width: 45px;
+        height: 45px;
+        margin-left: 16px;
     }
 
-    .mainmenu-area .menu-button {
-        order: inherit;
-        width: 50%;
+    .mainmenu-area .nav-action.toggle-menu .bar {
+        width: 24px;
+        height: 2px;
     }
+}
 
-    .mainmenu-area .nav-row .menu-items {
-        max-height: 80vh;
-        overflow: auto;
-    }
-
-    .mainmenu-area .nav-row .menu-items>ul {
-        border-radius: 5px;
+@media screen and (max-width: 630px) {
+    .mainmenu-area .nav-row .menu-items ul {
         flex-direction: column;
-        padding: 15px;
-        background-color: white;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 0;
     }
 
     .mainmenu-area .nav-row .menu-items>ul>li {
         width: 100%;
-        padding: 0;
+        text-align: center;
+    }
+
+    .mainmenu-area .nav-row .menu-items>ul>li:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.02);
     }
 
     .mainmenu-area .nav-row .menu-items>ul>li>a {
-        line-height: 1.5em;
-        padding: 6px;
-        color: #131313;
+        line-height: 1.6em;
+        padding: 12px 0;
+        display: block;
     }
+}
 
-    .mainmenu-area .nav-action {
-        display: inline-block;
-    }
 
-    .header-box .title {
-        font-size: 58px;
-    }
 
-    .project-area .section-title .title {
-        font-size: 35px;
-    }
 
-    .contant .desc {
-        font-size: 20px;
-    }
 
-    .video-news .icon {
-        font-size: 30px;
-    }
+/* --- Body-Responsive-CSS --- */
+@media screen and (max-width: 1200px) {
 
-    .video-news .box-title {
-        font-size: 15px;
-    }
-
-    .video-info .section-title {
-        margin-bottom: 30px;
-    }
-
-    .testimonial-area .section-title .title {
+    .section-title .title {
         font-size: 40px;
     }
 
-    .feature-box-1 .desc {
-        font-size: 14px;
+    .section-title .top-title {
+        font-size: 16px;
     }
 
-}
-
-@media screen and (max-width: 992px) {
-
-    .mainmenu-area .nav-action.toggle-menu {
-        width: 41px;
-        height: 41px;
-        margin: 0;
-        padding: 0;
-        margin-left: 5px;
-        line-height: 41px;
-        font-size: 10px;
+    .project-box-1 .info-box .icon {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 15px;
     }
 
-    .header-area {
-        padding-top: 180px;
+    .contant .name-title {
+        margin-bottom: 10px;
     }
 
-    .header-area .header-box {
-        padding: 30px;
+    .contant .desc {
+        font-size: 15px;
     }
 
-    .header-box .top-title {
+    .price-box .price-title {
+        font-size: 18px;
+    }
+
+    .price-box .price-rate {
+        font-size: 37px;
+    }
+
+    .video-news .box-title {
+        font-size: 18px;
+    }
+    
+    .testimonial-item .desc {
+        font-size: 18px;
+    }
+
+    .news-content .title {
         font-size: 20px;
     }
 
-    .header-box .title {
-        font-size: 32px;
-        margin-bottom: 15px;
+    .news-content .categoy {
+        font-size: 15px;
     }
 
-    .header-box .desc {
-        font-size: 16px;
-        margin-bottom: 30px;
+    .news-content .date {
+        font-size: 13px;
     }
+
+    .testimonial-area .element-1 {
+        display: none;
+    }
+
+    .footer-blog .image-content {
+        left: 40%;
+    }
+
+    .image-content .side-title {
+        font-size: 15px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 992px) {
+
 
     .primary-button {
         padding: 10px 20px;
-        font-size: 12px;
-    }
-
-    .mainmenu-area .nav-action.toggle-menu {
-        width: 41px;
-        height: 41px;
-        padding: 0;
-        line-height: 41px;
         font-size: 14px;
+        line-height: 1.8em;
     }
 
-    .section-title .top-title {
-        font-size: 13px;
+    .section-title {
+        margin-bottom: 32px;
     }
+
+    .header-box .section-title {
+        margin-bottom: 32px;
+    }
+
+    .section-padding {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .section-padding-top {
+        padding-top: 120px;
+    }
+
+    .section-padding-bottom {
+        padding-bottom: 120px;
+    }
+
+    .video-area .video-box {
+        width: 100%;
+        height: 0%;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-from-area {
+        padding-top: 50px;
+    }
+
+
+    .search-form .search-button {
+        right: 20%;
+    }
+    
+    .feature-box-1 .title {
+        font-size: 18px;
+    }
+    
+    .payment-area {
+        padding-bottom: 100px;
+    }
+    
+    .video-area {
+        padding-top: 100px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    
+.header-area {
+     padding-top: 200px;
+    padding-bottom: 150px;
+
+}
 
     .section-title .title {
         font-size: 32px;
     }
 
-    .price-box .price-title {
+    .section-title .top-title {
+        font-size: 14px;
+    }
+
+    .header-box .section-title {
+        margin-bottom: 40px;
+    }
+
+
+    .section-padding {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .section-padding-top {
+        padding-top: 100px;
+    }
+
+    .section-padding-bottom {
+        padding-bottom: 100px;
+    }
+
+    .accordion .item .title a {
+        font-size: 18px;
+    }
+
+    .video-news {
+        padding: 18px;
+    }
+
+
+    .testimonial-item .title {
+        font-size: 20px;
+    }
+
+
+    .testimonial-item .position {
         font-size: 15px;
+    }
+
+    .search-form {
+        padding: 44px 44px;
+    }
+
+    .subscribe-from .footer-logo {
+        padding: 44px 55px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+
+    .mainmenu-area .menu-button .primary-button {
+        display: none;
+    }
+
+
+    .section-title .title {
+        font-size: 24px;
     }
 
     .price-box .price-rate {
         font-size: 30px;
     }
 
-}
-
-@media screen and (max-width: 768px) {
-    .about-history {
-        padding: 120px 60px;
-    }
-
-    .price-box {
-        margin-bottom: 40px;
-    }
-
-    .video-news {
-        margin-bottom: 15px;
-    }
-
-}
-
-@media screen and (max-width: 576px) {
-    .header-box .section-title .title {
-        font-size: 25px;
-    }
-
-    .video-box {
-        margin: 150px 0;
-        height: inherit;
-    }
-
-    .mainmenu-area .nav-action.toggle-menu {
-        width: 33px;
-        height: 33px;
-        line-height: 33px;
-        font-size: 12px;
-    }
-
-    .primary-button {
-        padding: 9.5px 13.3px;
-        font-size: 10px;
-    }
-
-    .project-area .section-title .title {
-        font-size: 25px;
-    }
-
-    .Project-box-1 .info-box {
-        height: 100px;
-    }
-
-    .Project-box-1 .info-box .icon {
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        font-size: 13px;
-    }
-
-    .contant .name-title {
-        font-size: 13px;
-        margin-bottom: 13px;
-    }
-
-    .contant .desc {
+    .price-box .price-title {
         font-size: 15px;
     }
 
-    .feedback-area .section-title .title {
-        font-size: 30px;
+    .video-icon .icon {
+        width: 60px;
+        height: 60px;
+        line-height: 61px;
+        font-size: 16px;
+        padding-left: 2px;
     }
 
-    .video-info .section-title .title {
-        font-size: 25px;
+    .wave-effect {
+        width: 60px;
+        height: 60px;
     }
 
-    .testimonial-area .section-title .title {
-        font-size: 28px;
+    .news-content .date {
+        font-size: 10px;
     }
 
-    .testimonial-image {
-        margin-bottom: 30px;
-    }
-
-    .accordion .item .title a {
-        font-size: 13px;
+    .news-content .categoy {
+        font-size: 12px;
     }
 
     .news-content .title {
-        font-size: 13px;
+        font-size: 18px;
     }
 
-    .subscribe-from .footer-logo {
-        margin-bottom: 25px;
+    .news-content {
+        padding: 28px;
     }
 
-
-
+    
+    .search-form .search-button {
+        right: 5%;
+    }
+    .search-form label[for="search-input"] {
+        left: 60px;
+    }
 
 
 }

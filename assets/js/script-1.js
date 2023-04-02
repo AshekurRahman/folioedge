@@ -1,22 +1,5 @@
 ; (function ($) {
     $(document).on('ready', function () {
-
-        /* Sticky-Menu-JS */
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 400) {
-                $(".mainmenu-area").addClass('sticky');
-            } else {
-                $(".mainmenu-area").removeClass('sticky');
-            }
-        });
-        /*mobile-menu-active*/
-        $('.mainmenu-area .nav-row .menu-button .nav-action.toggle-menu').on('click', function () {
-            $(this).find('span').toggleClass('fe-plus');
-            $(this).find('span').toggleClass('fe-minus');
-            $('.mainmenu-area .nav-row .menu-items').slideToggle();
-        });
-
-
         /*====== Project-Slider ======*/
         var Product_Slider = new Swiper(".project-slider", {
             loop: true,
@@ -32,6 +15,10 @@
             pagination: {
                 el: "#Project-slider-control .pagination-control",
                 clickable: true,
+                type: 'bullets',
+                renderBullet: function (i) {
+                    return `<span class="dot swiper-pagination-bullet" ><svg> <circle style="animation-duration: ` + 3000 / 1000 + `s;" cx="11" cy="11" r="10"></circle></svg></span>`;
+                }
             },
             breakpoints: {
                 575: {
@@ -60,6 +47,10 @@
             slidesPerView: 1,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
             navigation: {
                 nextEl: "#feedback-slider-control .navigation-control .next",
                 prevEl: "#feedback-slider-control .navigation-control .prev",
@@ -67,6 +58,10 @@
             pagination: {
                 el: "#feedback-slider-control .pagination-control",
                 clickable: true,
+                type: 'bullets',
+                renderBullet: function (i) {
+                    return `<span class="dot swiper-pagination-bullet" ><svg> <circle style="animation-duration: ` + 3000 / 1000 + `s;" cx="11" cy="11" r="10"></circle></svg></span>`;
+                }
             },
             breakpoints: {
                 575: {
@@ -75,7 +70,6 @@
                 992: {
                     slidesPerView: 1,
                 },
-
                 1024: {
                     slidesPerView: 1,
                 },
@@ -86,9 +80,6 @@
 
             },
         });
-
-
-
 
         /*====== team_member-Slider ======*/
         var team_member_Slider = new Swiper(".team-member-slider", {
@@ -105,34 +96,23 @@
             pagination: {
                 el: "#team-member-slider-control .pagination-control",
                 clickable: true,
+                type: 'bullets',
+                renderBullet: function (i) {
+                    return `<span class="dot swiper-pagination-bullet" ><svg> <circle style="animation-duration: ` + 3000 / 1000 + `s;" cx="11" cy="11" r="10"></circle></svg></span>`;
+                }
             },
             breakpoints: {
-
-                320: {
-                    slidesPerView: 2,
-                },
-                575: {
-                    slidesPerView: 2,
-                },
-                768: {
+                576: {
                     slidesPerView: 2,
                 },
                 992: {
                     slidesPerView: 3,
                 },
-                1024: {
-                    slidesPerView: 4,
-                },
-
-                1920: {
+                1200: {
                     slidesPerView: 4,
                 },
             },
         });
-
-
-
-
 
         /*====== news-Slider ======*/
         var news_Slider = new Swiper(".news-slider", {
@@ -149,6 +129,10 @@
             pagination: {
                 el: "#news-slider-control .pagination-control",
                 clickable: true,
+                type: 'bullets',
+                renderBullet: function (i) {
+                    return `<span class="dot swiper-pagination-bullet" ><svg> <circle style="animation-duration: ` + 3000 / 1000 + `s;" cx="11" cy="11" r="10"></circle></svg></span>`;
+                }
             },
             breakpoints: {
 
@@ -176,10 +160,4 @@
         });
 
     });
-
-    $(window).on("load", function () {
-        $(".loader-bg").fadeOut();
-    });
-
-
 })(jQuery);

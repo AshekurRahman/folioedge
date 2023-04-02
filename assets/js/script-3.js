@@ -9,12 +9,6 @@
                 $(".mainmenu-area").removeClass('sticky');
             }
         });
-        /*mobile-menu-active*/
-        $('.mainmenu-area .nav-row .menu-button .nav-action.toggle-menu').on('click', function () {
-            $(this).find('span').toggleClass('fe-plus');
-            $(this).find('span').toggleClass('fe-minus');
-            $('.mainmenu-area .nav-row .menu-items').slideToggle();
-        });
 
 
 
@@ -39,7 +33,7 @@
                     slidesPerView: 2,
                 },
                 768: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
                 },
                 992: {
                     slidesPerView: 5,
@@ -76,7 +70,7 @@
                     slidesPerView: 3,
                 },
                 1024: {
-                    slidesPerView: 2.5,
+                    slidesPerView: 3,
                 },
             },
         });

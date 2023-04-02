@@ -1,330 +1,473 @@
+/* --- Mainmenu-Responsive-CSS --- */
 @media screen and (min-width: 1201px) {
     .mainmenu-area .nav-row .menu-items {
         display: block !important;
     }
 
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a {
-
+    .mainmenu-area .nav-row .menu-items>ul>li>a {
         line-height: var(--navbar-height);
         padding: 0;
-        margin: 0 24px;
+        margin: -1px 24px;
         position: relative;
     }
 
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a:before {
+    .mainmenu-area .nav-row .menu-items>ul>li>a:before {
         content: "";
         position: absolute;
         right: 0;
         bottom: 0;
         transition: 0.3S;
-        width: 0%;
+        width: 100%;
+        height: 0px;
+        background-color: var(--primary-color);
+    }
+
+    .mainmenu-area .nav-row .menu-items>ul>li:hover>a:before,
+    .mainmenu-area .nav-row .menu-items>ul>li>a.active:before {
         height: 3px;
     }
-
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li:hover>a:before,
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li.active>a:before {
-        width: 100%;
-        left: 0;
-        right: auto;
-
-    }
-
-    .header-box .title {
-        font-size: 65px;
-    }
-
-    .header-box .top-title {
-        font-size: 30px;
-    }
-
-
 }
 
 @media screen and (max-width: 1200px) {
+    .mainmenu-area {
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .mainmenu-area .nav-action.toggle-menu {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mainmenu-area .nav-action.toggle-menu .bar {
+        width: 30px;
+        height: 3px;
+        display: block;
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+
+    .mainmenu-area .nav-action.toggle-menu.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .mainmenu-area .nav-action.toggle-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mainmenu-area .nav-action.toggle-menu.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .mainmenu-area .menu-button {
+        order: inherit;
+    }
+
     .mainmenu-area .nav-row {
         flex-wrap: wrap;
     }
 
     .mainmenu-area .nav-row .menu-items {
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 0 -15px;
         display: none;
     }
+}
 
-    .mainmenu-area .nav-row .nav-logo {
-        width: 50%;
-        min-height: 100px;
-        line-height: 100px;
+@media screen and (max-width: 992px) {
+    .mainmenu-area .nav-action {
+        width: 45px;
+        height: 45px;
+        margin-left: 16px;
     }
 
-    .mainmenu-area .menu-button {
-        order: inherit;
-        width: 50%;
+    .mainmenu-area .nav-action.toggle-menu .bar {
+        width: 24px;
+        height: 2px;
     }
+}
 
-    .mainmenu-area .nav-row .menu-items {
-        max-height: 80vh;
-        overflow: auto;
-    }
-
-    .mainmenu-area .nav-row .menu-items>ul {
-        border-radius: 5px;
+@media screen and (max-width: 630px) {
+    .mainmenu-area .nav-row .menu-items ul {
         flex-direction: column;
-        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 0;
     }
 
     .mainmenu-area .nav-row .menu-items>ul>li {
         width: 100%;
-        padding: 0;
+        text-align: center;
+    }
+
+    .mainmenu-area .nav-row .menu-items>ul>li:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.02);
     }
 
     .mainmenu-area .nav-row .menu-items>ul>li>a {
-        line-height: 1.5em;
-        padding: 6px;
+        line-height: 1.6em;
+        padding: 12px 0;
+        display: block;
     }
-
-    .mainmenu-area .nav-action {
-        display: inline-block;
-    }
-
-    .header-box .title {
-        font-size: 58px;
-    }
-
-    .about-history {
-        padding: 120px;
-        margin: -60px;
-    }
-
-    .about-image.image-2,
-    .about-image.image-1 {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .about-image.image-2 img,
-    .about-image.image-1 img {
-        width: 100%;
-    }
-
-    .about-area .image-info {
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .about-history .title {
-        font-size: 43px;
-    }
-
-    .feature-box .title {
-        font-size: 24px;
-    }
-
-    .core-features-image img {
-        width: 100%;
-    }
-
-    .core-features-image {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .project-area .section-title .title {
-        font-size: 30px;
-    }
-
-    .feedback-title .title {
-        font-size: 30px;
-    }
-
-    .team-member-box .team-content {
-        width: 150%;
-    }
-
-    .faq-area .section-title .title {
-        font-size: 40px;
-    }
-
-    .subscribe-from-area .section-title .title {
-        font-size: 33px;
-    }
-
-    .project-box-2 .description a {
-        font-size: 20px;
-    }
-
-    .news-area .section-title .title {
-        font-size: 39px;
-    }
-
-
-
-
-
 }
 
-@media screen and (max-width: 992px) {
+
+
+
+/* --- Body-Responsive-CSS --- */
+@media screen and (max-width: 1200px) {
+    :root {
+        --navbar-height: 100px;
+    }
+
     .header-area {
         padding-top: 180px;
     }
 
-    .header-area .header-box {
-        padding: 30px;
-    }
-
     .header-box .top-title {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .header-box .title {
-        font-size: 32px;
+        font-size: 62px;
+    }
+
+
+    .feature-box .title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .feature-box .icon {
+        width: 52px;
+        height: 52px;
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+
+    .feature-box {
+        padding: 32px;
+    }
+
+    .feature-box .desc {
+        font-size: 16px;
+    }
+
+
+    .counter-items>div {
+        padding: 60px 0;
+    }
+
+    .counter-items>div:nth-child(1),
+    .counter-items>div:nth-child(2) {
+        border-bottom: 1px solid #EBEBEB;
+    }
+
+    .counter-items>div:nth-child(2) {
+        border-right: none;
+    }
+
+    .about-image.image-1 {
+        width: 768px;
+        max-width: 100%;
+        float: none;
+        text-align: center;
+        margin: auto;
+    }
+
+    .about-image.image-1 img {
+        width: 100%;
+    }
+
+    .about-history {
+        padding: 180px 100px 100px 100px;
+        margin: -100px 0 0 0;
+    }
+
+    .about-area .image-info {
+        width: 380px;
+        max-width: 80%;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        margin: auto;
+    }
+
+    .about-image.image-2 {
+        display: none;
+    }
+
+    .project-box-1 .title {
+        font-size: 24px;
+    }
+
+    .feedback-box .description {
+        font-size: 24px;
+    }
+
+    .section-title .title {
+        font-size: 40px;
+    }
+
+    .section-title .top-title {
+        font-size: 16px;
+    }
+
+    .project-box-2 .top-title {
         margin-bottom: 15px;
     }
 
-    .header-box .desc {
-        font-size: 16px;
-        margin-bottom: 30px;
+    .project-box-2 .description a {
+        font-size: 18px;
+    }
+
+    .copyrights-list ul li a {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .header-area .header-box {
+        padding: 52px;
+    }
+
+    .header-box .top-title {
+        font-size: 24px;
+    }
+
+    .header-box .title {
+        font-size: 52px;
+    }
+
+    .header-box .section-title {
+        margin-bottom: 32px;
+    }
+
+    .about-history {
+        margin: -100px -100px 0 -100px;
     }
 
     .primary-button {
         padding: 10px 20px;
         font-size: 14px;
+        line-height: 1.8em;
     }
 
-    .mainmenu-area .nav-action.toggle-menu {
-        width: 41px;
-        height: 41px;
-        padding: 0;
-        line-height: 41px;
-        font-size: 10px;
+    .about-tab .nav-link {
+        padding: 8px 16px;
     }
 
-    .section-title .top-title {
-        font-size: 13px;
+    .section-padding {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .section-padding-top {
+        padding-top: 120px;
+    }
+
+    .section-padding-bottom {
+        padding-bottom: 120px;
+    }
+
+    .team-member-box .name {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-area .header-box {
+        padding: 52px;
+        border-radius: 10px;
+    }
+
+    .header-area .video-box {
+        padding: 120px 0;
     }
 
     .section-title .title {
         font-size: 32px;
     }
 
-    .project-box-1 .title {
-        font-size: 25px;
+    .section-title .top-title {
+        font-size: 14px;
     }
 
-    .faq-area .section-title {
-        text-align: center;
+    .counter-box .title {
+        font-size: 32px;
+        margin-bottom: 4px;
     }
 
-    .news-area .section-title .title {
-        font-size: 30px;
+    .counter-box .icon {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        margin-bottom: 16px;
     }
 
+    .counter-box .desc {
+        font-size: 16px;
+        line-height: 26px;
+    }
 
+    .section-title {
+        margin-bottom: 42px;
+    }
 
+    .about-tab .nav-link {
+        padding: 8px 16px;
+    }
 
+    .feedback-box .description {
+        margin-bottom: 32px;
+    }
+
+    .section-padding {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .section-padding-top {
+        padding-top: 100px;
+    }
+
+    .section-padding-bottom {
+        padding-bottom: 100px;
+    }
+
+    .accordion .item .title a {
+        font-size: 18px;
+    }
+
+    .faq-box {
+        padding: 32px;
+    }
+
+    .faq-box .title {
+        font-size: 24px;
+    }
+
+    .call-number .number {
+        font-size: 18px;
+    }
 }
 
-@media screen and (max-width: 768px) {
-    .about-history {
-        padding: 120px 60px;
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header-box .section-title {
+        margin-bottom: 32px;
+    }
+
+    .header-area .header-box {
+        padding: 32px;
+    }
+
+    .header-box .title {
+        font-size: 38px;
+    }
+
+    .header-box .desc {
+        font-size: 16px;
+    }
+
+    .primary-button {
+        padding: 12px 21px;
+        font-size: 14px;
+    }
+
+    .mainmenu-area .nav-action {
+        width: 45px;
+        height: 45px;
+        margin-left: 16px;
+    }
+
+    .mainmenu-area .nav-action.toggle-menu .bar {
+        width: 24px;
+        height: 2px;
+    }
+
+    .mainmenu-area .nav-action.toggle-menu.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .mainmenu-area .nav-action.toggle-menu.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .mainmenu-area .nav-row .nav-logo {
+        max-width: 140px;
+    }
+
+    .mainmenu-area .menu-button .primary-button {
+        display: none;
+    }
+
+    .video-icon .icon {
+        width: 60px;
+        height: 60px;
+        line-height: 61px;
+        font-size: 16px;
+        padding-left: 2px;
+    }
+
+    .wave-effect {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .header-area .video-box {
+        padding: 80px 0;
+    }
+
+    .counter-items>div {
+        border: none !important;
+    }
+
+    .counter-items>div:first-child {
+        padding-top: 0;
+    }
+
+    .counter-items>div:last-child {
+        padding-bottom: 0;
+    }
+
+    .counter-items>div:not(:last-child) {
+        border-bottom: 1px solid #EBEBEB !important;
+    }
+
+    .about-area .image-info {
+        padding: 16px;
+        font-size: 14px;
     }
 
     .feedback-box .description {
         font-size: 20px;
     }
 
-    .core-features-image img {
-        margin-bottom: 20px;
-    }
-
-    .project-box-2 .description a {
+    .feedback-box .name {
         font-size: 18px;
     }
 
-    .subscribe-from-area .section-title .title {
-        font-size: 33px;
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .mainmenu-area .nav-action.toggle-menu {
-        width: 33px;
-        height: 33px;
-        line-height: 33px;
-        font-size: 12px;
-    }
-
-    .primary-button {
-        padding: 9.5px 13.3px;
-        font-size: 10px;
-    }
-
-    .video-box {
-        margin: 150px 0;
-        height: inherit;
-    }
-
-    .feature-box .title {
-        font-size: 20px;
-    }
-
-    .about-history .section-title .title {
-        font-size: 26px;
-    }
-
-    .about-tab .nav-link {
-        margin-bottom: 15px;
-    }
-
-    .project-box-1 .title {
-        font-size: 20px;
-    }
-
-    .project-area .section-title .title {
-        font-size: 26px;
-    }
-
-    .project-box-1 .top-title {
-        font-size: 16px;
-    }
-
-    .faq-box .title {
-        font-size: 18px;
-    }
-
-    .call-number .number {
-        font-size: 16px;
-    }
-
-    .accordion .item .title a {
-        font-size: 16px;
-    }
-
-    .accordion .item .title a:after {
-        font-size: 10px;
-    }
-
-    .core-box .section-title .title {
+    .section-title .title {
         font-size: 24px;
     }
 
-    .icon-box .title {
-        font-size: 25px;
+    .search-form .search-button {
+        padding: 17px 20px;
     }
 
-    .faq-area .section-title .title {
-        font-size: 35px;
+    .search-form .input-field {
+        height: 60px;
     }
-
-    .feature-area .section-title .title {
-        font-size: 27px;
-    }
-
-    .subscribe-from-area .section-title .title {
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-
-
 
 }

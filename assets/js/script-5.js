@@ -11,17 +11,11 @@
                 $(".mainmenu-area").removeClass('sticky');
             }
         });
-        /*mobile-menu-active*/
-        $('.mainmenu-area .nav-row .menu-button .nav-action.toggle-menu').on('click', function () {
-            $(this).find('span').toggleClass('fe-plus');
-            $(this).find('span').toggleClass('fe-minus');
-            $('.mainmenu-area .nav-row .menu-items').slideToggle();
-        });
         /*====== news-Slider ======*/
         var news_Slider = new Swiper(".news-slider", {
             loop: true,
             speed: 800,
-            spaceBetween: 0,
+            spaceBetween: 30,
             slidesPerView: 1,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
