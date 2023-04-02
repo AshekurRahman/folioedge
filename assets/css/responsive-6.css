@@ -9,6 +9,9 @@
    .blog-item .blog-title {
       font-size: 18px;
    }
+   .coundown {
+      padding: 36px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -73,6 +76,9 @@
       font-size: 20px;
       margin-bottom: 70px;
    }
+   .coundown {
+      padding: 18px;
+  }
 
 }
 
@@ -163,12 +169,13 @@
    .coundown .lable {
       font-size: 14px;
    }
+
    .angle-shape-1,
    .angle-shape-2 {
       display: none;
    }
 
-   
+
 
 }
 
@@ -202,7 +209,7 @@
 
    .coundown {
       padding: 28px;
-  }
+   }
 
    .blog-item .blog-title {
       font-size: 14px;
@@ -222,6 +229,6 @@
    .blog-image img {
       min-width: 180px;
    }
-   
+
 
 }

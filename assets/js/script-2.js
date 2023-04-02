@@ -120,25 +120,21 @@
 
 
 
-        /*-- Line-Progress-Bar-Active --*/
-        $(".bar_group").appear(function () {
-            var value = $(this).find('.bar_group__bar').data('value');
-            $(this).find('.b_tooltip span').animateNumber({
-                number: value
-            }, 1500);
+
+
+        $('.bar_group').each(function () {
+            $(this).appear(function () {
+                var value = $(this).find('.bar_group__bar').data('value');
+                $('.b_tooltip span').each(function () {
+                    var $this = $(this);
+                    if (!$this.data('animated')) {
+                        $this.data('animated', true).animateNumber({
+                            number: value
+                        }, 1500);
+                    }
+                });
+            });
         });
-
-
-
-        /*-- Line-Progress-Bar-Active --*/
-        $(".bar_group").appear(function () {
-            var value = $(this).find('.bar_group__bar').data('value');
-            $(this).find('.b_tooltip span').animateNumber({
-                number: value
-            }, 1500);
-        });
-
-
 
 
           

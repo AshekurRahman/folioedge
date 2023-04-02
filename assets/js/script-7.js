@@ -1,19 +1,49 @@
 ; (function ($) {
     $(document).on('ready', function () {
-
-
-
-                /* Sticky-Menu-JS */
-                $(window).scroll(function () {
-                    if($(window).scrollTop() > 50) {
-                        $(".mainmenu-area").addClass('sticky');
-                    } else {
-                        $(".mainmenu-area").removeClass('sticky');
+        $('.circle-progress').each(function () {
+            $(this).appear(function () {
+                var color = $(this).find('.chart').data('color');
+                var percent = $(this).find('.chart').data('percent');
+                $(this).find('.chart').easyPieChart({
+                    barColor: color,
+                    trackColor: false,
+                    scaleColor: false,
+                    lineWidth: 3,
+                    lineCap: "round",
+                    size: 80,
+                    animate: 1500
+                });
+                $('.chart-number').each(function () {
+                    var $this = $(this);
+                    if (!$this.data('animated')) {
+                        $this.data('animated', true).animateNumber({
+                            number: percent
+                        }, 1500);
                     }
                 });
+            });
+        });
 
-                
-              /*Mobail-menu-active*/
+        
+        $('.filter-options').on('click', 'button', function () {
+            $('.filter-options').find('button').removeClass('active');
+            $(this).addClass('active');
+            var filterValue = $(this).attr('data-filter');
+            $('.work-items').isotope({ filter: filterValue });
+        });
+
+
+        /* Sticky-Menu-JS */
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 50) {
+                $(".mainmenu-area").addClass('sticky');
+            } else {
+                $(".mainmenu-area").removeClass('sticky');
+            }
+        });
+
+
+        /*Mobail-menu-active*/
         $('.mainmenu-area .toggle-menu').on('click', function () {
             $(this).find('span').toggleClass('fe-plus');
             $(this).find('span').toggleClass('fe-minus');
@@ -52,58 +82,39 @@
         });
 
 
-                /*====== Blog-slider ======*/
-                var blog_slider = new Swiper(".blog-slider", {
-                    loop: true,
-                    speed: 800,
-                    spaceBetween: 30,
+        /*====== Blog-slider ======*/
+        var blog_slider = new Swiper(".blog-slider", {
+            loop: true,
+            speed: 800,
+            spaceBetween: 30,
+            slidesPerView: 1,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                575: {
                     slidesPerView: 1,
-                    watchSlidesVisibility: true,
-                    watchSlidesProgress: true,
-                    breakpoints: {
-                        575: {
-                            slidesPerView: 1,
-                        },
-                        768: {
-                            slidesPerView: 2,
-                        },
-                        992: {
-                            slidesPerView: 3,
-                        },
-                    },
-                });
-                
-
-
-        /*-- Line-Progress-Bar-Active --*/
-        $(".bar_group").appear(function () {
-            var value = $(this).find('.bar_group__bar').data('value');
-            $(this).find('.b_tooltip span').animateNumber({
-                number: value
-            }, 1500);
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+            },
         });
 
 
-
-        /*-- Line-Progress-Bar-Active --*/
-        $(".bar_group").appear(function () {
-            var value = $(this).find('.bar_group__bar').data('value');
-            $(this).find('.b_tooltip span').animateNumber({
-                number: value
-            }, 1500);
-        });
-
-
-
-
-          
 
 
 
     });
 
-    $(window).on("load", function(){
+    $(window).on("load", function () {
         $(".loader-bg").fadeOut();
     });
+
+
+
+
 
 })(jQuery);

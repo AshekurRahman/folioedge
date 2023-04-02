@@ -214,17 +214,25 @@ img {
     padding: 0;
 }
 
+.mainmenu-area .manu-items ul li {
+    margin: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .mainmenu-area .manu-items ul li a {
     color: #ffffff;
     display: block;
-    padding: 10px 24px;
+    padding: 10px 0;
     transition: 0.5s;
     display: inline-block;
+    border-bottom: 1px solid transparent;
 }
 
 .mainmenu-area .manu-items ul li:hover a {
     color: var(--primary-color);
-    text-decoration: underline;
+    border-color: var(--primary-color);
 }
 
 .mainmenu-area .toggle-menu {
@@ -795,6 +803,7 @@ img {
 
 .testimonial-items:hover {
     background-color: #F1554C;
+    background-image: url(../images/theme-4/testi-hover-shape.png);
 }
 
 .testimonial-items .rating-star {
