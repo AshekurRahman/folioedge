@@ -41,7 +41,7 @@
 
 
 
-                /*====== payment-logo-slider -slider ======*/
+                /*====== Brand-logo-slider -slider ======*/
                 var logo_slider = new Swiper(".logo-slider", {
                     loop: true,
                     speed: 800,
@@ -58,8 +58,11 @@
                         clickable: true,
                     },
                     breakpoints: {
-                        575: {
+                        230: {
                             slidesPerView: 2,
+                        },
+                        575: {
+                            slidesPerView: 3,
                         },
                         768: {
                             slidesPerView: 4,
@@ -70,6 +73,31 @@
                     },
                 });
 
+
+                        /*====== stadius-slider ======*/
+        var stadius_slider = new Swiper(".stadius-slider", {
+            loop: true,
+            speed: 800,
+            spaceBetween: 25,
+            slidesPerView: 1,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                575: {
+                    slidesPerView: 1,
+                },
+
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
 
 
 

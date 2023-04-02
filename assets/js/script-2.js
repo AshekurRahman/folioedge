@@ -120,24 +120,21 @@
 
 
 
-        /*-- Line-Progress-Bar-Active --*/
-        $(".bar_group").appear(function () {
-            var value = $(this).find('.bar_group__bar').data('value');
-            $(this).find('.b_tooltip span').animateNumber({
-                number: value
-            }, 1500);
+
+
+        $('.bar_group').each(function () {
+            $(this).appear(function () {
+                var value = $(this).find('.bar_group__bar').data('value');
+                $('.b_tooltip span').each(function () {
+                    var $this = $(this);
+                    if (!$this.data('animated')) {
+                        $this.data('animated', true).animateNumber({
+                            number: value
+                        }, 1500);
+                    }
+                });
+            });
         });
-
-        // 
-        var typed3 = new Typed('#typed3', {
-            strings: ['My strings are: <i>strings</i> with', 'My strings are: <strong>HTML</strong>', 'My strings are: Chars &times; &copy;'],
-            typeSpeed: 0,
-            backSpeed: 0,
-            smartBackspace: true, // this is a default
-            loop: true
-          });
-            
-
 
 
           

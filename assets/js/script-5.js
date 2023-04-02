@@ -142,20 +142,18 @@
 
 
 
-
-        /*-- Line-Progress-Bar-Active --*/
-        $(".bar_group").appear(function () {
+        $('.bar_group').each(function () {
             var value = $(this).find('.bar_group__bar').data('value');
-            $(this).find('.b_tooltip span').animateNumber({
-                number: value
-            }, 1500);
-        });
-
-        $(document.body).on('appear', '.bar_group', function (e, $affected) {
-            var value = $(this).find('.bar_group__bar').data('value');
-            $(this).find('.b_tooltip span').animateNumber({
-                number: value
-            }, 1000);
+            $(this).appear(function () {
+                $('.b_tooltip span').each(function () {
+                    var $this = $(this);
+                    if (!$this.data('animated')) {
+                        $this.data('animated', true).animateNumber({
+                            number: value
+                        }, 1500);
+                    }
+                });
+            });
         });
 
 
