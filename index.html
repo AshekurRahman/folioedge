@@ -23,73 +23,73 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle-min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/lity.min.css">
-    <link rel="stylesheet" href="./assets/fonts/theme-icons/theme-icons.css">
+    <link rel="stylesheet" href="assets/fonts/theme-icons/theme-icons.css">
     <link rel="stylesheet" href="assets/css/theme-font.css">
     <link rel="stylesheet" href="assets/css/theme-1.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/responsive-1.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".mainmenu-area" data-bs-offset="100">
     <div class="page-wrapper">
 
         <!-- preloader -->
-         <div class="loader-bg">
+        <div class="loader-bg">
             <h3>Loading</h3>
-          <div class="loader">
-              <span></span>
-          </div>
-        </div> 
+            <div class="loader">
+                <span></span>
+            </div>
+        </div>
         <!-- preloader end -->
 
         <!-- mainmenu-area-start -->
-
         <div class="mainmenu-area">
-            <div class="container">
-                <div class="nav-row">
-                    <!-- logo-start -->
-                    <a href="#" class="nav-logo">
-                        <img src="assets/images/theme-1/Logo.svg" alt="">
-                    </a>
-                    <!-- logo-end -->
-                    <!-- menu-button-start -->
-                    <div class="menu-button">
-                        <a href="#" class="primary-button">Download CV</a>
-                        <a href="#" class="nav-action toggle-menu"><span class="fe-plus"></span></a>
-                    </div>
-                    <!-- menu-button-end -->
-                    <!-- menu-items-start -->
-                    <div class="menu-items">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <!-- menu-items-end -->
-
+            <div class="nav-row">
+                <!-- logo-start -->
+                <a href="#" class="nav-logo">
+                    <img src="assets/images/theme-1/Logo.svg" alt="">
+                </a>
+                <!-- logo-end -->
+                <!-- menu-button-start -->
+                <div class="menu-button">
+                    <a href="#" class="primary-button">Download CV</a>
+                    <button class="nav-action toggle-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
                 </div>
+                <!-- menu-button-end -->
+                <!-- menu-items-start -->
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="#home_section">Home</a></li>
+                        <li><a href="#service_section">Service</a></li>
+                        <li><a href="#about_section">About</a></li>
+                        <li><a href="#work_section">Works</a></li>
+                        <li><a href="#blog_section">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- menu-items-end -->
             </div>
         </div>
 
         <!-- mainmenu-area-end -->
 
         <!-- Header-Area-Start -->
-        <header class="header-area" style="background-image: url(assets/images/theme-1/header-image.png);">
+        <header class="header-area" id="home_section" style="background-image: url(assets/images/theme-1/header-image.png);">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8 col-xl-6">
-                        <div class="header-box">
+                    <div class="col-md-8 col-lg-7 col-xxl-6">
+                        <div class="header-box anim_left">
                             <div class="section-title">
                                 <h3 class="top-title">Creative Agency</h3>
                                 <h1 class="title">We’ll Help to Grow Your Business</h1>
@@ -100,10 +100,9 @@
                             </div>
                             <a href="#" class="primary-button">Browse projects</a>
                         </div>
-
                     </div>
-                    <div class="col-sm-4 col-xl-6">
-                        <div class="video-box">
+                    <div class="col-md-4 col-lg-5 col-xxl-6">
+                        <div class="video-box anim_right">
                             <a href="https://youtu.be/O0pLvLtoESc" data-lity class="video-icon">
                                 <div class="icon"><span class="fe-play"></span></div>
                                 <div class="wave-effect">
@@ -119,10 +118,11 @@
             </div>
         </header>
 
+
         <!-- Header-Area-end -->
 
         <!-- Feature-Area-Start -->
-        <section class="feature-area section-padding">
+        <section class="feature-area section-padding" id="service_section">
             <div class="container">
                 <div class="row section-title white align-items-end">
                     <div class="col-md-8">
@@ -132,10 +132,10 @@
                         </div>
                     </div>
                     <div class="col-md-4 text-md-end mt-4 mt-md-0">
-                        <a href="#" class="side-title">Browse All Services</a>
+                        <a href="#" class="link-button">Browse All Services</a>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row anim_bottom">
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="feature-box box-1">
                             <div class="bg" style="background-image: url(./assets/images/theme-1/feature-box-bg.jpg);">
@@ -181,48 +181,39 @@
         <!-- Feature-Area-End -->
 
         <!-- project-area-start -->
-        <div class="company-project-area section-padding">
+        <div class="counter-area section-padding anim_right">
             <div class="container">
-                <div class="row g-5 g-xl-4">
-                    <div class="col-md-6 col-xl-3">
-                        <div class="company-project-logo">
-                            <a href="#">
-                                <img src="assets/images/theme-1/project-logo-1.svg" alt="">
-                            </a>
+                <div class="row g-0 g-xl-4 counter-items">
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="counter-box">
+                            <div class="icon"><img src="assets/images/theme-1/project-logo-1.svg" alt=""></div>
                             <h2 class="title">1627+</h2>
                             <div class="desc">
                                 <p>Project Completed</p>
                             </div>
                         </div>
-
                     </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="company-project-logo">
-                            <a href="#">
-                                <img src="assets/images/theme-1/project-logo-2.svg" alt="">
-                            </a>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="counter-box">
+                            <div class="icon"><img src="assets/images/theme-1/project-logo-2.svg" alt=""></div>
                             <h2 class="title">25+</h2>
                             <div class="desc">
                                 <p>Project Completed</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="company-project-logo">
-                            <a href="#">
-                                <img src="assets/images/theme-1/project-logo-3.svg" alt="">
-                            </a>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="counter-box">
+                            <div class="icon"><img src="assets/images/theme-1/project-logo-3.svg" alt=""></div>
                             <h2 class="title">1627+</h2>
                             <div class="desc">
                                 <p>Project Completed</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-3">
-                        <div class="company-project-logo">
-                            <a href="#">
-                                <img src="assets/images/theme-1/project-logo-4.svg" alt="">
-                            </a>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="counter-box">
+                            <div class="icon"><img src="assets/images/theme-1/project-logo-4.svg" alt=""></div>
                             <h2 class="title">24+</h2>
                             <div class="desc">
                                 <p>Project Completed</p>
@@ -237,18 +228,18 @@
         <!-- project-area-End -->
 
         <!-- About-Area-start -->
-        <section class="about-area">
+        <section class="about-area" id="about_section">
             <div class="container">
                 <div class="row align-items-center g-0">
                     <div class="col-xl-3 col-xxl-4 z-index-2">
-                        <div class="about-image image-1">
+                        <div class="about-image image-1 anim_left">
                             <img src="assets/images/theme-1/about-image-1.jpg" alt="">
                         </div>
                         <div class="image-info">“ There are many variatio of passages of available but majority
                             have suffered alteration in some form.”</div>
                     </div>
                     <div class="col-xl-8 col-xxl-7">
-                        <div class="about-history">
+                        <div class="about-history anim_top">
                             <div class="section-title">
                                 <div class="top-title">Know About Us</div>
                                 <h2 class="title">We Provide with Passion</h2>
@@ -276,11 +267,8 @@
 
                                     <div class="desc">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed does a eiusmod
-                                            tempor.
-                                            There are many variations of passages of available but majority have
-                                            suffered
-                                            alteration in some form, by humour or randomised words which don't look even
-                                            believable.</p>
+                                            tempor. There are many variations of passages of available but majority have
+                                            suffered alteration in some form.</p>
                                     </div>
                                     <ul class="icon-list">
                                         <li>Guidance To Your Start-Up.</li>
@@ -292,11 +280,8 @@
 
                                     <div class="desc">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed does a eiusmod
-                                            tempor.
-                                            There are many variations of passages of available but majority have
-                                            suffered
-                                            alteration in some form, by humour or randomised words which don't look even
-                                            believable.</p>
+                                            tempor. There are many variations of passages of available but majority have
+                                            suffered alteration in some form.</p>
                                     </div>
                                     <ul class="icon-list">
                                         <li>Guidance To Your Start-Up.</li>
@@ -308,11 +293,8 @@
 
                                     <div class="desc">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed does a eiusmod
-                                            tempor.
-                                            There are many variations of passages of available but majority have
-                                            suffered
-                                            alteration in some form, by humour or randomised words which don't look even
-                                            believable.</p>
+                                            tempor. There are many variations of passages of available but majority have
+                                            suffered alteration in some form.</p>
                                     </div>
                                     <ul class="icon-list">
                                         <li>Guidance To Your Start-Up.</li>
@@ -324,7 +306,7 @@
                         </div>
                     </div>
                     <div class="col-xl-1">
-                        <div class="about-image image-2">
+                        <div class="about-image image-2 anim_right">
                             <img src="assets/images/theme-1/about-image-2.jpg" alt="">
                         </div>
                     </div>
@@ -334,7 +316,7 @@
 
         <!-- About-Area-End -->
         <!-- project-area-start -->
-        <section class="project-area section-padding">
+        <section class="project-area section-padding" id="work_section">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-8 offset-md-2">
@@ -346,7 +328,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="project-slider swiper anim_bottom">
+                        <div class="project-slider swiper anim_bottom anim_bottom">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="project-box-1">
@@ -354,8 +336,8 @@
                                             <img src="assets/images/theme-1/project-slide-1.png" alt="">
                                         </figure>
                                         <div class="top-title">Development</div>
-                                        <h3 class="title"><a href="#">Website Design & Development</a></h3>
-                                        <a href="icon"><span class="fe-send"></span></a>
+                                        <h3 class="title"><a href="#">Website Design & Development</a><a href="#"
+                                                class="icon"><span class="fe-send"></span></a></h3>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -364,8 +346,8 @@
                                             <img src="assets/images/theme-1/project-slide-2.png" alt="">
                                         </figure>
                                         <div class="top-title">Design</div>
-                                        <h3 class="title"><a href="#">iOS Apps Design & Development</a></h3>
-                                        <a href="icon"><span class="fe-send"></span></a>
+                                        <h3 class="title"><a href="#">iOS Apps Design & Development</a><a href="#"
+                                                class="icon"><span class="fe-send"></span></a></h3>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
@@ -374,8 +356,8 @@
                                             <img src="assets/images/theme-1/project-slide-3.png" alt="">
                                         </figure>
                                         <div class="top-title">Marketing</div>
-                                        <h3 class="title"><a href="#">Minimal Product Development</a></h3>
-                                        <a href="icon"><span class="fe-send"></span></a>
+                                        <h3 class="title"><a href="#">Minimal Product Development</a><a href="#"
+                                                class="icon"><span class="fe-send"></span></a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -407,33 +389,33 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="feedback-box">
-                                        <h3 class="description">
+                                        <div class="description">
                                             “ There are many variations of passages of Lorem Ipsum available, but the
                                             majority have suffered alteration in some form, by injected humour, or
                                             randomised words which don't use a passage look even slightly believable.”
-                                        </h3>
+                                        </div>
                                         <h3 class="name">Robertson Smith</h3>
                                         <div class="short-title">UI/UX Designer</div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="feedback-box">
-                                        <h3 class="description">
+                                        <div class="description">
                                             “ There are many variations of passages of Lorem Ipsum available, but the
                                             majority have suffered alteration in some form, by injected humour, or
                                             randomised words which don't use a passage look even slightly believable.”
-                                        </h3>
+                                        </div>
                                         <h3 class="name">Robertson Smith</h3>
                                         <div class="short-title">UI/UX Designer</div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="feedback-box">
-                                        <h3 class="description">
+                                        <div class="description">
                                             “ There are many variations of passages of Lorem Ipsum available, but the
                                             majority have suffered alteration in some form, by injected humour, or
                                             randomised words which don't use a passage look even slightly believable.”
-                                        </h3>
+                                        </div>
                                         <h3 class="name">Robertson Smith</h3>
                                         <div class="short-title">UI/UX Designer</div>
                                     </div>
@@ -453,7 +435,7 @@
 
         <!-- feedback-Area-End -->
         <!-- team-Member-Area-Start -->
-        <section class="team-member-area section-padding" id="team-member-section">
+        <section class="team-member-area section-padding-top" id="team-member-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
@@ -544,11 +526,10 @@
 
         <!-- team-Member-Area-End -->
         <!-- FAQ-Area-Start -->
-
         <section class="faq-area section-padding">
             <div class="container">
                 <div class="row ">
-                    <div class="col-lg-5 mt-5 mt-lg-0 ">
+                    <div class="col-xl-5 mb-5 mb-xl-0 ">
                         <div class="section-title">
                             <div class="top-title">FAQ Questions</div>
                             <h3 class="title">General Questions</h3>
@@ -557,7 +538,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="faq-box">
+                        <div class="faq-box anim_left">
                             <h3 class="title">Please Don’t Be Hesitate to Call Us Anytime</h3>
                             <a href="#" class="call-number">
                                 <div class="call-icon">
@@ -568,11 +549,11 @@
                                         <span></span>
                                     </div>
                                 </div>
-                                <h3 class="number">+8802 3829 2901</h3>
+                                <div class="number">+8802 3829 2901</div>
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-xl-6 offset-xl-1">
+                    <div class="col-xl-7 col-xxl-6 offset-xxl-1">
                         <div class="row flex-row-reverse">
                             <div id="accordion1" class="accordion anim_bottom">
                                 <div class="item">
@@ -635,16 +616,16 @@
         <!--FAQ-area-End-->
 
         <!--core-features-area-Start-->
-        <section class="core-features-area">
+        <section class="core-features-area section-padding py-lg-0">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-3">
-                        <figure class="core-features-image">
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <figure class="core-features-image anim_left">
                             <img src="assets/images/theme-1/core-features.png" alt="">
                         </figure>
                     </div>
-                    <div class="col-lg-8 offset-lg-1 section-padding">
-                        <div class="core-box">
+                    <div class="col-lg-8 offset-lg-1">
+                        <div class="core-box anim_right">
                             <div class="section-title text-start">
                                 <div class="top-title">Core Features</div>
                                 <h3 class="title anim_bottom ">Why You Choose FolioEdge</h3>
@@ -705,7 +686,7 @@
 
         <!--core-features-area-End-->
         <!--news-area-start-->
-        <div class="news-area">
+        <div class="news-area" id="blog_section">
             <div class="container">
                 <img src="assets/images/theme-1/news-shape-1.png" alt="" class="element element-1">
                 <img src="assets/images/theme-1/news-shape-2.png" alt="" class="element element-2">
@@ -774,14 +755,14 @@
         <div class="subscribe-from-area">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 mb-5">
                         <div class="section-title mb-0">
                             <div class="top-title">Get Latest Update</div>
                             <h3 class="title">Subscribe Newsletter</h3>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <form class="search-form">
+                    <div class="col-lg-6">
+                        <form class="search-form anim_right">
                             <label for="search-input"><span class="fe-envalop"></span></label>
                             <input type="text" id="search-input" class="input-field" placeholder="Search property">
                             <button type="submit" class="search-button">Subscribe Now</button>
@@ -849,7 +830,7 @@
                 </div>
 
                 <div class="row footer-bottom">
-                    <div class="col-md-3">
+                    <div class="col-lg-3">
 
                         <div class="copyrights-list">
                             <ul>
@@ -858,7 +839,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4 offset-md-5">
+                    <div class="col-lg-4 offset-lg-5">
                         <div class="copyrights">
                             <p>&copy;2022 FolioEdge, Inc. All rights reserved</p>
                         </div>
@@ -876,6 +857,7 @@
     <script src="assets/js/jquery-mailchimp.min.js"></script>
     <script src="assets/js/lity.min.js"></script>
     <script src="assets/js/scrollreveal.js"></script>
+    <script src="assets/js/common.js"></script>
     <script src="assets/js/script-1.js"></script>
 </body>
 

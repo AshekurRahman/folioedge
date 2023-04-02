@@ -280,6 +280,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1600px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .mainmenu-area .nav-row .menu-items ul {
@@ -331,14 +335,22 @@ img {
 }
 
 .mainmenu-area .nav-action {
-    padding: 17px;
-    background-color: black;
+    background-color: var(--primary-color);
     border-radius: 5px;
-    color: var(--primary-color);
+    color: #ffffff;
     transition: 0.5s;
     margin-left: 5px;
-    display: none;
+    width: 62px;
+    height: 62px;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin-left: 24px;
+}
 
+.mainmenu-area .nav-action svg {
+    width: 30px;
+    height: 30px;
 }
 
 .mainmenu-area .nav-action:hover {
@@ -348,8 +360,17 @@ img {
 
 .mainmenu-area .menu-button {
     order: 1;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: calc(var(--navbar-height) - 2px);
+
 }
+
+.mainmenu-area .nav-action.toggle-menu {
+    display: none;
+}
+
 
 .mainmenu-area .nav-action.toggle-menu {
     text-align: center;
@@ -375,6 +396,7 @@ img {
 
 .header-box .title {
     font-size: 74px;
+    font-weight: 600;
     color: var(--heading-color);
     margin-bottom: 48px;
 }
@@ -803,6 +825,7 @@ img {
 
 .video-image img {
     border-radius: 5px;
+    width: 100%;
 }
 
 .video-box-2 {
@@ -1025,7 +1048,11 @@ img {
 }
 
 .news-box {
-    margin-bottom: 50px;
+    margin-bottom: 28px;
+}
+
+.news-box .thumb img {
+    width: 100%;
 }
 
 .news-box .thumb .icon-box {
@@ -1119,9 +1146,10 @@ img {
     background-color: white;
     color: var(--primary-color);
 }
+
 .news-image img {
     position: relative;
-    width: 71vw;
+    width: 100%;
 }
 
 
@@ -1179,7 +1207,7 @@ img {
 .testimonial-items img {
     position: absolute;
     top: -60px;
-    
+
 }
 
 .testimonial-items {
@@ -1413,6 +1441,7 @@ img {
 .bock-list li:hover a {
     color: var(--primary-color);
 }
+
 .input-control {
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.02);
@@ -1436,6 +1465,7 @@ img {
     left: 24px;
     top: 75px;
 }
+
 .subscribe-form .primary-button {
     width: 100%;
     background-color: var(--primary-color);
@@ -1444,10 +1474,11 @@ img {
     border: none;
 }
 
-.subscribe-form .primary-button:hover{
+.subscribe-form .primary-button:hover {
     color: var(--primary-color);
     background-color: white;
 }
+
 .footer-area .element {
     position: absolute;
     z-index: 1;
@@ -1467,6 +1498,7 @@ img {
     right: 5vw;
     bottom: 20%;
 }
+
 .footer-bottom {
     border-style: solid;
     border-width: 1px 0px 0px 0px;

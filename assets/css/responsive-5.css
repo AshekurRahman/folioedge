@@ -1,161 +1,208 @@
+/* --- Mainmenu-Responsive-CSS --- */
 @media screen and (min-width: 1201px) {
     .mainmenu-area .nav-row .menu-items {
         display: block !important;
     }
 
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a {
-
+    .mainmenu-area .nav-row .menu-items>ul>li>a {
         line-height: var(--navbar-height);
         padding: 0;
-        margin: 0 24px;
+        margin: -1px 24px;
         position: relative;
     }
 
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li>a:before {
+    .mainmenu-area .nav-row .menu-items>ul>li>a:before {
         content: "";
         position: absolute;
         right: 0;
         bottom: 0;
         transition: 0.3S;
-        width: 0%;
+        width: 100%;
+        height: 0px;
+        background-color: var(--primary-color);
+    }
+
+    .mainmenu-area .nav-row .menu-items>ul>li:hover>a:before,
+    .mainmenu-area .nav-row .menu-items>ul>li>a.active:before {
         height: 3px;
     }
-
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li:hover>a:before,
-    .mainmenu-area:not(.sticky) .nav-row .menu-items>ul>li.active>a:before {
-        width: 100%;
-        left: 0;
-        right: auto;
-
-    }
-
 }
 
 @media screen and (max-width: 1200px) {
+    .mainmenu-area {
+        border-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .mainmenu-area .nav-action.toggle-menu {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mainmenu-area .nav-action.toggle-menu .bar {
+        width: 30px;
+        height: 3px;
+        display: block;
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+
+    .mainmenu-area .nav-action.toggle-menu.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .mainmenu-area .nav-action.toggle-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mainmenu-area .nav-action.toggle-menu.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .mainmenu-area .menu-button {
+        order: inherit;
+    }
+
     .mainmenu-area .nav-row {
         flex-wrap: wrap;
     }
 
     .mainmenu-area .nav-row .menu-items {
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 0 -15px;
         display: none;
     }
+}
 
-    .mainmenu-area .nav-row .nav-logo {
-        width: 50%;
-        min-height: 100px;
-        line-height: 100px;
+@media screen and (max-width: 992px) {
+    .mainmenu-area .nav-action {
+        width: 45px;
+        height: 45px;
+        margin-left: 16px;
     }
 
-    .mainmenu-area .menu-button {
-        order: inherit;
-        width: 50%;
+    .mainmenu-area .nav-action.toggle-menu .bar {
+        width: 24px;
+        height: 2px;
     }
+}
 
-    .mainmenu-area .nav-row .menu-items {
-        max-height: 80vh;
-        overflow: auto;
-    }
-
-    .mainmenu-area .nav-row .menu-items>ul {
-        border-radius: 5px;
+@media screen and (max-width: 630px) {
+    .mainmenu-area .nav-row .menu-items ul {
         flex-direction: column;
-        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 0;
     }
 
     .mainmenu-area .nav-row .menu-items>ul>li {
         width: 100%;
-        padding: 0;
+        text-align: center;
+    }
+
+    .mainmenu-area .nav-row .menu-items>ul>li:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.02);
     }
 
     .mainmenu-area .nav-row .menu-items>ul>li>a {
-        line-height: 1.5em;
-        padding: 6px;
+        line-height: 1.6em;
+        padding: 12px 0;
+        display: block;
     }
+}
 
-    .mainmenu-area .nav-action {
-        display: inline-block;
-    }
-    .section-title .title{
+
+
+
+
+/* --- Body-Responsive-CSS --- */
+@media screen and (max-width: 1200px) {
+
+    .section-title .title {
         font-size: 40px;
     }
 
-    .header-box .top-title {
-        font-size: 30px;
+    .section-title .top-title {
+        font-size: 16px;
     }
-
     .header-box .title{
-        font-size: 58px;
+        font-size: 48px;
     }
-    .service-box .title {
-        font-size: 25px;
-    }
-    .project-box-2 .thumb .icon {
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 15px;
-    }
-    .project-box-2 .news-content{
-        top: 50%;
-    }
-    .news-content .categoy{
-        font-size: 13px;
-    }
-    .news-content .title{
-        font-size: 15px;
-    }
-
-
     
+.video-box-2 .number {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+}
 
+.news-box .thumb .icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+}
+.news-box .news-content{
+    top: 60%;
+}
 
 }
 
+
 @media screen and (max-width: 992px) {
 
-    .mainmenu-area .nav-action.toggle-menu {
-        width: 41px;
-        height: 41px;
-        padding: 0;
-        line-height: 41px;
-        font-size: 10px;
-    }
-    
 
     .primary-button {
-        padding: 12px 22px;
-        font-size: 12px;
+        padding: 10px 20px;
+        font-size: 14px;
+        line-height: 1.8em;
     }
 
-    
-    .section-title .top-title {
-        font-size: 13px;
+    .section-title {
+        margin-bottom: 32px;
     }
 
-    .section-title .title {
-        font-size: 29px;
+
+    .section-padding {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .section-padding-top {
+        padding-top: 120px;
+    }
+
+    .section-padding-bottom {
+        padding-bottom: 120px;
+    }
+
+    .header-box .section-title {
+        margin-bottom: 32px;
+    }
+    .header-area{
+        padding-top: 200px;
+        padding-bottom: 100px;
     }
     
-    .bar_group .title {
-        font-size: 16px;
+    .process-image {
+        float: none;
     }
-    .exp-item .left .name{
-        font-size: 18px;
-    }
-    .exp-item .left .date {
-        font-size: 13px;
-    }
-    .exp-item .right .title {
-        font-size: 18px;
+    .process-area .image-info{
+        right: 0;
     }
     .video-box-2 .box-title{
-        left: 18%;
+        left: 12%;
     }
     .video-box-2 .title{
-        font-size: 20px;
+        font-size: 24px;
     }
-    .company-project-logo .title {
-        font-size: 35px;
+    
+    .company-project-logo .title{
+        font-size: 38px;
     }
 
 
@@ -163,53 +210,93 @@
 }
 
 @media screen and (max-width: 768px) {
-    
-    .header-box .title{
-        font-size: 40px;
+
+
+    .section-title .title {
+        font-size: 32px;
+    }
+
+    .section-title .top-title {
+        font-size: 14px;
+    }
+
+
+    .section-padding {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .section-padding-top {
+        padding-top: 100px;
+    }
+
+    .section-padding-bottom {
+        padding-bottom: 100px;
+    }
+
+    .header-area {
+        padding-top: 200px;
+        padding-bottom: 150px;
+
+    }
+
+
+    .header-box .section-title {
+        margin-bottom: 40px;
     }
     
-    .header-box .top-title {
-        font-size: 25px;
+    .header-box .title {
+        margin-bottom: 0;
     }
-    .video-box-2 .number{
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
+    .service-box .title {
+        font-size: 20;
+        font-size: 20px;
     }
+
+
+
 
 }
 
 @media screen and (max-width: 576px) {
-    .mainmenu-area .nav-action.toggle-menu {
-        width: 33px;
-        height: 33px;
-        line-height: 33px;
-        font-size: 12px;
+
+
+    .mainmenu-area .menu-button .primary-button {
+        display: none;
+    }
+    .social-menu {
+        display: flex;
+        left: 40px;
+        top: 30px;
+    }
+    .social-menu a {
+        margin-right: 10px;
+    }
+    .header-box .title {
+        margin-bottom: 0;
     }
 
-    .primary-button {
-        padding: 9.5px 13.3px;
-        font-size: 10px;
+
+    .video-icon .icon {
+        width: 60px;
+        height: 60px;
+        line-height: 61px;
+        font-size: 16px;
+        padding-left: 2px;
     }
-    
-    .section-title .title{
-        font-size: 25px;
+
+    .wave-effect {
+        width: 60px;
+        height: 60px;
     }
     .process-area .image-info {
-        padding: 15px 15px;
-        font-size: 12px;
-        bottom: 0px;
-        right: 5%;
+        padding: 17px 17px;
+        font-size: 13px;
+        bottom: 0;
     }
-    .social-menu{
-        display: flex;
-        right: 0;
-    }
-    .social-menu a{
-        margin-left: 10px;
-    }
-    .video-box-2 .box-title {
-        left: 20%;
+    
+    .company-project-logo .title{
+        font-size: 33px;
     }
 
 
