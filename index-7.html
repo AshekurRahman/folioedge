@@ -53,37 +53,40 @@
 
         <!-- main-manu-area-start -->
         <div class="mainmenu-area">
-            <div class="container">
                 <div class="nav-row">
                     <!-- logo-start -->
                     <div class="nav-logo">
                         <a href="#">
-                            <img src="assets/images/theme-7/logo-light.svg" alt="">
+                            <span class="dark-logo"><img src="assets/images/theme-7/logo-dark.svg" alt=""></span>
+                            <span class="light-logo"><img src="assets/images/theme-7/Logo-light.svg" alt=""></span>
                         </a>
                     </div>
                     <!-- logp-end -->
 
                     <!-- nav-actions-start -->
-                    <div class="nav-button">
-                        <button type="submit" class="primary-button white">Download CV</button>
-                        <a href="#" class="nav-action toggle-menu"><span class="fe-plus"></span></a>
-                    </div>
+                <div class="nav-button">
+                    <a href="#" class="primary-button">Download CV</a>
+                    <button class="nav-action toggle-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
                     <!-- nav-actions-End -->
 
                     <!-- manu-item-start -->
                     <nav class="manu-items">
                         <ul>
                             <li><a href="#home-section">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Page</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#about-section">About</a></li>
+                            <li><a href="#marque-section">Page</a></li>
+                            <li><a href="#scrvice-section">Services</a></li>
+                            <li><a href="#blog-section">Blog</a></li>
+                            <li><a href="#contact-section">Contact</a></li>
                         </ul>
                     </nav>
                     <!-- manu-item-End -->
                 </div>
-            </div>
         </div>
         <!-- main-manu-area-End -->
 
@@ -92,7 +95,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <div class="header-item">
+                        <div class="header-item anim_bottom">
                             <h1 class="main-title">Hello, I’m Robert Smith An Web Developer</h1>
                             <div class="desc">
                                 <p>It is a long established fact that a reader will be distracted by the readable
@@ -107,23 +110,23 @@
                             <li><a href="#"><span class="fe-facebook"></span></a></li>
                         </ul>
                     </div>
-                    <div class="col-md-6">
-                        <figure class="header-image">
+                    <div class="col-md-6" id="home-section">
+                        <figure class="header-image anim_top">
                             <img src="assets/images/theme-7/header-image.png" alt="">
                         </figure>
                     </div>
                 </div>
             </div>
-        </header>
+        </header >
         <!-- header-area-End -->
 
 
         <!-- service-area-start -->
-        <section class="service-area section-padding">
+        <section class="service-area section-padding" id="scrvice-section">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3">
-                        <div class="service-box">
+                        <div class="service-box anim_left">
                             <div class="icon"><span class="fe-website"></span></div>
                             <h4 class="service-title">Website Development</h4>
                             <ul class="service-list">
@@ -135,7 +138,7 @@
                     </div>
 
                     <div class="col-xl-3">
-                        <div class="service-box">
+                        <div class="service-box anim_right">
                             <div class="icon"><span class="fe-rocket"></span></div>
                             <h4 class="service-title">Website Development</h4>
                             <ul class="service-list">
@@ -146,7 +149,7 @@
                         </div>
                     </div>
                     <div class="col-xl-5 offset-xl-1">
-                        <div class="section-title">
+                        <div class="section-title anim_bottom">
                             <div class="top-title">WHAT WE OFFER</div>
                             <h3 class="main-title">Which Services I will Provide For You</h3>
                             <div class="desc">
@@ -154,7 +157,7 @@
                                     quam laoreet.</p>
                             </div>
                         </div>
-                        <a href="#" class="primary-button">Explore All Services</a>
+                        <a href="#" class="primary-button anim_top">Explore All Services</a>
                     </div>
                 </div>
                 <figure class="secrvice-shape-1">
@@ -169,27 +172,22 @@
 
 
         <!-- About-area-start -->
-        <div class="about-area section-padding">
+        <div class="about-area section-padding" id="about-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 mb-5 mb-lg-0">
-                        <figure class="about-image">
+                        <figure class="about-image anim_top">
                             <img src="assets/images/theme-7/about-image.png" alt="">
                         </figure>
                     </div>
                     <div class="col-md-6 offset-md-1">
-                        <div class="section-title">
+                        <div class="section-title anim_top">
                             <div class="top-title">About Me</div>
                             <h3 class="main-title">I Can Develope Anything For Your Needs</h3>
                         </div>
 
-
-
-
-
-
                         <div class="process-box mb-5">
-                            <div class="process-item">
+                            <div class="process-item anim_right">
                                 <div class="circle-progress">
                                     <div class="chart" data-percent="75" data-color="#F1554C" id="chart-number-1">
                                         <div class="chart-content">
@@ -202,7 +200,7 @@
                             </div>
                         </div>
                         <div class="process-box mb-5">
-                            <div class="process-item">
+                            <div class="process-item anim_left">
                                 <div class="circle-progress">
                                     <div class="chart" data-percent="65" data-color="#FDB12E" id="chart-number-1">
                                         <div class="chart-content">
@@ -215,7 +213,7 @@
                             </div>
                         </div>
                         <div class="process-box">
-                            <div class="process-item">
+                            <div class="process-item anim_right">
                                 <div class="circle-progress">
                                     <div class="chart" data-percent="85" data-color="#8A64F9" id="chart-number-1">
                                         <div class="chart-content">
@@ -243,17 +241,17 @@
         <!-- About-area-End -->
 
         <!-- Work-Area-Start -->
-        <section class="work-area section-padding">
+        <section class="work-area section-padding" id="marque-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
-                        <div class="section-title text-center">
+                        <div class="section-title text-center anim_top">
                             <div class="top-title">Portfolio Works</div>
                             <h3 class="main-title">Recent Case Studies</h3>
                         </div>
                     </div>
                     <div class="col">
-                        <ul class="filter-options">
+                        <ul class="filter-options anim_left">
                             <li><button class="active" data-filter="*">All</button></li>
                             <li><button data-filter=".website">Website</button></li>
                             <li><button data-filter=".mobile_app">Mobile App</button></li>
@@ -261,7 +259,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row work-items">
+                <div class="row work-items anim_bottom">
                     <div class="col-md-6 col-lg-4 work-item website software">
                         <div class="work-box">
                             <figure class="work-thumb m-0">
@@ -336,11 +334,11 @@
 
 
         <!-- Testimonial-area-start -->
-        <section class="testi-area section-padding">
+        <section class="testi-area section-padding" id="testi-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
-                        <div class="video-box">
+                        <div class="video-box anim_top">
                             <a href="https://youtu.be/O0pLvLtoESc" data-lity class="video-icon">
                                 <div class="icon"><span class="fe-play"></span></div>
                                 <div class="wave-effect">
@@ -350,7 +348,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="section-title">
+                        <div class="section-title anim_bottom">
                             <h3 class="main-title">I am Fully Commited To The Needs My Customers</h3>
                             <div class="desc">
                                 <p>Integer faucibus auctor tortor eget aliquam. Maecenas ut enim at velitPraesent et
@@ -359,7 +357,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 offset-lg-1">
-                        <div class="swiper testimonial-slider">
+                        <div class="swiper testimonial-slider anim_right">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="testi-box">
@@ -461,28 +459,28 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
-                        <div class="award-box">
+                        <div class="award-box anim_top">
                             <div class="icon"><span class="fe-dashboard"></span></div>
                             <h6 class="couting-no">234+</h6>
                             <div class="desc">Completed Projects</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
-                        <div class="award-box">
+                        <div class="award-box anim_bottom">
                             <div class="icon"><span class="fe-heand-bag"></span></div>
                             <h6 class="couting-no">40+</h6>
                             <div class="desc">Happy Customers</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
-                        <div class="award-box">
+                        <div class="award-box anim_top">
                             <div class="icon"><span class="fe-dubbol-user"></span></div>
                             <h6 class="couting-no">4.9/5+</h6>
                             <div class="desc">Average Ratings</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <div class="award-box">
+                        <div class="award-box anim_bottom">
                             <div class="icon"><span class="fe-trophy"></span></div>
                             <h6 class="couting-no">23+</h6>
                             <div class="desc">Winning Award</div>
@@ -498,12 +496,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 mb-5 mb-lg-0">
-                        <figure class="faq-image">
+                        <figure class="faq-image anim_left">
                             <img src="assets/images/theme-7/faq-image.jpg" alt="">
                         </figure>
                     </div>
                     <div class="col-md-6 offset-md-1">
-                        <div class="section-title">
+                        <div class="section-title anim_top">
                             <div class="top-title">COMMON QUESTIONS</div>
                             <h3 class="main-title">General Questions</h3>
                         </div>
@@ -555,11 +553,11 @@
         <!-- Faq-area-End -->
 
         <!-- Contact-area-start -->
-        <section class="contact-area section-padding">
+        <section class="contact-area section-padding" id="contact-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
-                        <div class="section-title">
+                        <div class="section-title anim_top">
                             <div class="top-title">Contact With Me</div>
                             <h3 class="main-title">Have Any Project In Your Mind?</h3>
                             <div class="desc">
@@ -572,18 +570,18 @@
                         <form class="control-from">
                             <div class="row g-4">
                                 <div class="col-sm-6">
-                                    <div class="input-grouph">
+                                    <div class="input-grouph anim_left">
                                         <input type="text" class="input-filde" placeholder="Name">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="input-grouph">
+                                    <div class="input-grouph anim_right">
                                         <input type="email" class="input-filde" placeholder="Mail Address">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-12">
-                                    <div class="input-grouph">
+                                    <div class="input-grouph anim_bottom">
                                         <textarea class="input-filde" placeholder="Your Message"></textarea>
                                     </div>
                                 </div>
@@ -594,18 +592,27 @@
                                 </div>
                             </div>
                         </form>
+                        <figure class="contact-shape-2">
+                            <img src="assets/images/theme-7/contact-shape-2.png" alt="">
+                        </figure>
                     </div>
                 </div>
+                <figure class="contact-shape-1">
+                    <img src="assets/images/theme-7/contact-shape-1.png" alt="">
+                </figure>
+                <figure class="contact-shape-3">
+                    <img src="assets/images/theme-7/contact-shape-3.png" alt="">
+                </figure>
             </div>
         </section>
         <!-- Contact-area-End -->
 
         <!-- news-pade-area-start -->
-        <section class="newepade-area section-padding">
+        <section class="newepade-area section-padding" id="blog-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
-                        <div class="section-title text-center">
+                        <div class="section-title text-center anim_top">
                             <div class="top-title">Blog & News</div>
                             <h3 class="main-title">Latest From Blogs</h3>
                         </div>
@@ -613,7 +620,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="swiper blog-slider">
+                        <div class="swiper blog-slider anim_bottom">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="blog-box">
@@ -688,6 +695,12 @@
                         </div>
                     </div>
                 </div>
+                <figure class="news-shape-1">
+                    <img src="assets/images/theme-7/blog-shape-1.png" alt="">
+                </figure>
+                <figure class="news-shape-2">
+                    <img src="assets/images/theme-7/blog-shape-2.png" alt="">
+                </figure>
             </div>
         </section>
         <!-- news-pade-area-End -->
@@ -698,7 +711,7 @@
             <div class="container">
                 <div class="row footer-top section-padding">
                     <div class="col-lg-3 mb-4 mb-lg-0">
-                        <div class="footer-widegt">
+                        <div class="footer-widegt anim_top">
                             <div class="footer-image">
                                 <a href="#">
                                     <img src="assets/images/theme-7/footer-image.png" alt="">
@@ -709,7 +722,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 mb-4 mb-lg-0 col-lg-2 offset-lg-1">
-                        <div class="footer-widegt">
+                        <div class="footer-widegt anim_left">
                             <h4 class="widegt-title">Contact Info</h4>
                             <ul class="block-list">
                                 <li>
@@ -729,7 +742,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 offset-lg-1">
-                        <div class="footer-widegt">
+                        <div class="footer-widegt anim_right">
                             <h4 class="widegt-talk">Let’s Talk</h4>
                             <div class="desc">
                                 <p>I am always open to discuss your project, improve your online presence or help with
@@ -742,7 +755,7 @@
 
                 <div class="row footer-bottom">
                     <div class="col-sm-4">
-                        <div class="policy">
+                        <div class="policy anim_left">
                             <a href="#">About</a>
                             <a href="#">Works </a>
                             <a href="#">Services</a>
@@ -750,12 +763,17 @@
                         </div>
                     </div>
                     <div class="col-sm-8 text-end">
-                        <div class="copy-right text-end">
+                        <div class="copy-right text-end anim_right">
                             <p>&copy;All Rights Reserved. Powered by Webflow</p>
                         </div>
                     </div>
-
                 </div>
+                <figure class="footer-shape-1">
+                    <img src="assets/images/theme-7/footer-shape-1.png" alt="">
+                </figure>
+                <figure class="footer-shape-2">
+                    <img src="assets/images/theme-7/footer-shape-2.png" alt="">
+                </figure>
             </div>
         </footer>
         <!-- Footer-area-End -->
@@ -783,6 +801,7 @@
     <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
     <script src="assets/js/scrollreveal.js"></script>
+    <script src="assets/js/common.js"></script>
     <script src="assets/js/script-7.js"></script>
 </body>
 

@@ -235,6 +235,12 @@ img {
     color: var(--primary-color);
 }
 
+.testi-area .primary-button:hover,
+.news-paid-area .primary-button:hover {
+    background-color: #10131F;
+    color: #ffffff;
+}
+
 /*=== 3. Helper-Class-CSS ===*/
 .page-wrapper {
     position: relative;
@@ -320,6 +326,10 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    max-width: 1600px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .mainmenu-area .manu-items ul {
@@ -929,16 +939,6 @@ img {
     margin-top: 56px;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* testimonial-area-css */
 .testi-area {
     position: relative;
@@ -1021,28 +1021,12 @@ img {
 .coundown-items>div {
     border: 1px solid rgba(16, 19, 31, 0.1);
     border-right: none;
-    left: -1px;
 }
 
-
-
-
-
-
-
-
-
-
 /* News-paid-area-css */
-
 .news-paid-area {
     position: relative;
     z-index: 1;
-}
-.testi-area .primary-button:hover,
-.news-paid-area .primary-button:hover {
-    background-color: #10131F;
-    color: #ffffff;
 }
 .blog-box {
     display: flex;
@@ -1110,22 +1094,6 @@ img {
     right: 140px;
     bottom: 170px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* footer-area-css */
 .footer-area {
