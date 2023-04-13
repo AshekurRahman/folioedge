@@ -279,6 +279,10 @@
     .team-member-box .name {
         font-size: 24px;
     }
+    
+    .search-form .search-button{
+        padding: 16px 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -468,6 +472,35 @@
 
     .search-form .input-field {
         height: 60px;
+    }
+
+
+    .icon-box .icon {
+        width: 50px;
+        height: 50px;
+        line-height: 51px;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .icon-box .title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .project-box-2 .button-link {
+        font-size: 14px;
+    }
+
+    .search-form .search-button {
+        position: static;
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    .footer-widget .widget-title {
+        font-size: 18px;
+        margin-bottom: 15px;
     }
 
 }
