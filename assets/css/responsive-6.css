@@ -154,6 +154,9 @@
       top: 20px;
       right: -65px;
    }
+   .elimant-box {
+      left: -18%;
+   }
 
 }
 
@@ -210,9 +213,8 @@
    .coundown {
       padding: 28px;
    }
-
-   .blog-item .blog-title {
-      font-size: 14px;
+   .blog-box {
+      display: inline-block;
    }
 
    .blog-item .date-2 {
@@ -229,6 +231,12 @@
    .blog-image img {
       min-width: 180px;
    }
-
+   
+   .elimant-box {
+      display: none;
+   }
+   .about-beadeg {
+      top: 50px;
+   }
 
 }

@@ -33,23 +33,6 @@
         });
 
 
-        /* Sticky-Menu-JS */
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 50) {
-                $(".mainmenu-area").addClass('sticky');
-            } else {
-                $(".mainmenu-area").removeClass('sticky');
-            }
-        });
-
-
-        /*Mobail-menu-active*/
-        $('.mainmenu-area .toggle-menu').on('click', function () {
-            $(this).find('span').toggleClass('fe-plus');
-            $(this).find('span').toggleClass('fe-minus');
-            $('.mainmenu-area .nav-row .manu-items').slideToggle();
-        });
-
 
 
         /*====== testimonial -slider ======*/
@@ -108,13 +91,5 @@
 
 
     });
-
-    $(window).on("load", function () {
-        $(".loader-bg").fadeOut();
-    });
-
-
-
-
 
 })(jQuery);

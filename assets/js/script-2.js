@@ -143,8 +143,4 @@
 
     });
 
-    $(window).on("load", function(){
-        $(".loader-bg").fadeOut();
-    });
-
 })(jQuery);

@@ -368,7 +368,7 @@ img {
 }
 
 .mainmenu-area .nav-action:hover {
-    color: white;
+    color: #ffffff;
     background-color: var(--primary-color);
 }
 
