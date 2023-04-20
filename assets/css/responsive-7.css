@@ -64,7 +64,7 @@
        transform: rotate(-45deg) translate(7px, -7px);
    }
 
-   .mainmenu-area .menu-button {
+   .mainmenu-area .nav-button {
        order: inherit;
    }
 
@@ -119,9 +119,6 @@
        display: block;
    }
 }
-
-
-
 
 
 /* === Body-responsive-css === */

@@ -80,6 +80,74 @@ img {
     z-index: 2;
 }
 
+/* preloder-css */
+body {
+    font-family: 'satoshi';
+   
+}
+
+.loader-bg {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999999;
+}
+.loader-bg h3 {
+  position: fixed;
+  color: var(--primary-color);
+  font-size: 24px;
+}
+.loader {
+  width: 8em;
+  height: 8em;
+  font-size: 22px;
+  box-sizing: border-box;
+  border-top: 0.3em solid #505050;
+  border-radius: 50%;
+  position: relative;
+  animation: rotating 2s ease-in-out infinite;
+  --direction: 1;
+}
+.loader span {
+  position: absolute;
+  color: var(--primary-color);
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  line-height: 10em;
+  font-family: sans-serif;
+  animation: rotating 2s linear infinite;
+}
+.loader::before,
+.loader::after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  box-sizing: border-box;
+  top: -0.2em;
+}
+.loader::before {
+  border-top: 0.3em solid var(--primary-color);
+  transform: rotate(120deg);
+}
+.loader::after {
+  border-top: 0.3em solid #F1554C;
+  transform: rotate(240deg);
+}
+@keyframes rotating {
+  50% {
+    transform: rotate(calc(180deg));
+  }
+  100% {
+    transform: rotate(calc(360deg));
+  }
+}
 
 /*=== 2. Button-CSS ===*/
 .primary-button {
@@ -148,8 +216,6 @@ img {
 .section-title.white-title .desc {
     color: #ffffff;
 }
-
-
 .section-title .main-title {
     font-size: 48px;
     font-weight: 600;
@@ -185,11 +251,11 @@ img {
     margin: 0 auto;
 }
 
-.mainmenu-area .manu-items {
+.mainmenu-area .menu-items {
     order: 2;
 }
 
-.mainmenu-area .manu-items ul {
+.mainmenu-area .menu-items ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -199,7 +265,7 @@ img {
     padding: 0;
 }
 
-.mainmenu-area .manu-items ul li a {
+.mainmenu-area .menu-items ul li a {
     color: #ffffff;
     display: inline-block;
     border-bottom: 2px solid transparent;
@@ -208,14 +274,14 @@ img {
     transition: 0.5s;
 }
 
-.mainmenu-area .manu-items ul li {
+.mainmenu-area .menu-items ul li {
     margin: 0 24px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.mainmenu-area .manu-items ul li:hover a {
+.mainmenu-area .menu-items ul li:hover a {
     border-color: var(--primary-color);
     color: var(--primary-color);
 }
@@ -225,18 +291,29 @@ img {
     align-items: center;
     justify-content: end;
 }
-.nav-button .toggle-menu {
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    text-align: center;
-    font-size: 80%;
-    color: #ffffff;
+
+.mainmenu-area .nav-action {
     background-color: var(--primary-color);
     border-radius: 5px;
-    display: inline-block;
+    color: #ffffff;
+    transition: 0.5s;
+    width: 62px;
+    height: 62px;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin-left: 24px;
     display: none;
-    margin-left: 20px;
+}
+
+.mainmenu-area .nav-action svg {
+    width: 30px;
+    height: 30px;
+}
+
+.mainmenu-area .nav-action:hover {
+    color: #ffffff;
+    background-color: var(--primary-color);
 }
 
 /* header-area-css */
@@ -1246,30 +1323,6 @@ img {
 .block-list li:hover a {
     color: var(--primary-color);
 }
-
-.page-up {
-    position: fixed;
-    z-index: 999;
-    right: 75px;
-    bottom: 59px;
-    width: 56px;
-    height: 56px;
-    line-height: 56px;
-    font-size: 24px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #F1554C;
-    border-radius: 100px;
-    transition: 0.5s;
-}
-.page-up .icon{
-    color: #fff;
-}
-.page-up:hover {
-    background-color: var(--primary-color);
-    color: #ffffff;
-}
-
 /* animated-area-css */
 
 .moving-2 {
@@ -1416,75 +1469,4 @@ img {
     25% {
         transform: translate(100px, -100px) rotate(90deg);
     }
-}
-
-
-
-/* preloder-css */
-body {
-    font-family: 'satoshi';
-   
-}
-
-.loader-bg {
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999999999;
-}
-.loader-bg h3 {
-  position: fixed;
-  color: var(--primary-color);
-  font-size: 24px;
-}
-.loader {
-  width: 8em;
-  height: 8em;
-  font-size: 22px;
-  box-sizing: border-box;
-  border-top: 0.3em solid #505050;
-  border-radius: 50%;
-  position: relative;
-  animation: rotating 2s ease-in-out infinite;
-  --direction: 1;
-}
-.loader span {
-  position: absolute;
-  color: var(--primary-color);
-  width: inherit;
-  height: inherit;
-  text-align: center;
-  line-height: 10em;
-  font-family: sans-serif;
-  animation: rotating 2s linear infinite;
-}
-.loader::before,
-.loader::after {
-  content: '';
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  border-radius: 50%;
-  box-sizing: border-box;
-  top: -0.2em;
-}
-.loader::before {
-  border-top: 0.3em solid var(--primary-color);
-  transform: rotate(120deg);
-}
-.loader::after {
-  border-top: 0.3em solid #F1554C;
-  transform: rotate(240deg);
-}
-@keyframes rotating {
-  50% {
-    transform: rotate(calc(180deg));
-  }
-  100% {
-    transform: rotate(calc(360deg));
-  }
 }
