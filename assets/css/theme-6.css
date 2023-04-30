@@ -1004,7 +1004,7 @@ img {
     color: var(--primary-color);
 }
 .swiper-controls .navigation-control .control.next {
-    right: 100px;
+    right: 75px;
 }
 .testi-shape-1 {
     position: absolute;

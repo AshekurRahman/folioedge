@@ -12,9 +12,6 @@ body {
     font-size: 18px;
     color: var(--body-color);
 }
-
-
-
  
 
 
@@ -815,12 +812,6 @@ body {
 .stuadis-area .primary-button:hover {
     background-color: #000a2d;
     color: #ffffff;
-}
-
-.section-title .top-title {
-    font-size: 18px;
-    font-weight: 700;
-    color: #F1554C;
 }
 .stadius-image img {
     width: 100%;

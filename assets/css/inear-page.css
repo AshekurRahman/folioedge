@@ -262,7 +262,6 @@ body {
     color: #ffffff;
 }
 
-
 .section-title.white-title .desc {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -418,7 +417,8 @@ body {
     background-color: var(--primary-color);
     display: inline-block;
     position: absolute;
-    bottom: 0;
+    left: 45%;
+    bottom: -25px;
 }
 
 /* About-area-css */
@@ -470,7 +470,24 @@ body {
     font-weight: 600;
 }
 
+.aboutus-shape-2 {
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+    bottom: 10%;
+}
+.aboutus-shape-3 {
+    position: absolute;
+    z-index: -1;
+    right: 5%;
+    top: 20%;
+}
+
 /* Aboutus-coundown-area */
+.coundown-area {
+    position: relative;
+    z-index: 1;
+}
 .coundown-box {
     background-color: #ffffff;
     border-radius: 5px;
@@ -491,6 +508,25 @@ body {
 .coundown-border>div {
     border: 1px solid #EBEBEB;
     border-right: none;
+}
+
+.aboutus-shape-4 {
+    position: absolute;
+    z-index: -1;
+    left: -5%;
+    top: 20%;
+}
+.aboutus-shape-5 {
+    position: absolute;
+    z-index: -1;
+    right: -5%;
+    bottom: 0;
+}
+.aboutus-shape-6 {
+    position: absolute;
+    z-index: -1;
+    right: 5%;
+    top: 25%;
 }
 
 /* success-story-area-css */
@@ -536,7 +572,7 @@ body {
 
 
 /* Leaders-area-css */
-.propasonal-area-1 {
+.propasonal-area-2 {
     position: relative;
     z-index: 1;
 }
@@ -597,6 +633,19 @@ body {
     color: #3CC3A3;
 }
 
+.member-shape-1 {
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+    bottom: 15%;
+}
+
+.member-shape-2 {
+    position: absolute;
+    z-index: -1;
+    right: 10%;
+    top: 10%;
+}
 
 /* testimonial-area-css */
 .testimonial-area {
@@ -655,6 +704,21 @@ body {
     color: #ffffff;
 }
 
+.testi-shape-2 {
+    position: absolute;
+    z-index: -1;
+    left: 15%;
+    top: 30%;
+}
+
+.testi-shape-3 {
+    position: absolute;
+    z-index: -1;
+    right: 10%;
+    bottom: 20%;
+}
+
+
 /* About-us-area-End */
 
 /* About-me-area-start */
@@ -677,6 +741,8 @@ body {
 /* aboutme-propasonal-area-start */
 .propasonal-area {
     background-color: #F7F7F7;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -787,7 +853,18 @@ body {
     border-radius: 10px;
 }
 
+.propasonal-shape-1 {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 30%;
+}
+
 /* Aboutme-2-area-css */
+.aboutme-2-area {
+    position: relative;
+    z-index: 1;
+}
 .service-box-2 {
     background-color: #f7f7f7;
     border-radius: 5px;
@@ -823,6 +900,18 @@ body {
     margin-bottom: 20px;
 }
 
+.propasonal-shape-2 {
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+    top: 50%;
+}
+.propasonal-shape-3 {
+    position: absolute;
+    z-index: -1;
+    right: 10%;
+    bottom: 20%;
+}
 
 /* aboutme-process-area-css */
 .process-area {
@@ -888,7 +977,10 @@ body {
 }
 
 /* Aboutme-testimonial-css */
-
+.aboutme-testimonial-area {
+    position: relative;
+    z-index: 1;
+}
 .testimonial-items-2 {
     padding: 40px;
     background-color: #F7F7F7;
@@ -927,13 +1019,18 @@ body {
     margin-top: 80px;
 }
 
+.aboutme-testimonial-shape-2 {
+    position: absolute;
+    z-index: -1;
+    right: 18%;
+    top: 30%;
+}
 
 
 /*=== Aboutus-2-About-area-CSS ===*/
 .about-area {
-    padding-top: 136px;
-    padding-bottom: 136px;
     position: relative;
+    z-index: 1;
 }
 
 .about-history {
@@ -1232,6 +1329,9 @@ body {
     background-color: #ffffff;
     color: var(--heading-color);
     font-weight: 600;
+}
+.aboutus-2-contact-area .top-title {
+    color: #ffffff;
 }
 .contact-image-1 img {
     border-radius: 5px;
@@ -1704,10 +1804,6 @@ body {
 
 
 /* aboutme-2-working-staps-css-start */
-
-/*=== 10.video-CSS ===*/
-
-
 .working-stap-area {
     position: relative;
     background-color: #F7F7F7;
@@ -1868,6 +1964,82 @@ body {
     }
 }
 
+
+/* About-me-2-expriens-area-css-start */
+
+/*=== 10.experiences-service-CSS ===*/
+.exp-item {
+    display: flex;
+}
+
+.exp-item .left {
+    width: calc(36% - 62px);
+    margin-bottom: 125px;
+}
+
+.exp-item .left .name {
+    font-size: 28px;
+    font-weight: 600;
+    color: #10131F;
+    margin-bottom: 14px;
+}
+
+.exp-item .left .date {
+    font-size: 18px;
+    color: #6E6E78;
+}
+
+.exp-item .right {
+    width: 64%;
+}
+
+.exp-item .right .title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.exp-item .medal {
+    margin-right: 68px;
+}
+
+.exp-item .medal .sercal {
+    width: 62px;
+    height: 62px;
+    border: 1px dashed rgba(16, 19, 31, 0.3);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exp-item .medal .point {
+    width: 24px;
+    height: 24px;
+    background-color: #8A64F9;
+    display: inline-block;
+    border-radius: 100px;
+}
+
+.exp-item .medal .point.point-2 {
+    background-color: #F1554C;
+}
+
+.exp-item .medal .point.point-3 {
+    background-color: #FDB12E;
+
+}
+
+.exp-item .medal .line {
+    height: 70%;
+    width: 50%;
+    border-right: 1px dashed rgba(16, 19, 31, 0.3);
+    display: block;
+}
+
+.exp-item:last-child .medal .line {
+    display: none;
+}
 
 /* Aboutme-2-counter-area-css-start */
 
@@ -2051,15 +2223,6 @@ body {
 .accordion-button:not(.collapsed)::after {
     background-image: var(--bs-accordion-btn-icon) !important;
 }
-
-.section-title .top-title {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 12px;
-    color: var(--top-title-color);
-    text-transform: uppercase;
-}
-
 
 .accordion-button {
     font-size: 28px;
@@ -2352,18 +2515,7 @@ body {
     right: 75px;
     border-radius: 5px 0 0 5px;
 }
-.testi-shape-1 {
-    position: absolute;
-    z-index: -1;
-    left: 195px;
-    top: 150px;
-}
-.testi-shape-2 {
-    position: absolute;
-    z-index: -1;
-    right: 140px;
-    bottom: 230px;
-}
+
 .testi-area .primary-button:hover {
     background-color: var(--heading-color);
 }
@@ -2545,6 +2697,8 @@ body {
     font-size: 24px;
 }
 /* contact-me-area-css-END */
+
+
 /* comming-soon-area-css-start */
 .comming-soon-area{
     position: relative;
@@ -2566,7 +2720,10 @@ body {
     top: -5%;
     left: -6%;
 }
+
 /* comming-soon-area-css-End */
+
+
 /* 404-area-css-start */
 .image-404 {
     margin-bottom: 56px;
@@ -2586,6 +2743,15 @@ body {
     color: #ffffff;
 }
 /* 404-area-css-End */
+
+/* ==========All-shape-css-start========== */
+.aboutus-shape-1 {
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+    top: 20%;
+}
+/* ==========All-shape-css-End========== */
 /* ================================================RAYHAN-AREA-END===================================================== */
 
 
@@ -2715,4 +2881,17 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* About-us-css-End */
+.footer-shape-1 {
+    position: absolute;
+    z-index: -1;
+    left: 15%;
+    bottom: 20%;
+}
+.footer-shape-2 {
+    position: absolute;
+    z-index: -1;
+    right: 10%;
+    top: 20%;
+}
+
+/* inear-page-css-End */

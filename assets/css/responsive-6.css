@@ -258,6 +258,10 @@
    .angle-shape-2 {
       display: none;
    }
+   .news-bt {
+      float: left;
+   }
+
 
 
 
@@ -311,5 +315,4 @@
    .about-beadeg {
       top: 50px;
    }
-
 }
