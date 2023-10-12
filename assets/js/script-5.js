@@ -29,10 +29,10 @@
             },
             breakpoints: {
                 575: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                 },
                 992: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                 },
                 1024: {
                     slidesPerView: 2,
@@ -62,6 +62,9 @@
                 clickable: true,
             },
             breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                },
                 575: {
                     slidesPerView: 2,
                 },
@@ -109,7 +112,7 @@
         var Feedback_Slider = new Swiper(".feedback-slider", {
             loop: true,
             speed: 800,
-            spaceBetween: 100,
+            spaceBetween: 30,
             slidesPerView: 1,
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
@@ -125,7 +128,7 @@
                 575: {
                     slidesPerView: 1,
                 },
-                992: {
+                984: {
                     slidesPerView: 2,
                 },
 

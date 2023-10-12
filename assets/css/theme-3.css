@@ -555,6 +555,7 @@ img {
 
 .about-icon .icon-title {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -589,6 +590,11 @@ img {
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 0px;
+}
+
+.about-info-box .description {
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .about-info-box {
@@ -877,8 +883,10 @@ input:checked+.slider::before {
     list-style: none;
 }
 
-.price-box .icon-list li:not(:last-child) {
+.price-box .icon-list li {
     margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .price-box .icon-list li::before {
@@ -1168,6 +1176,11 @@ input:checked+.slider::before {
     margin-bottom: 7px;
 }
 
+.faq-box .box-content {
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .faq-area .element {
     position: absolute;
 }
@@ -1291,6 +1304,7 @@ input:checked+.slider::before {
     left: 3%;
     bottom: 13%;
 }
+
 .news-area .element-2 {
     right: 2%;
     top: 15%;
@@ -1330,6 +1344,7 @@ input:checked+.slider::before {
     width: 70%;
     height: 64px;
     padding: 19px 53px;
+    border-radius: 5px;
     border: none;
     background-color: #ffffff;
     outline: none;
@@ -1392,6 +1407,7 @@ input:checked+.slider::before {
 .footer-widget .social-menu a {
     width: 40px;
     height: 40px;
+    font-size: 14px;
     display: inline-block;
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.1);

@@ -480,14 +480,7 @@ img {
 }
 
 .service-box {
-    background-image: url(../images/theme-5/service-shape-4.png);
-    background-position: 94% 10%;
-    background-repeat: no-repeat;
-    background-size: auto;
     padding: 30px 30px;
-    transition: 0.5s;
-    border-radius: 5px;
-
 }
 
 .service-box .icon {
@@ -746,13 +739,15 @@ img {
 .exp-item .left {
     width: calc(36% - 62px);
     margin-bottom: 125px;
+    padding-top: 16px;
 }
 
 .exp-item .left .name {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 600;
     color: #10131F;
     margin-bottom: 14px;
+    font-family: 'satoshi';
 }
 
 .exp-item .left .date {
@@ -762,6 +757,7 @@ img {
 
 .exp-item .right {
     width: 64%;
+    padding-top: 16px;
 }
 
 .exp-item .right .title {
@@ -777,6 +773,7 @@ img {
 .exp-item .medal .sercal {
     width: 62px;
     height: 62px;
+    background-color: rgb(255, 255, 255);
     border: 1px dashed rgba(16, 19, 31, 0.3);
     border-radius: 100px;
     display: flex;
@@ -802,7 +799,7 @@ img {
 }
 
 .exp-item .medal .line {
-    height: 70%;
+    height: 100%;
     width: 50%;
     border-right: 1px dashed rgba(16, 19, 31, 0.3);
     display: block;
@@ -830,10 +827,14 @@ img {
 
 .video-box-2 {
     margin-bottom: 40px;
+    position: relative;
+    padding-left: 94px;
 }
 
 .video-box-2 .number {
     position: absolute;
+    left: 0;
+    top: 0;
     width: 70px;
     height: 70px;
     line-height: 70px;
@@ -873,8 +874,6 @@ img {
 
 .video-box-2 .box-title {
     position: relative;
-    right: 0;
-    left: 23%;
 }
 
 .video-box-2 .title {
@@ -926,8 +925,8 @@ img {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -1204,14 +1203,14 @@ img {
     position: relative;
 }
 
-.testimonial-items img {
-    position: absolute;
-    top: -60px;
-
+.testimonial-image {
+    margin-top: -74px;
+    margin-bottom: 24px;
 }
 
 .testimonial-items {
     padding: 32px;
+    margin-top: 45px;
     background-color: #F7F7F7;
     border-radius: 5px;
     transition: 0.5s;
@@ -1325,7 +1324,8 @@ img {
 .feature-area .feature-video-image {
     text-align: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
+
 }
 
 .feature-area .element {
@@ -1377,16 +1377,31 @@ img {
 
 .feedback-box-1 .thumb .feedback-info {
     display: flex;
+    align-items: center;
+}
+
+.feedback-image img {
+    width: 100%;
 }
 
 .feedback-info .feedback-button {
     width: 93px;
     height: 34px;
+    line-height: 32px;
+    font-size: 18px;
     text-align: center;
     background-color: #10131F;
     color: white;
     border-radius: 3px;
-    margin-right: 24px;
+    margin-right: 18px;
+}
+
+.feedback-info .date {
+    font-size: 18px;
+}
+
+.feedback-image {
+    margin: 0;
 }
 
 .feedback-info span {

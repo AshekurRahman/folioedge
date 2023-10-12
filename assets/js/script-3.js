@@ -29,6 +29,9 @@
                 clickable: true,
             },
             breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                },
                 575: {
                     slidesPerView: 2,
                 },

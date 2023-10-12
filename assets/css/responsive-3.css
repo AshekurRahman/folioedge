@@ -156,7 +156,7 @@
     .video-news .box-title {
         font-size: 18px;
     }
-    
+
     .testimonial-item .desc {
         font-size: 18px;
     }
@@ -185,6 +185,43 @@
         font-size: 15px;
     }
 
+    .about-history .section-title .title {
+        font-size: 28px;
+    }
+
+    .about-history .section-title .top-title {
+        font-size: 12px;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .icon-title .icon {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .about-icon .about-title {
+        font-size: 15px;
+        margin-left: 40px;
+    }
+
+    .about-info .number {
+        font-size: 28px;
+    }
+
+    .about-info-box .description {
+        font-size: 13px;
+    }
+
+    .about-history {
+        padding-left: 25px;
+    }
+    .faq-box{
+        right: 20%;
+    }
 
 
 }
@@ -234,17 +271,45 @@
     .search-form .search-button {
         right: 20%;
     }
-    
+
     .feature-box-1 .title {
         font-size: 18px;
     }
-    
+
     .payment-area {
         padding-bottom: 100px;
     }
-    
+
     .video-area {
         padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .about-area {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .about-info {
+        margin-left: 0;
+        padding: 25px 30px;
+    }
+
+    .about-history {
+        padding-left: 0px;
+    }
+
+    .about-area .element-1 {
+        display: none;
+    }
+
+    .feedback-area {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .faq-image {
+        width: 100%;
     }
 
 
@@ -252,15 +317,16 @@
 
 @media screen and (max-width: 768px) {
 
-    
-.header-area {
-     padding-top: 200px;
-    padding-bottom: 150px;
 
-}
+    .header-area {
+        padding-top: 200px;
+        padding-bottom: 150px;
+
+    }
 
     .section-title .title {
         font-size: 32px;
+
     }
 
     .section-title .top-title {
@@ -304,14 +370,33 @@
     }
 
     .search-form {
-        padding: 44px 44px;
+        padding: 30px 30px;
     }
 
     .subscribe-from .footer-logo {
         padding: 44px 55px;
     }
 
+    .testimonial-area .element-2 {
+        display: none;
+    }
 
+    .search-form .search-button {
+        position: sticky;
+        margin-top: 35px;
+        padding: 15px 25px;
+        width: 100%;
+
+    }
+    
+    .search-form .input-field {
+        width: 100%;
+        height: 55px;
+    }
+    .search-form label[for="search-input"] {
+        top: 60px;
+        left: 50px;
+    }
 
 }
 
@@ -322,9 +407,33 @@
         display: none;
     }
 
+    .header-box .title {
+        margin-bottom: 0;
+    }
+
+    .header-box .desc {
+        margin-top: 0;
+    }
+
+    .section-title .desc {
+        margin-top: 15px;
+    }
 
     .section-title .title {
         font-size: 24px;
+    }
+
+    .section-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section-title {
+        margin-bottom: 15px;
+    }
+
+    .section-title .top-title {
+        margin-bottom: 10px;
     }
 
     .price-box .price-rate {
@@ -333,6 +442,27 @@
 
     .price-box .price-title {
         font-size: 15px;
+    }
+
+    .price-box .icon-list li {
+        font-size: 14px;
+    }
+
+    .price-box .price-header {
+        margin-bottom: 20px;
+    }
+
+    .price-box .preiod {
+        margin-bottom: 0;
+    }
+
+    .video-info {
+        padding: 20px 20px;
+    }
+
+    .video-box {
+        width: 100%;
+        height: 350%;
     }
 
     .video-icon .icon {
@@ -364,12 +494,66 @@
         padding: 28px;
     }
 
-    
     .search-form .search-button {
         right: 5%;
     }
-    .search-form label[for="search-input"] {
-        left: 60px;
+
+    .about-area {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .about-info-box {
+        margin-bottom: 15px;       
+        border-bottom: 1px solid #EBEBEB;
+        border-right: none;
+     }
+
+
+    .feature-box-1 {
+        margin-bottom: 20px;
+    }
+
+    .feature-box-1 img {
+        left: 5px;
+    }
+
+    .feedback-area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .testimonial-image {
+        margin-right: 0;
+    }
+
+    .testimonial-item .desc {
+        margin-bottom: 20px;
+    }
+
+    .swiper-controls {
+        margin-top: 40px;
+    }
+
+    .faq-box .box-title {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .faq-box .box-content {
+        font-size: 14px;
+    }
+    .faq-box{
+        
+    position: sticky;
+    margin-top: 90%;
+    width: 100%;
+  }
+    .payment-logo a{
+        height: 80px;
+    }
+    .header-area .element-3 {
+        opacity: 0.3;
     }
 
 
